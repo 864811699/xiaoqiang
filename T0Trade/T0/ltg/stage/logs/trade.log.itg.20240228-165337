@@ -1,0 +1,6 @@
+2024-02-28T16:53:37.75+08:00 LibITG_Init - DEBUG 1 MergePosition 0
+2024-02-28T16:53:37.75+08:00 LibITG_Init - DEBUG 2 WD D:\Project\T0\T0\ltg\stage
+2024-02-28T16:53:37.753+08:00 NewItg - INFO 3 Create New ItgClient, addr: 127.0.0.1:10001
+2024-02-28T16:53:37.753+08:00 Connect - INFO 4 Connecting to 127.0.0.1:10001
+2024-02-28T16:53:38.756+08:00 Connect - ERROR 5 Failed to connect to 127.0.0.1:10001, dial tcp 127.0.0.1:10001: connectex: No connection could be made because the target machine actively refused it.
+2024-02-28T16:53:38.757+08:00 ReConnect - ERROR 6 Connect Error, dial tcp 127.0.0.1:10001: connectex: No connection could be made because the target machine actively refused it.

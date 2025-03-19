@@ -1,0 +1,42 @@
+=============== Jun 29, 2023 (CST) ===============
+15:54:02.303584 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:54:02.306159 db@open opening
+15:54:02.307178 version@stat F·[] S·0B[] Sc·[]
+15:54:02.309225 db@janitor F·2 G·0
+15:54:02.309225 db@open done T·3.0659ms
+16:27:11.149919 db@close closing
+16:27:11.149919 db@close done T·0s
+=============== Jun 29, 2023 (CST) ===============
+16:27:11.781076 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:27:11.782105 version@stat F·[] S·0B[] Sc·[]
+16:27:11.782105 db@open opening
+16:27:11.782105 journal@recovery F·1
+16:27:11.782623 journal@recovery recovering @1
+16:27:11.784682 version@stat F·[] S·0B[] Sc·[]
+16:27:11.790838 db@janitor F·2 G·0
+16:27:11.790838 db@open done T·8.7328ms
+16:30:23.258420 db@close closing
+16:30:23.258420 db@close done T·0s
+=============== Jun 29, 2023 (CST) ===============
+16:30:29.963341 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:30:29.963341 version@stat F·[] S·0B[] Sc·[]
+16:30:29.963341 db@open opening
+16:30:29.964358 journal@recovery F·1
+16:30:29.964358 journal@recovery recovering @2
+16:30:29.966424 version@stat F·[] S·0B[] Sc·[]
+16:30:29.971510 db@janitor F·2 G·0
+16:30:29.971510 db@open done T·8.1687ms
+19:22:14.220492 db@close closing
+19:22:14.221526 db@close done T·1.034ms
+=============== Jun 29, 2023 (CST) ===============
+19:22:15.053168 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:22:15.053168 version@stat F·[] S·0B[] Sc·[]
+19:22:15.053168 db@open opening
+19:22:15.053168 journal@recovery F·1
+19:22:15.054192 journal@recovery recovering @4
+19:22:15.056277 version@stat F·[] S·0B[] Sc·[]
+19:22:15.061906 db@janitor F·2 G·0
+19:22:15.061906 db@open done T·8.7377ms
+=============== Jul 5, 2023 (CST) ===============
+21:45:31.820848 db@close closing
+21:45:31.820848 db@close done T·0s

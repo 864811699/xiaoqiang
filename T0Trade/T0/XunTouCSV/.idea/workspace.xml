@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="556e364f-ebd3-4099-b312-4852c1f96b9c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="26Xwo64Vs7xxRV7y9cJBzGKKpWB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="D:/proj/hertz" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build xuntouCSV" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="XunTouCSV" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="xuntouCSV" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build xuntouCSV" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.cn,direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1655884739966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1655884739966" />
+    <state width="2517" height="482" key="GridCell.Tab.0.bottom" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.0.center" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.0.left" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.0.right" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1652319950387">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="482" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1652319950387" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1647827833994">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1647827833994" />
+    <state x="831" y="436" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1647848830709">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="831" y="436" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1647848830709" />
+    <state x="1002" y="611" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1647930867739">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1002" y="611" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1647930867739" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="reflect.TypeOf(val)" language="go" />
+        <watch expression="fmt.Println(b)" language="go" />
+        <watch expression="val" language="go" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

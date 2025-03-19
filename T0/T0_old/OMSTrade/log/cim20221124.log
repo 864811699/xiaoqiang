@@ -1,0 +1,11 @@
+[2022/11/24 17:42:35 CST] [CRIT] (OMSTrade/trade.(*Api).LoadCfg:58) read trade cfg :./etc/trade.json fail ,err: open ./etc/trade.json: The system cannot find the file specified.
+[2022/11/24 17:42:44 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/11/24 17:42:44 CST] [CRIT] (OMSTrade/trade.(*Api).LoadCfg:58) read trade cfg :./etc/trade.json fail ,err: open ./etc/trade.json: The system cannot find the file specified.
+[2022/11/24 17:43:08 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/11/24 17:43:08 CST] [INFO] (OMSTrade/trade.(*Api).LoadCfg:68) load cfg success!!
+[2022/11/24 17:43:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 47.101.207.80, port: 5000
+[2022/11/24 17:43:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/11/24 17:43:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/11/24 17:43:08 CST] [INFO] (OMSTrade/trade.(*Api).RunApi:79) API run success!
+[2022/11/24 17:43:08 CST] [INFO] (OMSTrade/trade.(*Api).update:196) ########### UPDATE  START ########
+[2022/11/24 17:43:09 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat

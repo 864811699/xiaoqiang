@@ -1,0 +1,359 @@
+2024-02-27T11:28:18.972+08:00 NewItg - INFO 1 Create New ItgClient, addr: 47.101.170.217:10001
+2024-02-27T11:28:18.972+08:00 Connect - INFO 2 Connecting to 47.101.170.217:10001
+2024-02-27T11:28:18.979+08:00 Connect - INFO 3 Successfully Connected to 47.101.170.217:10001
+2024-02-27T11:28:18.989+08:00 Connect - WARNING 4 Decrypting the comfirmation failed when connect to 47.101.170.217:10001, crypto/rsa: decryption error
+2024-02-27T11:28:18.989+08:00 Connect - DEBUG 5 AES Key: COCGMKCMIAHJIHCG, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T11:28:18.99+08:00 Send - DEBUG 6 Sending msg to itg. msg: {"itg":{"msgTime":"112818990","reqSource":"human_channel","reqNo":"6122d0cf42cd41ba8c38af9c52416e13","infCode":"ITG_LOGIN_QUOTATION","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":""}}}
+ len: 240 dest: 47.101.170.217:10001
+2024-02-27T11:28:18.991+08:00 Send - DEBUG 7 Sending msg to itg. msg: {"itg":{"msgTime":"112818991","reqSource":"human_channel","reqNo":"2b640e10fd7740b1af0b90ed69ff7e32","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112818991","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:28:18.997+08:00 recvRun - DEBUG 8 ItgClient RecvMsg len: 208
+2024-02-27T11:28:18.998+08:00 pkcs5UnPadding - DEBUG 9 unpadding 207
+2024-02-27T11:28:18.999+08:00 recvRun - DEBUG 10 ItgClient RecvMsg Type: ITG_LOGIN_QUOTATION
+2024-02-27T11:28:19+08:00 recvRun - DEBUG 11 ItgClient RecvMsg: {"itg":{"errDesc":"","infCode":"ITG_LOGIN_QUOTATION","msgTime":"112823611","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"6122d0cf42cd41ba8c38af9c52416e13","reqSource":"human_channel","respCode":0}}, ContentLen: 207
+2024-02-27T11:28:19.002+08:00 recvRun - DEBUG 12 ItgClient RecvMsg len: 256
+2024-02-27T11:28:19.002+08:00 pkcs5UnPadding - DEBUG 13 unpadding 251
+2024-02-27T11:28:19.003+08:00 recvRun - DEBUG 14 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:28:19.004+08:00 recvRun - DEBUG 15 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112823612","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"112823612","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"2b640e10fd7740b1af0b90ed69ff7e32","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:28:48.992+08:00 Send - DEBUG 16 Sending msg to itg. msg: {"itg":{"msgTime":"112848992","reqSource":"human_channel","reqNo":"eba8195dae5d488d803654599c6a40e1","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112848992","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:28:48.999+08:00 recvRun - DEBUG 17 ItgClient RecvMsg len: 256
+2024-02-27T11:28:48.999+08:00 pkcs5UnPadding - DEBUG 18 unpadding 251
+2024-02-27T11:28:49+08:00 recvRun - DEBUG 19 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:28:49+08:00 recvRun - DEBUG 20 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112853613","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"112853613","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"eba8195dae5d488d803654599c6a40e1","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:29:18.993+08:00 Send - DEBUG 21 Sending msg to itg. msg: {"itg":{"msgTime":"112918993","reqSource":"human_channel","reqNo":"5e3cf4190b154256b58b9c8f2a9cf60d","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112918993","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:29:19+08:00 recvRun - DEBUG 22 ItgClient RecvMsg len: 256
+2024-02-27T11:29:19+08:00 pkcs5UnPadding - DEBUG 23 unpadding 251
+2024-02-27T11:29:19+08:00 recvRun - DEBUG 24 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:29:19.001+08:00 recvRun - DEBUG 25 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112923615","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"112923615","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"5e3cf4190b154256b58b9c8f2a9cf60d","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:29:48.993+08:00 Send - DEBUG 26 Sending msg to itg. msg: {"itg":{"msgTime":"112948993","reqSource":"human_channel","reqNo":"ba30d30a24bd4f409e6d10a3989de0b9","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112948993","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:29:49.001+08:00 recvRun - DEBUG 27 ItgClient RecvMsg len: 256
+2024-02-27T11:29:49.001+08:00 pkcs5UnPadding - DEBUG 28 unpadding 251
+2024-02-27T11:29:49.001+08:00 recvRun - DEBUG 29 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:29:49.002+08:00 recvRun - DEBUG 30 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112953616","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"112953616","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"ba30d30a24bd4f409e6d10a3989de0b9","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:30:18.994+08:00 Send - DEBUG 31 Sending msg to itg. msg: {"itg":{"msgTime":"113018994","reqSource":"human_channel","reqNo":"1ead5355edbe44068c23792f9b453138","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113018994","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:30:19+08:00 recvRun - DEBUG 32 ItgClient RecvMsg len: 256
+2024-02-27T11:30:19+08:00 pkcs5UnPadding - DEBUG 33 unpadding 251
+2024-02-27T11:30:19.001+08:00 recvRun - DEBUG 34 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:30:19.002+08:00 recvRun - DEBUG 35 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113023617","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113023617","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"1ead5355edbe44068c23792f9b453138","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:30:48.994+08:00 Send - DEBUG 36 Sending msg to itg. msg: {"itg":{"msgTime":"113048994","reqSource":"human_channel","reqNo":"049fbe4487a9474ab388307d91b0f842","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113048994","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:30:49.001+08:00 recvRun - DEBUG 37 ItgClient RecvMsg len: 256
+2024-02-27T11:30:49.001+08:00 pkcs5UnPadding - DEBUG 38 unpadding 251
+2024-02-27T11:30:49.002+08:00 recvRun - DEBUG 39 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:30:49.002+08:00 recvRun - DEBUG 40 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113053618","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113053618","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"049fbe4487a9474ab388307d91b0f842","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:31:18.995+08:00 Send - DEBUG 41 Sending msg to itg. msg: {"itg":{"msgTime":"113118995","reqSource":"human_channel","reqNo":"8ef28c17d1954dc5929cab01257d88fc","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113118995","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:31:19.002+08:00 recvRun - DEBUG 42 ItgClient RecvMsg len: 256
+2024-02-27T11:31:19.002+08:00 pkcs5UnPadding - DEBUG 43 unpadding 251
+2024-02-27T11:31:19.002+08:00 recvRun - DEBUG 44 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:31:19.003+08:00 recvRun - DEBUG 45 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113123620","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113123620","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"8ef28c17d1954dc5929cab01257d88fc","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:31:48.995+08:00 Send - DEBUG 46 Sending msg to itg. msg: {"itg":{"msgTime":"113148995","reqSource":"human_channel","reqNo":"8b8b5b6d10c24f8995a3784eda875186","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113148995","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:31:49.002+08:00 recvRun - DEBUG 47 ItgClient RecvMsg len: 256
+2024-02-27T11:31:49.002+08:00 pkcs5UnPadding - DEBUG 48 unpadding 251
+2024-02-27T11:31:49.003+08:00 recvRun - DEBUG 49 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:31:49.003+08:00 recvRun - DEBUG 50 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113153621","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113153621","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"8b8b5b6d10c24f8995a3784eda875186","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:32:18.996+08:00 Send - DEBUG 51 Sending msg to itg. msg: {"itg":{"msgTime":"113218996","reqSource":"human_channel","reqNo":"422aa1d46bbf46f4af0c9e88ead9c180","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113218996","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:32:19.003+08:00 recvRun - DEBUG 52 ItgClient RecvMsg len: 256
+2024-02-27T11:32:19.003+08:00 pkcs5UnPadding - DEBUG 53 unpadding 251
+2024-02-27T11:32:19.004+08:00 recvRun - DEBUG 54 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:32:19.005+08:00 recvRun - DEBUG 55 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113223623","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113223623","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"422aa1d46bbf46f4af0c9e88ead9c180","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:32:48.996+08:00 Send - DEBUG 56 Sending msg to itg. msg: {"itg":{"msgTime":"113248996","reqSource":"human_channel","reqNo":"d51abd26dead48a487cdda8db31f91f0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113248996","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:32:49.004+08:00 recvRun - DEBUG 57 ItgClient RecvMsg len: 256
+2024-02-27T11:32:49.004+08:00 pkcs5UnPadding - DEBUG 58 unpadding 251
+2024-02-27T11:32:49.005+08:00 recvRun - DEBUG 59 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:32:49.005+08:00 recvRun - DEBUG 60 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113253624","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113253624","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"d51abd26dead48a487cdda8db31f91f0","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:33:18.997+08:00 Send - DEBUG 61 Sending msg to itg. msg: {"itg":{"msgTime":"113318997","reqSource":"human_channel","reqNo":"a40616571a6c4ff189c2f329d4cdbb1a","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113318997","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:33:19.003+08:00 recvRun - DEBUG 62 ItgClient RecvMsg len: 256
+2024-02-27T11:33:19.003+08:00 pkcs5UnPadding - DEBUG 63 unpadding 251
+2024-02-27T11:33:19.004+08:00 recvRun - DEBUG 64 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:33:19.004+08:00 recvRun - DEBUG 65 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113323625","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113323625","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"a40616571a6c4ff189c2f329d4cdbb1a","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:33:48.997+08:00 Send - DEBUG 66 Sending msg to itg. msg: {"itg":{"msgTime":"113348997","reqSource":"human_channel","reqNo":"3271a04ced924deb9d4454c94940a65c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113348997","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:33:49.004+08:00 recvRun - DEBUG 67 ItgClient RecvMsg len: 256
+2024-02-27T11:33:49.004+08:00 pkcs5UnPadding - DEBUG 68 unpadding 251
+2024-02-27T11:33:49.004+08:00 recvRun - DEBUG 69 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:33:49.005+08:00 recvRun - DEBUG 70 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113353626","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113353626","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"3271a04ced924deb9d4454c94940a65c","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:34:18.998+08:00 Send - DEBUG 71 Sending msg to itg. msg: {"itg":{"msgTime":"113418998","reqSource":"human_channel","reqNo":"044fb8e72f6e46b2aff12445261ce49f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113418998","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:34:19.004+08:00 recvRun - DEBUG 72 ItgClient RecvMsg len: 256
+2024-02-27T11:34:19.004+08:00 pkcs5UnPadding - DEBUG 73 unpadding 251
+2024-02-27T11:34:19.005+08:00 recvRun - DEBUG 74 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:34:19.005+08:00 recvRun - DEBUG 75 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113423628","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113423628","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"044fb8e72f6e46b2aff12445261ce49f","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:34:48.998+08:00 Send - DEBUG 76 Sending msg to itg. msg: {"itg":{"msgTime":"113448998","reqSource":"human_channel","reqNo":"0b792f6cac9a41129910c30afcc97e0e","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113448998","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:34:49.006+08:00 recvRun - DEBUG 77 ItgClient RecvMsg len: 256
+2024-02-27T11:34:49.006+08:00 pkcs5UnPadding - DEBUG 78 unpadding 251
+2024-02-27T11:34:49.006+08:00 recvRun - DEBUG 79 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:34:49.007+08:00 recvRun - DEBUG 80 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113453630","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113453630","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"0b792f6cac9a41129910c30afcc97e0e","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:35:18.998+08:00 Send - DEBUG 81 Sending msg to itg. msg: {"itg":{"msgTime":"113518998","reqSource":"human_channel","reqNo":"8ec81623363a4aa5b1f07a9a18625abc","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113518998","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:35:19.005+08:00 recvRun - DEBUG 82 ItgClient RecvMsg len: 256
+2024-02-27T11:35:19.005+08:00 pkcs5UnPadding - DEBUG 83 unpadding 251
+2024-02-27T11:35:19.006+08:00 recvRun - DEBUG 84 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:35:19.006+08:00 recvRun - DEBUG 85 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113523630","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113523630","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"8ec81623363a4aa5b1f07a9a18625abc","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:35:48.999+08:00 Send - DEBUG 86 Sending msg to itg. msg: {"itg":{"msgTime":"113548999","reqSource":"human_channel","reqNo":"49fd5a0c10394562a104733ec70c3c2f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113548999","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:35:49.006+08:00 recvRun - DEBUG 87 ItgClient RecvMsg len: 256
+2024-02-27T11:35:49.006+08:00 pkcs5UnPadding - DEBUG 88 unpadding 251
+2024-02-27T11:35:49.007+08:00 recvRun - DEBUG 89 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:35:49.007+08:00 recvRun - DEBUG 90 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113553632","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113553632","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"49fd5a0c10394562a104733ec70c3c2f","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:36:18.999+08:00 Send - DEBUG 91 Sending msg to itg. msg: {"itg":{"msgTime":"113618999","reqSource":"human_channel","reqNo":"4812881515dd479fb0c49f211a11537b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113618999","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:36:19.006+08:00 recvRun - DEBUG 92 ItgClient RecvMsg len: 256
+2024-02-27T11:36:19.006+08:00 pkcs5UnPadding - DEBUG 93 unpadding 251
+2024-02-27T11:36:19.006+08:00 recvRun - DEBUG 94 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:36:19.007+08:00 recvRun - DEBUG 95 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113623633","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113623633","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"4812881515dd479fb0c49f211a11537b","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:36:49+08:00 Send - DEBUG 96 Sending msg to itg. msg: {"itg":{"msgTime":"113649000","reqSource":"human_channel","reqNo":"4a49f8f98b544a8c98e97727403d16a8","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113649000","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:36:49.008+08:00 recvRun - DEBUG 97 ItgClient RecvMsg len: 256
+2024-02-27T11:36:49.008+08:00 pkcs5UnPadding - DEBUG 98 unpadding 251
+2024-02-27T11:36:49.008+08:00 recvRun - DEBUG 99 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:36:49.008+08:00 recvRun - DEBUG 100 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113653635","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113653635","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"4a49f8f98b544a8c98e97727403d16a8","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:37:19+08:00 Send - DEBUG 101 Sending msg to itg. msg: {"itg":{"msgTime":"113719000","reqSource":"human_channel","reqNo":"07a4b80a9c6d43f796487ecc54eeaf4d","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113719000","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:37:19.007+08:00 recvRun - DEBUG 102 ItgClient RecvMsg len: 256
+2024-02-27T11:37:19.008+08:00 pkcs5UnPadding - DEBUG 103 unpadding 251
+2024-02-27T11:37:19.008+08:00 recvRun - DEBUG 104 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:37:19.008+08:00 recvRun - DEBUG 105 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113723636","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113723636","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"07a4b80a9c6d43f796487ecc54eeaf4d","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:37:49+08:00 Send - DEBUG 106 Sending msg to itg. msg: {"itg":{"msgTime":"113749000","reqSource":"human_channel","reqNo":"dbe09de5d54542a6a3a4915351e8192f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113749000","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:37:49.007+08:00 recvRun - DEBUG 107 ItgClient RecvMsg len: 256
+2024-02-27T11:37:49.007+08:00 pkcs5UnPadding - DEBUG 108 unpadding 251
+2024-02-27T11:37:49.008+08:00 recvRun - DEBUG 109 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:37:49.008+08:00 recvRun - DEBUG 110 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113753636","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113753636","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"dbe09de5d54542a6a3a4915351e8192f","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:38:19.001+08:00 Send - DEBUG 111 Sending msg to itg. msg: {"itg":{"msgTime":"113819001","reqSource":"human_channel","reqNo":"cae610d203af4b269509c1d3106ed4ea","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113819001","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:38:19.008+08:00 recvRun - DEBUG 112 ItgClient RecvMsg len: 256
+2024-02-27T11:38:19.008+08:00 pkcs5UnPadding - DEBUG 113 unpadding 251
+2024-02-27T11:38:19.009+08:00 recvRun - DEBUG 114 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:38:19.01+08:00 recvRun - DEBUG 115 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113823638","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113823638","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"cae610d203af4b269509c1d3106ed4ea","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:38:49.002+08:00 Send - DEBUG 116 Sending msg to itg. msg: {"itg":{"msgTime":"113849002","reqSource":"human_channel","reqNo":"53d8bc9e369745d4b2b1823d4af42a5a","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113849002","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:38:49.009+08:00 recvRun - DEBUG 117 ItgClient RecvMsg len: 256
+2024-02-27T11:38:49.009+08:00 pkcs5UnPadding - DEBUG 118 unpadding 251
+2024-02-27T11:38:49.01+08:00 recvRun - DEBUG 119 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:38:49.01+08:00 recvRun - DEBUG 120 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113853640","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113853640","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"53d8bc9e369745d4b2b1823d4af42a5a","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:39:19.002+08:00 Send - DEBUG 121 Sending msg to itg. msg: {"itg":{"msgTime":"113919002","reqSource":"human_channel","reqNo":"4bce1286136c446db6500cd1ceb93f81","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113919002","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:39:19.009+08:00 recvRun - DEBUG 122 ItgClient RecvMsg len: 256
+2024-02-27T11:39:19.009+08:00 pkcs5UnPadding - DEBUG 123 unpadding 251
+2024-02-27T11:39:19.01+08:00 recvRun - DEBUG 124 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:39:19.01+08:00 recvRun - DEBUG 125 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113923641","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113923641","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"4bce1286136c446db6500cd1ceb93f81","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:39:49.002+08:00 Send - DEBUG 126 Sending msg to itg. msg: {"itg":{"msgTime":"113949002","reqSource":"human_channel","reqNo":"1d503736a0bd4821abfb0540086823a2","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113949002","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:39:49.01+08:00 recvRun - DEBUG 127 ItgClient RecvMsg len: 256
+2024-02-27T11:39:49.01+08:00 pkcs5UnPadding - DEBUG 128 unpadding 251
+2024-02-27T11:39:49.01+08:00 recvRun - DEBUG 129 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:39:49.011+08:00 recvRun - DEBUG 130 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113953642","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"113953642","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"1d503736a0bd4821abfb0540086823a2","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:40:19.003+08:00 Send - DEBUG 131 Sending msg to itg. msg: {"itg":{"msgTime":"114019003","reqSource":"human_channel","reqNo":"9f8e0f68002b40b7a52374b764ef7e15","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114019003","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:40:19.01+08:00 recvRun - DEBUG 132 ItgClient RecvMsg len: 256
+2024-02-27T11:40:19.01+08:00 pkcs5UnPadding - DEBUG 133 unpadding 251
+2024-02-27T11:40:19.01+08:00 recvRun - DEBUG 134 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:40:19.011+08:00 recvRun - DEBUG 135 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114023643","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114023643","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"9f8e0f68002b40b7a52374b764ef7e15","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:40:49.003+08:00 Send - DEBUG 136 Sending msg to itg. msg: {"itg":{"msgTime":"114049003","reqSource":"human_channel","reqNo":"7221f937edfd43cb9dbe0a032ee17526","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114049003","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:40:49.01+08:00 recvRun - DEBUG 137 ItgClient RecvMsg len: 256
+2024-02-27T11:40:49.012+08:00 pkcs5UnPadding - DEBUG 138 unpadding 251
+2024-02-27T11:40:49.014+08:00 recvRun - DEBUG 139 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:40:49.015+08:00 recvRun - DEBUG 140 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114053645","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114053645","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"7221f937edfd43cb9dbe0a032ee17526","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:41:19.004+08:00 Send - DEBUG 141 Sending msg to itg. msg: {"itg":{"msgTime":"114119004","reqSource":"human_channel","reqNo":"aa254cd21d21469db76a0045f9307c7b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114119004","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:41:19.011+08:00 recvRun - DEBUG 142 ItgClient RecvMsg len: 256
+2024-02-27T11:41:19.012+08:00 pkcs5UnPadding - DEBUG 143 unpadding 251
+2024-02-27T11:41:19.012+08:00 recvRun - DEBUG 144 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:41:19.013+08:00 recvRun - DEBUG 145 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114123647","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114123647","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"aa254cd21d21469db76a0045f9307c7b","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:41:49.005+08:00 Send - DEBUG 146 Sending msg to itg. msg: {"itg":{"msgTime":"114149005","reqSource":"human_channel","reqNo":"7a95163a6a814bcd92a83b60baae604c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114149005","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:41:49.012+08:00 recvRun - DEBUG 147 ItgClient RecvMsg len: 256
+2024-02-27T11:41:49.012+08:00 pkcs5UnPadding - DEBUG 148 unpadding 251
+2024-02-27T11:41:49.012+08:00 recvRun - DEBUG 149 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:41:49.013+08:00 recvRun - DEBUG 150 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114153648","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114153648","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"7a95163a6a814bcd92a83b60baae604c","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:42:19.005+08:00 Send - DEBUG 151 Sending msg to itg. msg: {"itg":{"msgTime":"114219005","reqSource":"human_channel","reqNo":"9888bbb99c46420caa30d7387cc4a4f9","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114219005","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:42:19.012+08:00 recvRun - DEBUG 152 ItgClient RecvMsg len: 256
+2024-02-27T11:42:19.012+08:00 pkcs5UnPadding - DEBUG 153 unpadding 251
+2024-02-27T11:42:19.013+08:00 recvRun - DEBUG 154 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:42:19.013+08:00 recvRun - DEBUG 155 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114223649","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114223649","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"9888bbb99c46420caa30d7387cc4a4f9","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:42:49.005+08:00 Send - DEBUG 156 Sending msg to itg. msg: {"itg":{"msgTime":"114249005","reqSource":"human_channel","reqNo":"0a03ab68bfce4cb88c7b6f26ada47da0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114249005","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:42:49.012+08:00 recvRun - DEBUG 157 ItgClient RecvMsg len: 256
+2024-02-27T11:42:49.012+08:00 pkcs5UnPadding - DEBUG 158 unpadding 251
+2024-02-27T11:42:49.013+08:00 recvRun - DEBUG 159 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:42:49.013+08:00 recvRun - DEBUG 160 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114253650","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114253650","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"0a03ab68bfce4cb88c7b6f26ada47da0","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:43:19.007+08:00 Send - DEBUG 161 Sending msg to itg. msg: {"itg":{"msgTime":"114319007","reqSource":"human_channel","reqNo":"8d7494744d7944f1a82844c6d6252664","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114319007","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:43:19.014+08:00 recvRun - DEBUG 162 ItgClient RecvMsg len: 256
+2024-02-27T11:43:19.014+08:00 pkcs5UnPadding - DEBUG 163 unpadding 251
+2024-02-27T11:43:19.014+08:00 recvRun - DEBUG 164 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:43:19.015+08:00 recvRun - DEBUG 165 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114323652","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114323652","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"8d7494744d7944f1a82844c6d6252664","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:43:49.007+08:00 Send - DEBUG 166 Sending msg to itg. msg: {"itg":{"msgTime":"114349007","reqSource":"human_channel","reqNo":"2d8e7474771d4e9c8b065cb7a9a0385f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114349007","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:43:49.013+08:00 recvRun - DEBUG 167 ItgClient RecvMsg len: 256
+2024-02-27T11:43:49.013+08:00 pkcs5UnPadding - DEBUG 168 unpadding 251
+2024-02-27T11:43:49.014+08:00 recvRun - DEBUG 169 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:43:49.014+08:00 recvRun - DEBUG 170 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114353653","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114353653","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"2d8e7474771d4e9c8b065cb7a9a0385f","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:44:19.007+08:00 Send - DEBUG 171 Sending msg to itg. msg: {"itg":{"msgTime":"114419007","reqSource":"human_channel","reqNo":"bf39b129393b427d9c47090a56c64313","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114419007","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:44:19.014+08:00 recvRun - DEBUG 172 ItgClient RecvMsg len: 256
+2024-02-27T11:44:19.014+08:00 pkcs5UnPadding - DEBUG 173 unpadding 251
+2024-02-27T11:44:19.015+08:00 recvRun - DEBUG 174 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:44:19.015+08:00 recvRun - DEBUG 175 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114423654","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114423654","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"bf39b129393b427d9c47090a56c64313","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:44:49.007+08:00 Send - DEBUG 176 Sending msg to itg. msg: {"itg":{"msgTime":"114449007","reqSource":"human_channel","reqNo":"cbe7c05213b548068ebc38a111fa32db","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114449007","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:44:49.015+08:00 recvRun - DEBUG 177 ItgClient RecvMsg len: 256
+2024-02-27T11:44:49.015+08:00 pkcs5UnPadding - DEBUG 178 unpadding 251
+2024-02-27T11:44:49.016+08:00 recvRun - DEBUG 179 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:44:49.016+08:00 recvRun - DEBUG 180 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114453656","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114453656","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"cbe7c05213b548068ebc38a111fa32db","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:45:19.008+08:00 Send - DEBUG 181 Sending msg to itg. msg: {"itg":{"msgTime":"114519008","reqSource":"human_channel","reqNo":"eeb77fa0ff36473ea399ebeb2f021e68","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114519008","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:45:19.015+08:00 recvRun - DEBUG 182 ItgClient RecvMsg len: 256
+2024-02-27T11:45:19.015+08:00 pkcs5UnPadding - DEBUG 183 unpadding 251
+2024-02-27T11:45:19.015+08:00 recvRun - DEBUG 184 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:45:19.015+08:00 recvRun - DEBUG 185 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114523657","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114523657","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"eeb77fa0ff36473ea399ebeb2f021e68","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:45:49.008+08:00 Send - DEBUG 186 Sending msg to itg. msg: {"itg":{"msgTime":"114549008","reqSource":"human_channel","reqNo":"edcf5dc9172640dda6c76515bdbc182e","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114549008","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:45:49.018+08:00 recvRun - DEBUG 187 ItgClient RecvMsg len: 256
+2024-02-27T11:45:49.018+08:00 pkcs5UnPadding - DEBUG 188 unpadding 251
+2024-02-27T11:45:49.019+08:00 recvRun - DEBUG 189 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:45:49.02+08:00 recvRun - DEBUG 190 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114553661","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114553661","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"edcf5dc9172640dda6c76515bdbc182e","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:46:19.012+08:00 Send - DEBUG 191 Sending msg to itg. msg: {"itg":{"msgTime":"114619012","reqSource":"human_channel","reqNo":"5e49fb2ad7714fab8fbe95e9de21c171","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114619012","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:46:19.018+08:00 recvRun - DEBUG 192 ItgClient RecvMsg len: 256
+2024-02-27T11:46:19.018+08:00 pkcs5UnPadding - DEBUG 193 unpadding 251
+2024-02-27T11:46:19.019+08:00 recvRun - DEBUG 194 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:46:19.019+08:00 recvRun - DEBUG 195 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114623662","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114623662","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"5e49fb2ad7714fab8fbe95e9de21c171","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:46:49.012+08:00 Send - DEBUG 196 Sending msg to itg. msg: {"itg":{"msgTime":"114649012","reqSource":"human_channel","reqNo":"37dbba044ca841c787432a496d38e51c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114649012","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:46:49.019+08:00 recvRun - DEBUG 197 ItgClient RecvMsg len: 256
+2024-02-27T11:46:49.019+08:00 pkcs5UnPadding - DEBUG 198 unpadding 251
+2024-02-27T11:46:49.02+08:00 recvRun - DEBUG 199 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:46:49.02+08:00 recvRun - DEBUG 200 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114653663","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114653663","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"37dbba044ca841c787432a496d38e51c","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:47:19.012+08:00 Send - DEBUG 201 Sending msg to itg. msg: {"itg":{"msgTime":"114719012","reqSource":"human_channel","reqNo":"33f5505959304d2e887bc4e10889eae4","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114719012","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:47:19.019+08:00 recvRun - DEBUG 202 ItgClient RecvMsg len: 256
+2024-02-27T11:47:19.019+08:00 pkcs5UnPadding - DEBUG 203 unpadding 251
+2024-02-27T11:47:19.02+08:00 recvRun - DEBUG 204 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:47:19.02+08:00 recvRun - DEBUG 205 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114723665","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114723665","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"33f5505959304d2e887bc4e10889eae4","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:47:49.013+08:00 Send - DEBUG 206 Sending msg to itg. msg: {"itg":{"msgTime":"114749013","reqSource":"human_channel","reqNo":"00f900570e0441098bafeb5605765ace","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114749013","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:47:49.019+08:00 recvRun - DEBUG 207 ItgClient RecvMsg len: 256
+2024-02-27T11:47:49.02+08:00 pkcs5UnPadding - DEBUG 208 unpadding 251
+2024-02-27T11:47:49.02+08:00 recvRun - DEBUG 209 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:47:49.02+08:00 recvRun - DEBUG 210 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114753666","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114753666","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"00f900570e0441098bafeb5605765ace","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:48:19.013+08:00 Send - DEBUG 211 Sending msg to itg. msg: {"itg":{"msgTime":"114819013","reqSource":"human_channel","reqNo":"53318b9df8b04963842853f661a7ae14","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114819013","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:48:19.02+08:00 recvRun - DEBUG 212 ItgClient RecvMsg len: 256
+2024-02-27T11:48:19.02+08:00 pkcs5UnPadding - DEBUG 213 unpadding 251
+2024-02-27T11:48:19.02+08:00 recvRun - DEBUG 214 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:48:19.021+08:00 recvRun - DEBUG 215 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114823667","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114823667","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"53318b9df8b04963842853f661a7ae14","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:48:49.014+08:00 Send - DEBUG 216 Sending msg to itg. msg: {"itg":{"msgTime":"114849014","reqSource":"human_channel","reqNo":"a43394fc9d1449ea8baeaeb0e5796556","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114849014","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:48:49.021+08:00 recvRun - DEBUG 217 ItgClient RecvMsg len: 256
+2024-02-27T11:48:49.022+08:00 pkcs5UnPadding - DEBUG 218 unpadding 251
+2024-02-27T11:48:49.022+08:00 recvRun - DEBUG 219 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:48:49.022+08:00 recvRun - DEBUG 220 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114853669","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114853669","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"a43394fc9d1449ea8baeaeb0e5796556","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:49:19.014+08:00 Send - DEBUG 221 Sending msg to itg. msg: {"itg":{"msgTime":"114919014","reqSource":"human_channel","reqNo":"a12126d3121a4fbd8e62193d55d25e14","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114919014","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:49:19.021+08:00 recvRun - DEBUG 222 ItgClient RecvMsg len: 256
+2024-02-27T11:49:19.022+08:00 pkcs5UnPadding - DEBUG 223 unpadding 251
+2024-02-27T11:49:19.022+08:00 recvRun - DEBUG 224 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:49:19.023+08:00 recvRun - DEBUG 225 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114923670","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114923670","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"a12126d3121a4fbd8e62193d55d25e14","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:49:49.015+08:00 Send - DEBUG 226 Sending msg to itg. msg: {"itg":{"msgTime":"114949015","reqSource":"human_channel","reqNo":"faf5eeb9f9e84aaa9d58275f7929c268","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114949015","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:49:49.023+08:00 recvRun - DEBUG 227 ItgClient RecvMsg len: 256
+2024-02-27T11:49:49.023+08:00 pkcs5UnPadding - DEBUG 228 unpadding 251
+2024-02-27T11:49:49.024+08:00 recvRun - DEBUG 229 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:49:49.025+08:00 recvRun - DEBUG 230 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114953673","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"114953673","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"faf5eeb9f9e84aaa9d58275f7929c268","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:50:19.018+08:00 Send - DEBUG 231 Sending msg to itg. msg: {"itg":{"msgTime":"115019018","reqSource":"human_channel","reqNo":"74b5da2e170f4ff087c7cdd485e1aba1","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115019018","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:50:19.024+08:00 recvRun - DEBUG 232 ItgClient RecvMsg len: 256
+2024-02-27T11:50:19.026+08:00 pkcs5UnPadding - DEBUG 233 unpadding 251
+2024-02-27T11:50:19.026+08:00 recvRun - DEBUG 234 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:50:19.026+08:00 recvRun - DEBUG 235 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115023675","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115023675","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"74b5da2e170f4ff087c7cdd485e1aba1","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:50:49.018+08:00 Send - DEBUG 236 Sending msg to itg. msg: {"itg":{"msgTime":"115049018","reqSource":"human_channel","reqNo":"6dbdbce14c22435fbdd6975b86ad7dc3","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115049018","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:50:49.026+08:00 recvRun - DEBUG 237 ItgClient RecvMsg len: 256
+2024-02-27T11:50:49.026+08:00 pkcs5UnPadding - DEBUG 238 unpadding 251
+2024-02-27T11:50:49.027+08:00 recvRun - DEBUG 239 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:50:49.027+08:00 recvRun - DEBUG 240 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115053677","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115053677","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"6dbdbce14c22435fbdd6975b86ad7dc3","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:51:19.019+08:00 Send - DEBUG 241 Sending msg to itg. msg: {"itg":{"msgTime":"115119019","reqSource":"human_channel","reqNo":"0a93820348ff4ad79afff4d90066ac1b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115119019","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:51:19.026+08:00 recvRun - DEBUG 242 ItgClient RecvMsg len: 256
+2024-02-27T11:51:19.026+08:00 pkcs5UnPadding - DEBUG 243 unpadding 251
+2024-02-27T11:51:19.027+08:00 recvRun - DEBUG 244 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:51:19.027+08:00 recvRun - DEBUG 245 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115123678","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115123678","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"0a93820348ff4ad79afff4d90066ac1b","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:51:49.019+08:00 Send - DEBUG 246 Sending msg to itg. msg: {"itg":{"msgTime":"115149019","reqSource":"human_channel","reqNo":"cc8ba1db703841a0bde5959289b2fbba","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115149019","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:51:49.026+08:00 recvRun - DEBUG 247 ItgClient RecvMsg len: 256
+2024-02-27T11:51:49.026+08:00 pkcs5UnPadding - DEBUG 248 unpadding 251
+2024-02-27T11:51:49.027+08:00 recvRun - DEBUG 249 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:51:49.027+08:00 recvRun - DEBUG 250 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115153679","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115153679","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"cc8ba1db703841a0bde5959289b2fbba","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:52:19.02+08:00 Send - DEBUG 251 Sending msg to itg. msg: {"itg":{"msgTime":"115219020","reqSource":"human_channel","reqNo":"61e21023e3804338a4f8a013c69ee5f5","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115219020","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:52:19.027+08:00 recvRun - DEBUG 252 ItgClient RecvMsg len: 256
+2024-02-27T11:52:19.028+08:00 pkcs5UnPadding - DEBUG 253 unpadding 251
+2024-02-27T11:52:19.028+08:00 recvRun - DEBUG 254 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:52:19.028+08:00 recvRun - DEBUG 255 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115223681","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115223681","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"61e21023e3804338a4f8a013c69ee5f5","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:52:49.02+08:00 Send - DEBUG 256 Sending msg to itg. msg: {"itg":{"msgTime":"115249020","reqSource":"human_channel","reqNo":"2c587627b586418e926ac7a84fd19ebc","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115249020","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:52:49.028+08:00 recvRun - DEBUG 257 ItgClient RecvMsg len: 256
+2024-02-27T11:52:49.028+08:00 pkcs5UnPadding - DEBUG 258 unpadding 251
+2024-02-27T11:52:49.028+08:00 recvRun - DEBUG 259 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:52:49.029+08:00 recvRun - DEBUG 260 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115253683","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115253683","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"2c587627b586418e926ac7a84fd19ebc","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:53:19.021+08:00 Send - DEBUG 261 Sending msg to itg. msg: {"itg":{"msgTime":"115319021","reqSource":"human_channel","reqNo":"699d92d639834307adf4afb3a8e4c4ce","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115319021","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:53:19.028+08:00 recvRun - DEBUG 262 ItgClient RecvMsg len: 256
+2024-02-27T11:53:19.028+08:00 pkcs5UnPadding - DEBUG 263 unpadding 251
+2024-02-27T11:53:19.029+08:00 recvRun - DEBUG 264 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:53:19.029+08:00 recvRun - DEBUG 265 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115323684","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115323684","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"699d92d639834307adf4afb3a8e4c4ce","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:53:49.024+08:00 Send - DEBUG 266 Sending msg to itg. msg: {"itg":{"msgTime":"115349024","reqSource":"human_channel","reqNo":"18740f0d3a744fa18cd65d3874b70673","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115349024","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:53:49.032+08:00 recvRun - DEBUG 267 ItgClient RecvMsg len: 256
+2024-02-27T11:53:49.032+08:00 pkcs5UnPadding - DEBUG 268 unpadding 251
+2024-02-27T11:53:49.032+08:00 recvRun - DEBUG 269 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:53:49.033+08:00 recvRun - DEBUG 270 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115353688","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115353688","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"18740f0d3a744fa18cd65d3874b70673","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:54:19.026+08:00 Send - DEBUG 271 Sending msg to itg. msg: {"itg":{"msgTime":"115419026","reqSource":"human_channel","reqNo":"a280340749214d4da62e8d6115007493","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115419026","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:54:19.032+08:00 recvRun - DEBUG 272 ItgClient RecvMsg len: 256
+2024-02-27T11:54:19.033+08:00 pkcs5UnPadding - DEBUG 273 unpadding 251
+2024-02-27T11:54:19.035+08:00 recvRun - DEBUG 274 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:54:19.035+08:00 recvRun - DEBUG 275 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115423690","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115423690","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"a280340749214d4da62e8d6115007493","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:54:49.026+08:00 Send - DEBUG 276 Sending msg to itg. msg: {"itg":{"msgTime":"115449026","reqSource":"human_channel","reqNo":"acb27281683f4a548139b6443f2a7278","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115449026","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:54:49.033+08:00 recvRun - DEBUG 277 ItgClient RecvMsg len: 256
+2024-02-27T11:54:49.033+08:00 pkcs5UnPadding - DEBUG 278 unpadding 251
+2024-02-27T11:54:49.034+08:00 recvRun - DEBUG 279 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:54:49.034+08:00 recvRun - DEBUG 280 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115453691","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115453691","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"acb27281683f4a548139b6443f2a7278","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:55:19.027+08:00 Send - DEBUG 281 Sending msg to itg. msg: {"itg":{"msgTime":"115519027","reqSource":"human_channel","reqNo":"426f2acc62ad42c896e5704808930fa6","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115519027","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:55:19.034+08:00 recvRun - DEBUG 282 ItgClient RecvMsg len: 256
+2024-02-27T11:55:19.035+08:00 pkcs5UnPadding - DEBUG 283 unpadding 251
+2024-02-27T11:55:19.035+08:00 recvRun - DEBUG 284 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:55:19.036+08:00 recvRun - DEBUG 285 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115523693","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115523693","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"426f2acc62ad42c896e5704808930fa6","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:55:49.029+08:00 Send - DEBUG 286 Sending msg to itg. msg: {"itg":{"msgTime":"115549029","reqSource":"human_channel","reqNo":"ea365e7f832b4fed9250d36fcf6255e1","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115549029","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:55:49.036+08:00 recvRun - DEBUG 287 ItgClient RecvMsg len: 256
+2024-02-27T11:55:49.036+08:00 pkcs5UnPadding - DEBUG 288 unpadding 251
+2024-02-27T11:55:49.037+08:00 recvRun - DEBUG 289 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:55:49.037+08:00 recvRun - DEBUG 290 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115553696","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115553696","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"ea365e7f832b4fed9250d36fcf6255e1","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:56:19.03+08:00 Send - DEBUG 291 Sending msg to itg. msg: {"itg":{"msgTime":"115619030","reqSource":"human_channel","reqNo":"40b14aa2e4024d42ac3ee4c8b44d7c55","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115619030","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:56:19.037+08:00 recvRun - DEBUG 292 ItgClient RecvMsg len: 256
+2024-02-27T11:56:19.037+08:00 pkcs5UnPadding - DEBUG 293 unpadding 251
+2024-02-27T11:56:19.038+08:00 recvRun - DEBUG 294 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:56:19.04+08:00 recvRun - DEBUG 295 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115623698","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115623698","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"40b14aa2e4024d42ac3ee4c8b44d7c55","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:56:49.032+08:00 Send - DEBUG 296 Sending msg to itg. msg: {"itg":{"msgTime":"115649032","reqSource":"human_channel","reqNo":"433844d6185c4aa1aceb2ad5e0bdbcfa","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115649032","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:56:49.056+08:00 recvRun - DEBUG 297 ItgClient RecvMsg len: 256
+2024-02-27T11:56:49.057+08:00 pkcs5UnPadding - DEBUG 298 unpadding 251
+2024-02-27T11:56:49.058+08:00 recvRun - DEBUG 299 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:56:49.058+08:00 recvRun - DEBUG 300 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115653718","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"115653718","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"433844d6185c4aa1aceb2ad5e0bdbcfa","reqSource":"human_channel","respCode":0}}, ContentLen: 251

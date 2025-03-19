@@ -1,0 +1,13 @@
+{
+  "active_cfg": {
+    "addr": "115.238.186.119:61613",
+    "topic": "/topic/QUOTATION.STOCK.SNAPSHOT"
+  },
+  "kdb_cfg": {
+    "ip": "115.238.186.119",
+    "port":40000,
+    "auth": "test:pass",
+    "table": "Market",
+    "fun": "upd"
+  }
+}

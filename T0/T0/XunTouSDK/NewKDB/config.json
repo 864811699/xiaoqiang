@@ -1,0 +1,17 @@
+{
+  "ws_addr": "0.0.0.0",
+  "ws_port": 12000,
+  "FundAccount": {
+    "testCS": {
+      "fund": "1000002034",
+      "type": "STOCK"
+    },
+    "testCS02": {
+      "fund": "1000002040",
+      "type": "STOCK"
+    }
+  },
+  "path": "D:/迅投极速交易终端 睿智融科版/userdata_mini",
+  "session_id": 123456,
+  "kdbName": ""
+}

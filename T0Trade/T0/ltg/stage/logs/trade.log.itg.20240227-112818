@@ -1,0 +1,800 @@
+2024-02-27T11:28:18.948+08:00 LibITG_Init - DEBUG 1 MergePosition 0
+2024-02-27T11:28:18.948+08:00 LibITG_Init - DEBUG 2 WD D:\Project\T0\T0\ltg\stage
+2024-02-27T11:28:18.95+08:00 NewItg - INFO 3 Create New ItgClient, addr: 106.15.92.93:10005
+2024-02-27T11:28:18.951+08:00 Connect - INFO 4 Connecting to 106.15.92.93:10005
+2024-02-27T11:28:18.96+08:00 Connect - INFO 5 Successfully Connected to 106.15.92.93:10005
+2024-02-27T11:28:18.967+08:00 Connect - WARNING 6 Decrypting the comfirmation failed when connect to 106.15.92.93:10005, crypto/rsa: decryption error
+2024-02-27T11:28:18.967+08:00 Connect - DEBUG 7 AES Key: DJLINFEBICFGEGCE, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T11:28:18.97+08:00 Send - DEBUG 8 Sending msg to itg. msg: {"itg":{"msgTime":"112818969","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"107e292136a142ab91a4b8871db3ca09","infCode":"ITG_LOGIN_ACCOUNT","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":"107e292136a142ab91a4b8871db3ca09","accountPwd":"f379eaf3c831b04de153469d1bec345e","loginMac":"","loginDiskSn":"","loginIp":""}}} len: 368 dest: 106.15.92.93:10005
+2024-02-27T11:28:18.97+08:00 Send - DEBUG 9 Sending msg to itg. msg: {"itg":{"msgTime":"112818970","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"2a1b5cf9c7954a0b8d8ead33b2907c9c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112818970","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:28:18.976+08:00 recvRun - DEBUG 10 ItgClient RecvMsg len: 272
+2024-02-27T11:28:18.977+08:00 pkcs5UnPadding - DEBUG 11 unpadding 263
+2024-02-27T11:28:18.977+08:00 recvRun - DEBUG 12 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:28:18.978+08:00 recvRun - DEBUG 13 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112823","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227112823","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"2a1b5cf9c7954a0b8d8ead33b2907c9c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:28:18.991+08:00 recvRun - DEBUG 14 ItgClient RecvMsg len: 672
+2024-02-27T11:28:18.992+08:00 pkcs5UnPadding - DEBUG 15 unpadding 658
+2024-02-27T11:28:18.993+08:00 recvRun - DEBUG 16 ItgClient RecvMsg Type: ITG_LOGIN_ACCOUNT
+2024-02-27T11:28:18.993+08:00 recvRun - DEBUG 17 ItgClient RecvMsg: {"itg":{"content":{"accountCommission":"0.00025","accountName":"10016","accountPwd":"f379eaf3c831b04de153469d1bec345e","accountStatus":0,"bpLine":"10000000","closingDownLine":"10000","cordonLine":"0.8","desc":"","isAutoShutdown":1,"isEveningUp":1,"isRotationTrade":1,"isTradePub":0,"loginDate":"20240227","loginDiskSn":"","loginIp":"","loginMac":"","loginTime":"112823593","newMinFee":"5","riskCloseRatio":"0","teamCode":"hk801","tradeCloseRatio":""},"errDesc":"","infCode":"ITG_LOGIN_ACCOUNT","msgTime":"112823593","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"107e292136a142ab91a4b8871db3ca09","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 658
+2024-02-27T11:28:18.998+08:00 Send - DEBUG 18 Sending msg to itg. msg: {"itg":{"msgTime":"112818998","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","infCode":"ITG_DO_SUBMIT_ORDER","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"pkOrder":"","teamCode":"hk801","productCode":"200002","accountCode":"10016","stockCode":"000617","stockType":0,"stockFrom":0,"appointType":2,"appointPrice":"5.910000","appointCnt":100,"macAddr":"","ipAddr":"","snAddr":""}}} len: 464 dest: 106.15.92.93:10005
+2024-02-27T11:28:18.999+08:00 Send - DEBUG 19 Sending msg to itg. msg: {"itg":{"msgTime":"112818999","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"c7b9abf29da54403b8d0d32a3b0819eb","infCode":"ITG_DO_SUBMIT_ORDER","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"pkOrder":"","teamCode":"hk801","productCode":"200002","accountCode":"10016","stockCode":"000617","stockType":0,"stockFrom":0,"appointType":2,"appointPrice":"5.910000","appointCnt":100,"macAddr":"","ipAddr":"","snAddr":""}}} len: 464 dest: 106.15.92.93:10005
+2024-02-27T11:28:19.046+08:00 recvRun - DEBUG 20 ItgClient RecvMsg len: 736
+2024-02-27T11:28:19.046+08:00 pkcs5UnPadding - DEBUG 21 unpadding 727
+2024-02-27T11:28:19.047+08:00 recvRun - DEBUG 22 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-27T11:28:19.047+08:00 recvRun - DEBUG 23 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"","appointPrice":"5.910000","appointStatus":"S","appointStockCode":"000617","appointTime":"112823","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.00","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":0,"pkOrder":"20240227112823634622","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"112818998","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 727
+2024-02-27T11:28:19.054+08:00 recvRun - DEBUG 24 ItgClient RecvMsg len: 496
+2024-02-27T11:28:19.055+08:00 pkcs5UnPadding - DEBUG 25 unpadding 490
+2024-02-27T11:28:19.055+08:00 recvRun - DEBUG 26 ItgClient RecvMsg Type: ITG_PUSH_PRIVATE_POSITION_INFO
+2024-02-27T11:28:19.055+08:00 recvRun - DEBUG 27 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":30000,"accountCode":"10016","belongTo":1,"canBuy":29800,"canSell":29400,"holdNum":200,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_PRIVATE_POSITION_INFO","msgTime":"112818998","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 490
+2024-02-27T11:28:19.056+08:00 recvRun - DEBUG 28 ItgClient RecvMsg len: 480
+2024-02-27T11:28:19.058+08:00 pkcs5UnPadding - DEBUG 29 unpadding 468
+2024-02-27T11:28:19.058+08:00 recvRun - DEBUG 30 ItgClient RecvMsg Type: ITG_PUSH_TEAM_POSITION_INFO
+2024-02-27T11:28:19.059+08:00 recvRun - DEBUG 31 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":0,"accountCode":"","belongTo":2,"canBuy":0,"canSell":0,"holdNum":0,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_TEAM_POSITION_INFO","msgTime":"112818998","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 468
+2024-02-27T11:28:19.059+08:00 recvRun - DEBUG 32 ItgClient RecvMsg len: 736
+2024-02-27T11:28:19.06+08:00 pkcs5UnPadding - DEBUG 33 unpadding 727
+2024-02-27T11:28:19.06+08:00 recvRun - DEBUG 34 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-27T11:28:19.06+08:00 recvRun - DEBUG 35 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"","appointPrice":"5.910000","appointStatus":"S","appointStockCode":"000617","appointTime":"112823","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.00","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":0,"pkOrder":"20240227112823650557","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"112818999","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"c7b9abf29da54403b8d0d32a3b0819eb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 727
+2024-02-27T11:28:19.061+08:00 recvRun - DEBUG 36 ItgClient RecvMsg len: 496
+2024-02-27T11:28:19.061+08:00 pkcs5UnPadding - DEBUG 37 unpadding 490
+2024-02-27T11:28:19.062+08:00 recvRun - DEBUG 38 ItgClient RecvMsg Type: ITG_PUSH_PRIVATE_POSITION_INFO
+2024-02-27T11:28:19.062+08:00 recvRun - DEBUG 39 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":30000,"accountCode":"10016","belongTo":1,"canBuy":29800,"canSell":29400,"holdNum":200,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_PRIVATE_POSITION_INFO","msgTime":"112818999","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"c7b9abf29da54403b8d0d32a3b0819eb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 490
+2024-02-27T11:28:19.063+08:00 recvRun - DEBUG 40 ItgClient RecvMsg len: 480
+2024-02-27T11:28:19.063+08:00 pkcs5UnPadding - DEBUG 41 unpadding 468
+2024-02-27T11:28:19.063+08:00 recvRun - DEBUG 42 ItgClient RecvMsg Type: ITG_PUSH_TEAM_POSITION_INFO
+2024-02-27T11:28:19.064+08:00 recvRun - DEBUG 43 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":0,"accountCode":"","belongTo":2,"canBuy":0,"canSell":0,"holdNum":0,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_TEAM_POSITION_INFO","msgTime":"112818999","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"c7b9abf29da54403b8d0d32a3b0819eb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 468
+2024-02-27T11:28:19.065+08:00 recvRun - DEBUG 44 ItgClient RecvMsg len: 672
+2024-02-27T11:28:19.065+08:00 pkcs5UnPadding - DEBUG 45 unpadding 660
+2024-02-27T11:28:19.065+08:00 recvRun - DEBUG 46 ItgClient RecvMsg Type: ITG_DO_SUBMIT_ORDER
+2024-02-27T11:28:19.066+08:00 recvRun - DEBUG 47 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"e5bbf9d6afcc42808bb9b69115fd3d88","appointPrice":"5.910000","appointStatus":"2","appointStockCode":"000617","appointTime":"112823","appointType":2,"dealAvrPrice":"","dealCnt":0,"freqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","isVritual":1,"memo":"","orderDate":"20240227","pkOrder":"","productCode":"200002","stockFrom":0,"stockType":0,"teamCode":"hk801","tradeCommission":""},"errDesc":"","infCode":"ITG_DO_SUBMIT_ORDER","msgTime":"112823652","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"e5bbf9d6afcc42808bb9b69115fd3d88","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 660
+2024-02-27T11:28:19.069+08:00 recvRun - DEBUG 48 ItgClient RecvMsg len: 736
+2024-02-27T11:28:19.069+08:00 pkcs5UnPadding - DEBUG 49 unpadding 723
+2024-02-27T11:28:19.07+08:00 recvRun - DEBUG 50 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-27T11:28:19.07+08:00 recvRun - DEBUG 51 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"11282365203919","appointPrice":"5.910000","appointStatus":"2","appointStockCode":"000617","appointTime":"112823","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.0","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":34,"pkOrder":"20240227112823634622","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"112823652","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"11282365203919","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 723
+2024-02-27T11:28:19.096+08:00 recvRun - DEBUG 52 ItgClient RecvMsg len: 672
+2024-02-27T11:28:19.096+08:00 pkcs5UnPadding - DEBUG 53 unpadding 660
+2024-02-27T11:28:19.098+08:00 recvRun - DEBUG 54 ItgClient RecvMsg Type: ITG_DO_SUBMIT_ORDER
+2024-02-27T11:28:19.098+08:00 recvRun - DEBUG 55 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"c7b9abf29da54403b8d0d32a3b0819eb","appointPrice":"5.910000","appointStatus":"2","appointStockCode":"000617","appointTime":"112823","appointType":2,"dealAvrPrice":"","dealCnt":0,"freqNo":"c7b9abf29da54403b8d0d32a3b0819eb","isVritual":1,"memo":"","orderDate":"20240227","pkOrder":"","productCode":"200002","stockFrom":0,"stockType":0,"teamCode":"hk801","tradeCommission":""},"errDesc":"","infCode":"ITG_DO_SUBMIT_ORDER","msgTime":"112823661","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"c7b9abf29da54403b8d0d32a3b0819eb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 660
+2024-02-27T11:28:19.112+08:00 recvRun - DEBUG 56 ItgClient RecvMsg len: 736
+2024-02-27T11:28:19.113+08:00 pkcs5UnPadding - DEBUG 57 unpadding 723
+2024-02-27T11:28:19.114+08:00 recvRun - DEBUG 58 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-27T11:28:19.114+08:00 recvRun - DEBUG 59 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"11282366134020","appointPrice":"5.910000","appointStatus":"2","appointStockCode":"000617","appointTime":"112823","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.0","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":59,"pkOrder":"20240227112823650557","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"112823661","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"11282366134020","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 723
+2024-02-27T11:28:45.832+08:00 recvRun - DEBUG 60 ItgClient RecvMsg len: 288
+2024-02-27T11:28:45.832+08:00 pkcs5UnPadding - DEBUG 61 unpadding 276
+2024-02-27T11:28:45.834+08:00 recvRun - DEBUG 62 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:28:45.834+08:00 recvRun - DEBUG 63 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112852370","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"112824805","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:28:48.253+08:00 recvRun - DEBUG 64 ItgClient RecvMsg len: 288
+2024-02-27T11:28:48.253+08:00 pkcs5UnPadding - DEBUG 65 unpadding 281
+2024-02-27T11:28:48.254+08:00 recvRun - DEBUG 66 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:28:48.255+08:00 recvRun - DEBUG 67 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112854791","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"112827580","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:28:48.971+08:00 Send - DEBUG 68 Sending msg to itg. msg: {"itg":{"msgTime":"112848971","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"8c0f86bd4ff74fcd906776a769bad233","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112848971","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:28:48.977+08:00 recvRun - DEBUG 69 ItgClient RecvMsg len: 272
+2024-02-27T11:28:48.977+08:00 pkcs5UnPadding - DEBUG 70 unpadding 263
+2024-02-27T11:28:48.978+08:00 recvRun - DEBUG 71 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:28:48.978+08:00 recvRun - DEBUG 72 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112853","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227112853","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"8c0f86bd4ff74fcd906776a769bad233","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:29:15.842+08:00 recvRun - DEBUG 73 ItgClient RecvMsg len: 288
+2024-02-27T11:29:15.843+08:00 pkcs5UnPadding - DEBUG 74 unpadding 276
+2024-02-27T11:29:15.843+08:00 recvRun - DEBUG 75 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:29:15.843+08:00 recvRun - DEBUG 76 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112922380","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"112854819","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:29:18.269+08:00 recvRun - DEBUG 77 ItgClient RecvMsg len: 288
+2024-02-27T11:29:18.27+08:00 pkcs5UnPadding - DEBUG 78 unpadding 281
+2024-02-27T11:29:18.27+08:00 recvRun - DEBUG 79 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:29:18.27+08:00 recvRun - DEBUG 80 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112924808","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"112857595","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:29:18.971+08:00 Send - DEBUG 81 Sending msg to itg. msg: {"itg":{"msgTime":"112918971","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f4ac0938667942f6b4d5a8826499231c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112918971","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:29:18.978+08:00 recvRun - DEBUG 82 ItgClient RecvMsg len: 272
+2024-02-27T11:29:18.978+08:00 pkcs5UnPadding - DEBUG 83 unpadding 263
+2024-02-27T11:29:18.979+08:00 recvRun - DEBUG 84 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:29:18.979+08:00 recvRun - DEBUG 85 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112923","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227112923","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f4ac0938667942f6b4d5a8826499231c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:29:45.861+08:00 recvRun - DEBUG 86 ItgClient RecvMsg len: 288
+2024-02-27T11:29:45.861+08:00 pkcs5UnPadding - DEBUG 87 unpadding 276
+2024-02-27T11:29:45.862+08:00 recvRun - DEBUG 88 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:29:45.863+08:00 recvRun - DEBUG 89 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112952399","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"112924834","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:29:48.279+08:00 recvRun - DEBUG 90 ItgClient RecvMsg len: 288
+2024-02-27T11:29:48.279+08:00 pkcs5UnPadding - DEBUG 91 unpadding 281
+2024-02-27T11:29:48.281+08:00 recvRun - DEBUG 92 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:29:48.281+08:00 recvRun - DEBUG 93 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"112954819","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"112927611","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:29:48.973+08:00 Send - DEBUG 94 Sending msg to itg. msg: {"itg":{"msgTime":"112948973","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"b6e9dd9e578f46e8ac7072c175fe6305","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"112948973","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:29:48.979+08:00 recvRun - DEBUG 95 ItgClient RecvMsg len: 272
+2024-02-27T11:29:48.979+08:00 pkcs5UnPadding - DEBUG 96 unpadding 263
+2024-02-27T11:29:48.98+08:00 recvRun - DEBUG 97 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:29:48.98+08:00 recvRun - DEBUG 98 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227112953","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227112953","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"b6e9dd9e578f46e8ac7072c175fe6305","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:30:15.929+08:00 recvRun - DEBUG 99 ItgClient RecvMsg len: 288
+2024-02-27T11:30:15.929+08:00 pkcs5UnPadding - DEBUG 100 unpadding 276
+2024-02-27T11:30:15.931+08:00 recvRun - DEBUG 101 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:30:15.931+08:00 recvRun - DEBUG 102 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113022469","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"112954847","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:30:18.299+08:00 recvRun - DEBUG 103 ItgClient RecvMsg len: 288
+2024-02-27T11:30:18.299+08:00 pkcs5UnPadding - DEBUG 104 unpadding 281
+2024-02-27T11:30:18.301+08:00 recvRun - DEBUG 105 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:30:18.301+08:00 recvRun - DEBUG 106 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113024835","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"112957624","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:30:18.973+08:00 Send - DEBUG 107 Sending msg to itg. msg: {"itg":{"msgTime":"113018973","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"db407a19bab2414989fa89a99b0031b0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113018973","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:30:18.98+08:00 recvRun - DEBUG 108 ItgClient RecvMsg len: 272
+2024-02-27T11:30:18.98+08:00 pkcs5UnPadding - DEBUG 109 unpadding 263
+2024-02-27T11:30:18.981+08:00 recvRun - DEBUG 110 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:30:18.981+08:00 recvRun - DEBUG 111 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113023","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113023","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"db407a19bab2414989fa89a99b0031b0","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:30:45.887+08:00 recvRun - DEBUG 112 ItgClient RecvMsg len: 288
+2024-02-27T11:30:45.887+08:00 pkcs5UnPadding - DEBUG 113 unpadding 276
+2024-02-27T11:30:45.888+08:00 recvRun - DEBUG 114 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:30:45.889+08:00 recvRun - DEBUG 115 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113052429","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113024863","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:30:48.302+08:00 recvRun - DEBUG 116 ItgClient RecvMsg len: 288
+2024-02-27T11:30:48.302+08:00 pkcs5UnPadding - DEBUG 117 unpadding 281
+2024-02-27T11:30:48.303+08:00 recvRun - DEBUG 118 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:30:48.303+08:00 recvRun - DEBUG 119 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113054841","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113027639","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:30:48.973+08:00 Send - DEBUG 120 Sending msg to itg. msg: {"itg":{"msgTime":"113048973","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"940f12f2a78c4d5ba678070d4f96b420","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113048973","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:30:48.98+08:00 recvRun - DEBUG 121 ItgClient RecvMsg len: 272
+2024-02-27T11:30:48.98+08:00 pkcs5UnPadding - DEBUG 122 unpadding 263
+2024-02-27T11:30:48.98+08:00 recvRun - DEBUG 123 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:30:48.981+08:00 recvRun - DEBUG 124 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113053","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113053","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"940f12f2a78c4d5ba678070d4f96b420","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:31:15.906+08:00 recvRun - DEBUG 125 ItgClient RecvMsg len: 288
+2024-02-27T11:31:15.906+08:00 pkcs5UnPadding - DEBUG 126 unpadding 276
+2024-02-27T11:31:15.907+08:00 recvRun - DEBUG 127 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:31:15.908+08:00 recvRun - DEBUG 128 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113122447","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113054876","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:31:18.321+08:00 recvRun - DEBUG 129 ItgClient RecvMsg len: 288
+2024-02-27T11:31:18.321+08:00 pkcs5UnPadding - DEBUG 130 unpadding 281
+2024-02-27T11:31:18.322+08:00 recvRun - DEBUG 131 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:31:18.322+08:00 recvRun - DEBUG 132 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113124861","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113057654","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:31:18.974+08:00 Send - DEBUG 133 Sending msg to itg. msg: {"itg":{"msgTime":"113118974","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"6fb867255e19451cbe15ca4ce19368f5","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113118974","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:31:18.98+08:00 recvRun - DEBUG 134 ItgClient RecvMsg len: 272
+2024-02-27T11:31:18.98+08:00 pkcs5UnPadding - DEBUG 135 unpadding 263
+2024-02-27T11:31:18.981+08:00 recvRun - DEBUG 136 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:31:18.981+08:00 recvRun - DEBUG 137 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113123","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113123","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"6fb867255e19451cbe15ca4ce19368f5","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:31:45.917+08:00 recvRun - DEBUG 138 ItgClient RecvMsg len: 288
+2024-02-27T11:31:45.917+08:00 pkcs5UnPadding - DEBUG 139 unpadding 276
+2024-02-27T11:31:45.92+08:00 recvRun - DEBUG 140 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:31:45.92+08:00 recvRun - DEBUG 141 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113152462","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113124891","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:31:48.341+08:00 recvRun - DEBUG 142 ItgClient RecvMsg len: 288
+2024-02-27T11:31:48.342+08:00 pkcs5UnPadding - DEBUG 143 unpadding 281
+2024-02-27T11:31:48.343+08:00 recvRun - DEBUG 144 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:31:48.343+08:00 recvRun - DEBUG 145 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113154882","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113127669","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:31:48.974+08:00 Send - DEBUG 146 Sending msg to itg. msg: {"itg":{"msgTime":"113148974","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"2e4ecde07aa6494f811497cdd00a35b5","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113148974","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:31:48.981+08:00 recvRun - DEBUG 147 ItgClient RecvMsg len: 272
+2024-02-27T11:31:48.981+08:00 pkcs5UnPadding - DEBUG 148 unpadding 263
+2024-02-27T11:31:48.981+08:00 recvRun - DEBUG 149 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:31:48.982+08:00 recvRun - DEBUG 150 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113153","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113153","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"2e4ecde07aa6494f811497cdd00a35b5","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:32:15.988+08:00 recvRun - DEBUG 151 ItgClient RecvMsg len: 288
+2024-02-27T11:32:15.988+08:00 pkcs5UnPadding - DEBUG 152 unpadding 276
+2024-02-27T11:32:15.99+08:00 recvRun - DEBUG 153 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:32:15.99+08:00 recvRun - DEBUG 154 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113222533","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113154907","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:32:18.348+08:00 recvRun - DEBUG 155 ItgClient RecvMsg len: 288
+2024-02-27T11:32:18.348+08:00 pkcs5UnPadding - DEBUG 156 unpadding 281
+2024-02-27T11:32:18.35+08:00 recvRun - DEBUG 157 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:32:18.35+08:00 recvRun - DEBUG 158 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113224893","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113157684","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:32:18.974+08:00 Send - DEBUG 159 Sending msg to itg. msg: {"itg":{"msgTime":"113218974","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"96f5864492da4c69b116234ed304825b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113218974","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:32:18.98+08:00 recvRun - DEBUG 160 ItgClient RecvMsg len: 272
+2024-02-27T11:32:18.98+08:00 pkcs5UnPadding - DEBUG 161 unpadding 263
+2024-02-27T11:32:18.982+08:00 recvRun - DEBUG 162 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:32:18.982+08:00 recvRun - DEBUG 163 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113223","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113223","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"96f5864492da4c69b116234ed304825b","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:32:45.94+08:00 recvRun - DEBUG 164 ItgClient RecvMsg len: 288
+2024-02-27T11:32:45.94+08:00 pkcs5UnPadding - DEBUG 165 unpadding 276
+2024-02-27T11:32:45.942+08:00 recvRun - DEBUG 166 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:32:45.942+08:00 recvRun - DEBUG 167 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113252486","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113224920","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:32:48.357+08:00 recvRun - DEBUG 168 ItgClient RecvMsg len: 288
+2024-02-27T11:32:48.358+08:00 pkcs5UnPadding - DEBUG 169 unpadding 281
+2024-02-27T11:32:48.359+08:00 recvRun - DEBUG 170 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:32:48.359+08:00 recvRun - DEBUG 171 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113254903","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113227696","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:32:48.975+08:00 Send - DEBUG 172 Sending msg to itg. msg: {"itg":{"msgTime":"113248975","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"be1c626e565a4e2e925a1c5f2ff7a653","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113248975","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:32:48.981+08:00 recvRun - DEBUG 173 ItgClient RecvMsg len: 272
+2024-02-27T11:32:48.981+08:00 pkcs5UnPadding - DEBUG 174 unpadding 263
+2024-02-27T11:32:48.982+08:00 recvRun - DEBUG 175 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:32:48.983+08:00 recvRun - DEBUG 176 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113253","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113253","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"be1c626e565a4e2e925a1c5f2ff7a653","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:33:15.957+08:00 recvRun - DEBUG 177 ItgClient RecvMsg len: 288
+2024-02-27T11:33:15.957+08:00 pkcs5UnPadding - DEBUG 178 unpadding 276
+2024-02-27T11:33:15.959+08:00 recvRun - DEBUG 179 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:33:15.959+08:00 recvRun - DEBUG 180 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113322501","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113254936","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:33:18.378+08:00 recvRun - DEBUG 181 ItgClient RecvMsg len: 288
+2024-02-27T11:33:18.378+08:00 pkcs5UnPadding - DEBUG 182 unpadding 281
+2024-02-27T11:33:18.379+08:00 recvRun - DEBUG 183 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:33:18.38+08:00 recvRun - DEBUG 184 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113324924","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113257712","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:33:18.975+08:00 Send - DEBUG 185 Sending msg to itg. msg: {"itg":{"msgTime":"113318975","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"d2d95a5c2a714adf83e5955c8b6433a6","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113318975","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:33:18.982+08:00 recvRun - DEBUG 186 ItgClient RecvMsg len: 272
+2024-02-27T11:33:18.982+08:00 pkcs5UnPadding - DEBUG 187 unpadding 263
+2024-02-27T11:33:18.983+08:00 recvRun - DEBUG 188 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:33:18.983+08:00 recvRun - DEBUG 189 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113323","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113323","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"d2d95a5c2a714adf83e5955c8b6433a6","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:33:45.968+08:00 recvRun - DEBUG 190 ItgClient RecvMsg len: 288
+2024-02-27T11:33:45.968+08:00 pkcs5UnPadding - DEBUG 191 unpadding 276
+2024-02-27T11:33:45.969+08:00 recvRun - DEBUG 192 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:33:45.97+08:00 recvRun - DEBUG 193 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113352513","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113324952","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:33:48.386+08:00 recvRun - DEBUG 194 ItgClient RecvMsg len: 288
+2024-02-27T11:33:48.387+08:00 pkcs5UnPadding - DEBUG 195 unpadding 281
+2024-02-27T11:33:48.388+08:00 recvRun - DEBUG 196 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:33:48.388+08:00 recvRun - DEBUG 197 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113354933","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113327727","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:33:48.977+08:00 Send - DEBUG 198 Sending msg to itg. msg: {"itg":{"msgTime":"113348977","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"99c5e39bb57d48f4ba9903e17a7e49a7","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113348977","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:33:48.983+08:00 recvRun - DEBUG 199 ItgClient RecvMsg len: 272
+2024-02-27T11:33:48.983+08:00 pkcs5UnPadding - DEBUG 200 unpadding 263
+2024-02-27T11:33:48.984+08:00 recvRun - DEBUG 201 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:33:48.984+08:00 recvRun - DEBUG 202 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113353","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113353","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"99c5e39bb57d48f4ba9903e17a7e49a7","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:34:15.981+08:00 recvRun - DEBUG 203 ItgClient RecvMsg len: 288
+2024-02-27T11:34:15.982+08:00 pkcs5UnPadding - DEBUG 204 unpadding 276
+2024-02-27T11:34:15.983+08:00 recvRun - DEBUG 205 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:34:15.983+08:00 recvRun - DEBUG 206 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113422527","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113354964","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:34:18.409+08:00 recvRun - DEBUG 207 ItgClient RecvMsg len: 288
+2024-02-27T11:34:18.409+08:00 pkcs5UnPadding - DEBUG 208 unpadding 281
+2024-02-27T11:34:18.41+08:00 recvRun - DEBUG 209 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:34:18.411+08:00 recvRun - DEBUG 210 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113424957","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113357740","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:34:18.977+08:00 Send - DEBUG 211 Sending msg to itg. msg: {"itg":{"msgTime":"113418977","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"67e824d405154b8cae385c6110d8f816","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113418977","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:34:18.984+08:00 recvRun - DEBUG 212 ItgClient RecvMsg len: 272
+2024-02-27T11:34:18.984+08:00 pkcs5UnPadding - DEBUG 213 unpadding 263
+2024-02-27T11:34:18.984+08:00 recvRun - DEBUG 214 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:34:18.985+08:00 recvRun - DEBUG 215 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113423","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113423","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"67e824d405154b8cae385c6110d8f816","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:34:45.998+08:00 recvRun - DEBUG 216 ItgClient RecvMsg len: 288
+2024-02-27T11:34:45.998+08:00 pkcs5UnPadding - DEBUG 217 unpadding 276
+2024-02-27T11:34:45.999+08:00 recvRun - DEBUG 218 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:34:46+08:00 recvRun - DEBUG 219 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113452544","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113424979","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:34:48.419+08:00 recvRun - DEBUG 220 ItgClient RecvMsg len: 288
+2024-02-27T11:34:48.419+08:00 pkcs5UnPadding - DEBUG 221 unpadding 281
+2024-02-27T11:34:48.42+08:00 recvRun - DEBUG 222 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:34:48.42+08:00 recvRun - DEBUG 223 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113454967","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113427756","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:34:48.978+08:00 Send - DEBUG 224 Sending msg to itg. msg: {"itg":{"msgTime":"113448978","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"37d6cb01e5ff4cd1931954f2d36adafb","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113448978","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:34:48.985+08:00 recvRun - DEBUG 225 ItgClient RecvMsg len: 272
+2024-02-27T11:34:48.985+08:00 pkcs5UnPadding - DEBUG 226 unpadding 263
+2024-02-27T11:34:48.986+08:00 recvRun - DEBUG 227 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:34:48.986+08:00 recvRun - DEBUG 228 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113453","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113453","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"37d6cb01e5ff4cd1931954f2d36adafb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:35:16.015+08:00 recvRun - DEBUG 229 ItgClient RecvMsg len: 288
+2024-02-27T11:35:16.015+08:00 pkcs5UnPadding - DEBUG 230 unpadding 276
+2024-02-27T11:35:16.016+08:00 recvRun - DEBUG 231 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:35:16.017+08:00 recvRun - DEBUG 232 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113522560","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113454993","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:35:18.43+08:00 recvRun - DEBUG 233 ItgClient RecvMsg len: 288
+2024-02-27T11:35:18.43+08:00 pkcs5UnPadding - DEBUG 234 unpadding 281
+2024-02-27T11:35:18.431+08:00 recvRun - DEBUG 235 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:35:18.431+08:00 recvRun - DEBUG 236 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113524979","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113457769","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:35:18.979+08:00 Send - DEBUG 237 Sending msg to itg. msg: {"itg":{"msgTime":"113518979","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"32f880bf273345ceb72405857cec28e2","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113518979","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:35:18.985+08:00 recvRun - DEBUG 238 ItgClient RecvMsg len: 272
+2024-02-27T11:35:18.985+08:00 pkcs5UnPadding - DEBUG 239 unpadding 263
+2024-02-27T11:35:18.986+08:00 recvRun - DEBUG 240 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:35:18.986+08:00 recvRun - DEBUG 241 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113523","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113523","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"32f880bf273345ceb72405857cec28e2","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:35:46.039+08:00 recvRun - DEBUG 242 ItgClient RecvMsg len: 288
+2024-02-27T11:35:46.039+08:00 pkcs5UnPadding - DEBUG 243 unpadding 276
+2024-02-27T11:35:46.041+08:00 recvRun - DEBUG 244 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:35:46.041+08:00 recvRun - DEBUG 245 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113552592","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113525009","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:35:48.442+08:00 recvRun - DEBUG 246 ItgClient RecvMsg len: 288
+2024-02-27T11:35:48.442+08:00 pkcs5UnPadding - DEBUG 247 unpadding 281
+2024-02-27T11:35:48.443+08:00 recvRun - DEBUG 248 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:35:48.445+08:00 recvRun - DEBUG 249 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113554993","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113527787","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:35:48.979+08:00 Send - DEBUG 250 Sending msg to itg. msg: {"itg":{"msgTime":"113548979","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"35097ed33d7e4e528810e9c925dd4d48","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113548979","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:35:48.986+08:00 recvRun - DEBUG 251 ItgClient RecvMsg len: 272
+2024-02-27T11:35:48.986+08:00 pkcs5UnPadding - DEBUG 252 unpadding 263
+2024-02-27T11:35:48.986+08:00 recvRun - DEBUG 253 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:35:48.987+08:00 recvRun - DEBUG 254 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113553","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113553","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"35097ed33d7e4e528810e9c925dd4d48","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:36:16.035+08:00 recvRun - DEBUG 255 ItgClient RecvMsg len: 288
+2024-02-27T11:36:16.036+08:00 pkcs5UnPadding - DEBUG 256 unpadding 276
+2024-02-27T11:36:16.037+08:00 recvRun - DEBUG 257 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:36:16.037+08:00 recvRun - DEBUG 258 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113622587","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113555023","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:36:18.468+08:00 recvRun - DEBUG 259 ItgClient RecvMsg len: 288
+2024-02-27T11:36:18.469+08:00 pkcs5UnPadding - DEBUG 260 unpadding 281
+2024-02-27T11:36:18.47+08:00 recvRun - DEBUG 261 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:36:18.47+08:00 recvRun - DEBUG 262 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113625018","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113557799","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:36:18.981+08:00 Send - DEBUG 263 Sending msg to itg. msg: {"itg":{"msgTime":"113618981","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"87b386fb471c4f2eaa98cafe92b318a7","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113618981","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:36:18.987+08:00 recvRun - DEBUG 264 ItgClient RecvMsg len: 272
+2024-02-27T11:36:18.987+08:00 pkcs5UnPadding - DEBUG 265 unpadding 263
+2024-02-27T11:36:18.987+08:00 recvRun - DEBUG 266 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:36:18.988+08:00 recvRun - DEBUG 267 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113623","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113623","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"87b386fb471c4f2eaa98cafe92b318a7","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:36:46.049+08:00 recvRun - DEBUG 268 ItgClient RecvMsg len: 288
+2024-02-27T11:36:46.049+08:00 pkcs5UnPadding - DEBUG 269 unpadding 276
+2024-02-27T11:36:46.051+08:00 recvRun - DEBUG 270 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:36:46.051+08:00 recvRun - DEBUG 271 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113652602","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113625038","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:36:48.468+08:00 recvRun - DEBUG 272 ItgClient RecvMsg len: 288
+2024-02-27T11:36:48.468+08:00 pkcs5UnPadding - DEBUG 273 unpadding 281
+2024-02-27T11:36:48.469+08:00 recvRun - DEBUG 274 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:36:48.469+08:00 recvRun - DEBUG 275 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113655021","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113627813","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:36:48.981+08:00 Send - DEBUG 276 Sending msg to itg. msg: {"itg":{"msgTime":"113648981","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"2e50508d49154195bdb3c24e7bd84112","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113648981","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:36:48.988+08:00 recvRun - DEBUG 277 ItgClient RecvMsg len: 272
+2024-02-27T11:36:48.988+08:00 pkcs5UnPadding - DEBUG 278 unpadding 263
+2024-02-27T11:36:48.988+08:00 recvRun - DEBUG 279 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:36:48.989+08:00 recvRun - DEBUG 280 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113653","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113653","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"2e50508d49154195bdb3c24e7bd84112","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:37:16.063+08:00 recvRun - DEBUG 281 ItgClient RecvMsg len: 288
+2024-02-27T11:37:16.064+08:00 pkcs5UnPadding - DEBUG 282 unpadding 276
+2024-02-27T11:37:16.065+08:00 recvRun - DEBUG 283 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:37:16.065+08:00 recvRun - DEBUG 284 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113722617","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113655052","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:37:18.49+08:00 recvRun - DEBUG 285 ItgClient RecvMsg len: 288
+2024-02-27T11:37:18.491+08:00 pkcs5UnPadding - DEBUG 286 unpadding 281
+2024-02-27T11:37:18.492+08:00 recvRun - DEBUG 287 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:37:18.492+08:00 recvRun - DEBUG 288 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113725045","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113657828","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:37:18.982+08:00 Send - DEBUG 289 Sending msg to itg. msg: {"itg":{"msgTime":"113718982","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"19d25e79d08340cca371b6a8b2b93ac9","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113718982","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:37:18.988+08:00 recvRun - DEBUG 290 ItgClient RecvMsg len: 272
+2024-02-27T11:37:18.989+08:00 pkcs5UnPadding - DEBUG 291 unpadding 263
+2024-02-27T11:37:18.989+08:00 recvRun - DEBUG 292 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:37:18.99+08:00 recvRun - DEBUG 293 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113723","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113723","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"19d25e79d08340cca371b6a8b2b93ac9","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:37:46.079+08:00 recvRun - DEBUG 294 ItgClient RecvMsg len: 288
+2024-02-27T11:37:46.079+08:00 pkcs5UnPadding - DEBUG 295 unpadding 276
+2024-02-27T11:37:46.08+08:00 recvRun - DEBUG 296 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:37:46.081+08:00 recvRun - DEBUG 297 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113752633","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113725068","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:37:48.505+08:00 recvRun - DEBUG 298 ItgClient RecvMsg len: 288
+2024-02-27T11:37:48.505+08:00 pkcs5UnPadding - DEBUG 299 unpadding 281
+2024-02-27T11:37:48.507+08:00 recvRun - DEBUG 300 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:37:48.507+08:00 recvRun - DEBUG 301 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113755060","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113727843","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:37:48.983+08:00 Send - DEBUG 302 Sending msg to itg. msg: {"itg":{"msgTime":"113748983","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"ddb2f6a365e64512adb9a64f6580748e","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113748983","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:37:48.989+08:00 recvRun - DEBUG 303 ItgClient RecvMsg len: 272
+2024-02-27T11:37:48.99+08:00 pkcs5UnPadding - DEBUG 304 unpadding 263
+2024-02-27T11:37:48.99+08:00 recvRun - DEBUG 305 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:37:48.99+08:00 recvRun - DEBUG 306 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113753","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113753","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"ddb2f6a365e64512adb9a64f6580748e","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:38:16.093+08:00 recvRun - DEBUG 307 ItgClient RecvMsg len: 288
+2024-02-27T11:38:16.094+08:00 pkcs5UnPadding - DEBUG 308 unpadding 276
+2024-02-27T11:38:16.095+08:00 recvRun - DEBUG 309 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:38:16.095+08:00 recvRun - DEBUG 310 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113822648","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113755081","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:38:18.518+08:00 recvRun - DEBUG 311 ItgClient RecvMsg len: 288
+2024-02-27T11:38:18.518+08:00 pkcs5UnPadding - DEBUG 312 unpadding 281
+2024-02-27T11:38:18.52+08:00 recvRun - DEBUG 313 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:38:18.52+08:00 recvRun - DEBUG 314 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113825072","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113757857","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:38:18.983+08:00 Send - DEBUG 315 Sending msg to itg. msg: {"itg":{"msgTime":"113818983","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f4cde8df56f54bcd8e08120930438027","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113818983","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:38:18.99+08:00 recvRun - DEBUG 316 ItgClient RecvMsg len: 272
+2024-02-27T11:38:18.99+08:00 pkcs5UnPadding - DEBUG 317 unpadding 263
+2024-02-27T11:38:18.991+08:00 recvRun - DEBUG 318 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:38:18.991+08:00 recvRun - DEBUG 319 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113823","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113823","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f4cde8df56f54bcd8e08120930438027","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:38:46.107+08:00 recvRun - DEBUG 320 ItgClient RecvMsg len: 288
+2024-02-27T11:38:46.108+08:00 pkcs5UnPadding - DEBUG 321 unpadding 276
+2024-02-27T11:38:46.109+08:00 recvRun - DEBUG 322 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:38:46.11+08:00 recvRun - DEBUG 323 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113852664","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113825095","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:38:48.53+08:00 recvRun - DEBUG 324 ItgClient RecvMsg len: 288
+2024-02-27T11:38:48.531+08:00 pkcs5UnPadding - DEBUG 325 unpadding 281
+2024-02-27T11:38:48.532+08:00 recvRun - DEBUG 326 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:38:48.532+08:00 recvRun - DEBUG 327 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113855086","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113827872","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:38:48.984+08:00 Send - DEBUG 328 Sending msg to itg. msg: {"itg":{"msgTime":"113848984","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"d832e939e5f54966977f5a3a3696ef8c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113848984","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:38:48.991+08:00 recvRun - DEBUG 329 ItgClient RecvMsg len: 272
+2024-02-27T11:38:48.991+08:00 pkcs5UnPadding - DEBUG 330 unpadding 263
+2024-02-27T11:38:48.991+08:00 recvRun - DEBUG 331 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:38:48.992+08:00 recvRun - DEBUG 332 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113853","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113853","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"d832e939e5f54966977f5a3a3696ef8c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:39:16.121+08:00 recvRun - DEBUG 333 ItgClient RecvMsg len: 288
+2024-02-27T11:39:16.121+08:00 pkcs5UnPadding - DEBUG 334 unpadding 276
+2024-02-27T11:39:16.123+08:00 recvRun - DEBUG 335 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:39:16.123+08:00 recvRun - DEBUG 336 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113922678","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113855110","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:39:18.54+08:00 recvRun - DEBUG 337 ItgClient RecvMsg len: 288
+2024-02-27T11:39:18.54+08:00 pkcs5UnPadding - DEBUG 338 unpadding 281
+2024-02-27T11:39:18.542+08:00 recvRun - DEBUG 339 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:39:18.543+08:00 recvRun - DEBUG 340 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113925099","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113857887","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:39:18.985+08:00 Send - DEBUG 341 Sending msg to itg. msg: {"itg":{"msgTime":"113918985","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"16b13cba33be48a480917d444035aa64","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113918985","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:39:18.991+08:00 recvRun - DEBUG 342 ItgClient RecvMsg len: 272
+2024-02-27T11:39:18.992+08:00 pkcs5UnPadding - DEBUG 343 unpadding 263
+2024-02-27T11:39:18.992+08:00 recvRun - DEBUG 344 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:39:18.993+08:00 recvRun - DEBUG 345 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113923","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113923","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"16b13cba33be48a480917d444035aa64","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:39:46.137+08:00 recvRun - DEBUG 346 ItgClient RecvMsg len: 288
+2024-02-27T11:39:46.137+08:00 pkcs5UnPadding - DEBUG 347 unpadding 276
+2024-02-27T11:39:46.14+08:00 recvRun - DEBUG 348 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:39:46.14+08:00 recvRun - DEBUG 349 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113952693","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113925124","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:39:48.551+08:00 recvRun - DEBUG 350 ItgClient RecvMsg len: 288
+2024-02-27T11:39:48.552+08:00 pkcs5UnPadding - DEBUG 351 unpadding 281
+2024-02-27T11:39:48.553+08:00 recvRun - DEBUG 352 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:39:48.554+08:00 recvRun - DEBUG 353 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"113955109","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113927900","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:39:48.986+08:00 Send - DEBUG 354 Sending msg to itg. msg: {"itg":{"msgTime":"113948986","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f1e08ac1ffd041c6b52b6dd0e9bfcdea","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"113948986","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:39:48.993+08:00 recvRun - DEBUG 355 ItgClient RecvMsg len: 272
+2024-02-27T11:39:48.993+08:00 pkcs5UnPadding - DEBUG 356 unpadding 263
+2024-02-27T11:39:48.994+08:00 recvRun - DEBUG 357 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:39:48.994+08:00 recvRun - DEBUG 358 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227113953","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227113953","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f1e08ac1ffd041c6b52b6dd0e9bfcdea","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:40:16.148+08:00 recvRun - DEBUG 359 ItgClient RecvMsg len: 288
+2024-02-27T11:40:16.148+08:00 pkcs5UnPadding - DEBUG 360 unpadding 276
+2024-02-27T11:40:16.149+08:00 recvRun - DEBUG 361 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:40:16.15+08:00 recvRun - DEBUG 362 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114022708","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"113955140","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:40:18.576+08:00 recvRun - DEBUG 363 ItgClient RecvMsg len: 288
+2024-02-27T11:40:18.576+08:00 pkcs5UnPadding - DEBUG 364 unpadding 281
+2024-02-27T11:40:18.577+08:00 recvRun - DEBUG 365 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:40:18.578+08:00 recvRun - DEBUG 366 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114025134","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"113957916","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:40:18.986+08:00 Send - DEBUG 367 Sending msg to itg. msg: {"itg":{"msgTime":"114018986","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"fe41303598004a1783fb2f1389167c27","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114018986","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:40:18.994+08:00 recvRun - DEBUG 368 ItgClient RecvMsg len: 272
+2024-02-27T11:40:18.994+08:00 pkcs5UnPadding - DEBUG 369 unpadding 263
+2024-02-27T11:40:18.995+08:00 recvRun - DEBUG 370 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:40:18.995+08:00 recvRun - DEBUG 371 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114023","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114023","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"fe41303598004a1783fb2f1389167c27","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:40:46.165+08:00 recvRun - DEBUG 372 ItgClient RecvMsg len: 288
+2024-02-27T11:40:46.165+08:00 pkcs5UnPadding - DEBUG 373 unpadding 276
+2024-02-27T11:40:46.166+08:00 recvRun - DEBUG 374 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:40:46.167+08:00 recvRun - DEBUG 375 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114052725","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114025153","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:40:48.589+08:00 recvRun - DEBUG 376 ItgClient RecvMsg len: 288
+2024-02-27T11:40:48.589+08:00 pkcs5UnPadding - DEBUG 377 unpadding 281
+2024-02-27T11:40:48.59+08:00 recvRun - DEBUG 378 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:40:48.591+08:00 recvRun - DEBUG 379 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114055150","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114027929","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:40:48.988+08:00 Send - DEBUG 380 Sending msg to itg. msg: {"itg":{"msgTime":"114048988","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"07a91bda27894279aa0ef45a6e64a396","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114048988","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:40:48.994+08:00 recvRun - DEBUG 381 ItgClient RecvMsg len: 272
+2024-02-27T11:40:48.994+08:00 pkcs5UnPadding - DEBUG 382 unpadding 263
+2024-02-27T11:40:48.994+08:00 recvRun - DEBUG 383 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:40:48.995+08:00 recvRun - DEBUG 384 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114053","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114053","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"07a91bda27894279aa0ef45a6e64a396","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:41:16.179+08:00 recvRun - DEBUG 385 ItgClient RecvMsg len: 288
+2024-02-27T11:41:16.179+08:00 pkcs5UnPadding - DEBUG 386 unpadding 276
+2024-02-27T11:41:16.18+08:00 recvRun - DEBUG 387 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:41:16.181+08:00 recvRun - DEBUG 388 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114122739","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114055169","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:41:18.592+08:00 recvRun - DEBUG 389 ItgClient RecvMsg len: 288
+2024-02-27T11:41:18.592+08:00 pkcs5UnPadding - DEBUG 390 unpadding 281
+2024-02-27T11:41:18.593+08:00 recvRun - DEBUG 391 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:41:18.594+08:00 recvRun - DEBUG 392 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114125152","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114057945","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:41:18.988+08:00 Send - DEBUG 393 Sending msg to itg. msg: {"itg":{"msgTime":"114118988","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"be3ce209f8ab4e71a3064d46e789812c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114118988","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:41:18.995+08:00 recvRun - DEBUG 394 ItgClient RecvMsg len: 272
+2024-02-27T11:41:18.995+08:00 pkcs5UnPadding - DEBUG 395 unpadding 263
+2024-02-27T11:41:18.996+08:00 recvRun - DEBUG 396 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:41:18.996+08:00 recvRun - DEBUG 397 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114123","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114123","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"be3ce209f8ab4e71a3064d46e789812c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:41:46.191+08:00 recvRun - DEBUG 398 ItgClient RecvMsg len: 288
+2024-02-27T11:41:46.192+08:00 pkcs5UnPadding - DEBUG 399 unpadding 276
+2024-02-27T11:41:46.193+08:00 recvRun - DEBUG 400 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:41:46.193+08:00 recvRun - DEBUG 401 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114152753","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114125183","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:41:48.616+08:00 recvRun - DEBUG 402 ItgClient RecvMsg len: 288
+2024-02-27T11:41:48.616+08:00 pkcs5UnPadding - DEBUG 403 unpadding 281
+2024-02-27T11:41:48.618+08:00 recvRun - DEBUG 404 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:41:48.618+08:00 recvRun - DEBUG 405 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114155176","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114127959","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:41:48.989+08:00 Send - DEBUG 406 Sending msg to itg. msg: {"itg":{"msgTime":"114148989","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"8867032f9f7640aa9c16d8e7235ae739","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114148989","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:41:48.995+08:00 recvRun - DEBUG 407 ItgClient RecvMsg len: 272
+2024-02-27T11:41:48.995+08:00 pkcs5UnPadding - DEBUG 408 unpadding 263
+2024-02-27T11:41:48.996+08:00 recvRun - DEBUG 409 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:41:48.996+08:00 recvRun - DEBUG 410 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114153","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114153","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"8867032f9f7640aa9c16d8e7235ae739","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:42:16.205+08:00 recvRun - DEBUG 411 ItgClient RecvMsg len: 288
+2024-02-27T11:42:16.205+08:00 pkcs5UnPadding - DEBUG 412 unpadding 276
+2024-02-27T11:42:16.206+08:00 recvRun - DEBUG 413 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:42:16.207+08:00 recvRun - DEBUG 414 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114222768","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114155196","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:42:18.628+08:00 recvRun - DEBUG 415 ItgClient RecvMsg len: 288
+2024-02-27T11:42:18.628+08:00 pkcs5UnPadding - DEBUG 416 unpadding 281
+2024-02-27T11:42:18.629+08:00 recvRun - DEBUG 417 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:42:18.63+08:00 recvRun - DEBUG 418 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114225191","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114157974","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:42:18.989+08:00 Send - DEBUG 419 Sending msg to itg. msg: {"itg":{"msgTime":"114218989","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"7acbd793841c4142973ffb3b4c77bd0b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114218989","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:42:18.994+08:00 recvRun - DEBUG 420 ItgClient RecvMsg len: 272
+2024-02-27T11:42:18.995+08:00 pkcs5UnPadding - DEBUG 421 unpadding 263
+2024-02-27T11:42:18.995+08:00 recvRun - DEBUG 422 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:42:18.996+08:00 recvRun - DEBUG 423 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114223","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114223","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"7acbd793841c4142973ffb3b4c77bd0b","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:42:46.221+08:00 recvRun - DEBUG 424 ItgClient RecvMsg len: 288
+2024-02-27T11:42:46.221+08:00 pkcs5UnPadding - DEBUG 425 unpadding 276
+2024-02-27T11:42:46.222+08:00 recvRun - DEBUG 426 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:42:46.223+08:00 recvRun - DEBUG 427 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114252783","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114225212","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:42:48.637+08:00 recvRun - DEBUG 428 ItgClient RecvMsg len: 288
+2024-02-27T11:42:48.637+08:00 pkcs5UnPadding - DEBUG 429 unpadding 281
+2024-02-27T11:42:48.639+08:00 recvRun - DEBUG 430 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:42:48.639+08:00 recvRun - DEBUG 431 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114255200","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114227988","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:42:48.989+08:00 Send - DEBUG 432 Sending msg to itg. msg: {"itg":{"msgTime":"114248989","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"d37ab377d33a4bfc82539f3ab442e53b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114248989","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:42:48.996+08:00 recvRun - DEBUG 433 ItgClient RecvMsg len: 272
+2024-02-27T11:42:48.996+08:00 pkcs5UnPadding - DEBUG 434 unpadding 263
+2024-02-27T11:42:48.997+08:00 recvRun - DEBUG 435 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:42:48.997+08:00 recvRun - DEBUG 436 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114253","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114253","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"d37ab377d33a4bfc82539f3ab442e53b","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:43:16.233+08:00 recvRun - DEBUG 437 ItgClient RecvMsg len: 288
+2024-02-27T11:43:16.234+08:00 pkcs5UnPadding - DEBUG 438 unpadding 276
+2024-02-27T11:43:16.235+08:00 recvRun - DEBUG 439 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:43:16.235+08:00 recvRun - DEBUG 440 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114322798","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114255226","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:43:18.649+08:00 recvRun - DEBUG 441 ItgClient RecvMsg len: 288
+2024-02-27T11:43:18.649+08:00 pkcs5UnPadding - DEBUG 442 unpadding 281
+2024-02-27T11:43:18.651+08:00 recvRun - DEBUG 443 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:43:18.651+08:00 recvRun - DEBUG 444 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114325213","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114258003","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:43:18.989+08:00 Send - DEBUG 445 Sending msg to itg. msg: {"itg":{"msgTime":"114318989","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"430aca3c75fe425d81b74e149f374a3c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114318989","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:43:18.995+08:00 recvRun - DEBUG 446 ItgClient RecvMsg len: 272
+2024-02-27T11:43:18.996+08:00 pkcs5UnPadding - DEBUG 447 unpadding 263
+2024-02-27T11:43:18.996+08:00 recvRun - DEBUG 448 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:43:18.997+08:00 recvRun - DEBUG 449 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114323","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114323","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"430aca3c75fe425d81b74e149f374a3c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:43:46.248+08:00 recvRun - DEBUG 450 ItgClient RecvMsg len: 288
+2024-02-27T11:43:46.249+08:00 pkcs5UnPadding - DEBUG 451 unpadding 276
+2024-02-27T11:43:46.25+08:00 recvRun - DEBUG 452 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:43:46.25+08:00 recvRun - DEBUG 453 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114352813","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114325241","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:43:48.663+08:00 recvRun - DEBUG 454 ItgClient RecvMsg len: 288
+2024-02-27T11:43:48.663+08:00 pkcs5UnPadding - DEBUG 455 unpadding 281
+2024-02-27T11:43:48.664+08:00 recvRun - DEBUG 456 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:43:48.665+08:00 recvRun - DEBUG 457 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114355226","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114328018","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:43:48.989+08:00 Send - DEBUG 458 Sending msg to itg. msg: {"itg":{"msgTime":"114348989","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"8a35f5348a8847d7ac039fb2429775eb","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114348989","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:43:48.996+08:00 recvRun - DEBUG 459 ItgClient RecvMsg len: 272
+2024-02-27T11:43:48.996+08:00 pkcs5UnPadding - DEBUG 460 unpadding 263
+2024-02-27T11:43:48.996+08:00 recvRun - DEBUG 461 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:43:48.997+08:00 recvRun - DEBUG 462 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114353","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114353","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"8a35f5348a8847d7ac039fb2429775eb","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:44:16.284+08:00 recvRun - DEBUG 463 ItgClient RecvMsg len: 288
+2024-02-27T11:44:16.284+08:00 pkcs5UnPadding - DEBUG 464 unpadding 276
+2024-02-27T11:44:16.286+08:00 recvRun - DEBUG 465 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:44:16.286+08:00 recvRun - DEBUG 466 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114422827","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114355255","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:44:18.681+08:00 recvRun - DEBUG 467 ItgClient RecvMsg len: 288
+2024-02-27T11:44:18.681+08:00 pkcs5UnPadding - DEBUG 468 unpadding 281
+2024-02-27T11:44:18.682+08:00 recvRun - DEBUG 469 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:44:18.682+08:00 recvRun - DEBUG 470 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114425248","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114358032","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:44:18.99+08:00 Send - DEBUG 471 Sending msg to itg. msg: {"itg":{"msgTime":"114418990","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"da57f8d08c8a499dbdc3397274d3bb23","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114418990","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:44:18.996+08:00 recvRun - DEBUG 472 ItgClient RecvMsg len: 272
+2024-02-27T11:44:18.997+08:00 pkcs5UnPadding - DEBUG 473 unpadding 263
+2024-02-27T11:44:18.997+08:00 recvRun - DEBUG 474 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:44:18.998+08:00 recvRun - DEBUG 475 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114423","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114423","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"da57f8d08c8a499dbdc3397274d3bb23","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:44:46.274+08:00 recvRun - DEBUG 476 ItgClient RecvMsg len: 288
+2024-02-27T11:44:46.275+08:00 pkcs5UnPadding - DEBUG 477 unpadding 276
+2024-02-27T11:44:46.276+08:00 recvRun - DEBUG 478 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:44:46.276+08:00 recvRun - DEBUG 479 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114452841","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114425270","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:44:48.694+08:00 recvRun - DEBUG 480 ItgClient RecvMsg len: 288
+2024-02-27T11:44:48.695+08:00 pkcs5UnPadding - DEBUG 481 unpadding 281
+2024-02-27T11:44:48.696+08:00 recvRun - DEBUG 482 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:44:48.696+08:00 recvRun - DEBUG 483 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114455262","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114428046","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:44:48.991+08:00 Send - DEBUG 484 Sending msg to itg. msg: {"itg":{"msgTime":"114448991","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"73753450c0474d249225021795cd51d9","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114448991","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:44:48.997+08:00 recvRun - DEBUG 485 ItgClient RecvMsg len: 272
+2024-02-27T11:44:48.997+08:00 pkcs5UnPadding - DEBUG 486 unpadding 263
+2024-02-27T11:44:48.997+08:00 recvRun - DEBUG 487 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:44:48.998+08:00 recvRun - DEBUG 488 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114453","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114453","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"73753450c0474d249225021795cd51d9","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:45:16.291+08:00 recvRun - DEBUG 489 ItgClient RecvMsg len: 288
+2024-02-27T11:45:16.291+08:00 pkcs5UnPadding - DEBUG 490 unpadding 276
+2024-02-27T11:45:16.292+08:00 recvRun - DEBUG 491 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:45:16.293+08:00 recvRun - DEBUG 492 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114522856","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114455284","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:45:18.705+08:00 recvRun - DEBUG 493 ItgClient RecvMsg len: 288
+2024-02-27T11:45:18.705+08:00 pkcs5UnPadding - DEBUG 494 unpadding 281
+2024-02-27T11:45:18.706+08:00 recvRun - DEBUG 495 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:45:18.706+08:00 recvRun - DEBUG 496 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114525273","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114458060","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:45:18.992+08:00 Send - DEBUG 497 Sending msg to itg. msg: {"itg":{"msgTime":"114518992","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"6d46213559eb44f589f71a5343fb00ca","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114518992","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:45:18.998+08:00 recvRun - DEBUG 498 ItgClient RecvMsg len: 272
+2024-02-27T11:45:18.998+08:00 pkcs5UnPadding - DEBUG 499 unpadding 263
+2024-02-27T11:45:18.999+08:00 recvRun - DEBUG 500 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:45:18.999+08:00 recvRun - DEBUG 501 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114523","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114523","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"6d46213559eb44f589f71a5343fb00ca","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:45:46.302+08:00 recvRun - DEBUG 502 ItgClient RecvMsg len: 288
+2024-02-27T11:45:46.303+08:00 pkcs5UnPadding - DEBUG 503 unpadding 276
+2024-02-27T11:45:46.304+08:00 recvRun - DEBUG 504 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:45:46.305+08:00 recvRun - DEBUG 505 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114552872","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114525299","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:45:48.715+08:00 recvRun - DEBUG 506 ItgClient RecvMsg len: 288
+2024-02-27T11:45:48.715+08:00 pkcs5UnPadding - DEBUG 507 unpadding 281
+2024-02-27T11:45:48.716+08:00 recvRun - DEBUG 508 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:45:48.717+08:00 recvRun - DEBUG 509 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114555285","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114528076","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:45:48.993+08:00 Send - DEBUG 510 Sending msg to itg. msg: {"itg":{"msgTime":"114548993","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"ea9be60edb7f4807be28b06a69760ca3","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114548993","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:45:48.999+08:00 recvRun - DEBUG 511 ItgClient RecvMsg len: 272
+2024-02-27T11:45:48.999+08:00 pkcs5UnPadding - DEBUG 512 unpadding 263
+2024-02-27T11:45:49+08:00 recvRun - DEBUG 513 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:45:49+08:00 recvRun - DEBUG 514 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114553","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114553","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"ea9be60edb7f4807be28b06a69760ca3","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:46:16.326+08:00 recvRun - DEBUG 515 ItgClient RecvMsg len: 288
+2024-02-27T11:46:16.326+08:00 pkcs5UnPadding - DEBUG 516 unpadding 276
+2024-02-27T11:46:16.327+08:00 recvRun - DEBUG 517 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:46:16.328+08:00 recvRun - DEBUG 518 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114622887","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114555313","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:46:18.728+08:00 recvRun - DEBUG 519 ItgClient RecvMsg len: 288
+2024-02-27T11:46:18.729+08:00 pkcs5UnPadding - DEBUG 520 unpadding 281
+2024-02-27T11:46:18.731+08:00 recvRun - DEBUG 521 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:46:18.731+08:00 recvRun - DEBUG 522 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114625298","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114558090","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:46:18.993+08:00 Send - DEBUG 523 Sending msg to itg. msg: {"itg":{"msgTime":"114618993","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"c1919017c92c4fe5a585cf93b5eac9ae","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114618993","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:46:19+08:00 recvRun - DEBUG 524 ItgClient RecvMsg len: 272
+2024-02-27T11:46:19+08:00 pkcs5UnPadding - DEBUG 525 unpadding 263
+2024-02-27T11:46:19+08:00 recvRun - DEBUG 526 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:46:19.001+08:00 recvRun - DEBUG 527 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114623","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114623","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"c1919017c92c4fe5a585cf93b5eac9ae","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:46:46.331+08:00 recvRun - DEBUG 528 ItgClient RecvMsg len: 288
+2024-02-27T11:46:46.331+08:00 pkcs5UnPadding - DEBUG 529 unpadding 276
+2024-02-27T11:46:46.332+08:00 recvRun - DEBUG 530 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:46:46.333+08:00 recvRun - DEBUG 531 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114652901","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114625327","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:46:48.753+08:00 recvRun - DEBUG 532 ItgClient RecvMsg len: 288
+2024-02-27T11:46:48.753+08:00 pkcs5UnPadding - DEBUG 533 unpadding 281
+2024-02-27T11:46:48.754+08:00 recvRun - DEBUG 534 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:46:48.755+08:00 recvRun - DEBUG 535 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114655322","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114628103","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:46:48.993+08:00 Send - DEBUG 536 Sending msg to itg. msg: {"itg":{"msgTime":"114648993","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f07ef27bd78c4405ba6d1ef3a4fa4761","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114648993","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:46:49+08:00 recvRun - DEBUG 537 ItgClient RecvMsg len: 272
+2024-02-27T11:46:49+08:00 pkcs5UnPadding - DEBUG 538 unpadding 263
+2024-02-27T11:46:49.001+08:00 recvRun - DEBUG 539 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:46:49.001+08:00 recvRun - DEBUG 540 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114653","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114653","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f07ef27bd78c4405ba6d1ef3a4fa4761","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:47:16.358+08:00 recvRun - DEBUG 541 ItgClient RecvMsg len: 288
+2024-02-27T11:47:16.358+08:00 pkcs5UnPadding - DEBUG 542 unpadding 276
+2024-02-27T11:47:16.359+08:00 recvRun - DEBUG 543 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:47:16.36+08:00 recvRun - DEBUG 544 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114722917","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114655342","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:47:18.766+08:00 recvRun - DEBUG 545 ItgClient RecvMsg len: 288
+2024-02-27T11:47:18.767+08:00 pkcs5UnPadding - DEBUG 546 unpadding 281
+2024-02-27T11:47:18.768+08:00 recvRun - DEBUG 547 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:47:18.768+08:00 recvRun - DEBUG 548 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114725337","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114658119","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:47:18.994+08:00 Send - DEBUG 549 Sending msg to itg. msg: {"itg":{"msgTime":"114718994","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"8b61c791428843108bdc1e4a98b70b1f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114718994","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:47:19.001+08:00 recvRun - DEBUG 550 ItgClient RecvMsg len: 272
+2024-02-27T11:47:19.001+08:00 pkcs5UnPadding - DEBUG 551 unpadding 263
+2024-02-27T11:47:19.001+08:00 recvRun - DEBUG 552 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:47:19.002+08:00 recvRun - DEBUG 553 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114723","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114723","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"8b61c791428843108bdc1e4a98b70b1f","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:47:46.351+08:00 recvRun - DEBUG 554 ItgClient RecvMsg len: 288
+2024-02-27T11:47:46.351+08:00 pkcs5UnPadding - DEBUG 555 unpadding 276
+2024-02-27T11:47:46.353+08:00 recvRun - DEBUG 556 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:47:46.353+08:00 recvRun - DEBUG 557 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114752923","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114725357","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:47:48.783+08:00 recvRun - DEBUG 558 ItgClient RecvMsg len: 288
+2024-02-27T11:47:48.784+08:00 pkcs5UnPadding - DEBUG 559 unpadding 281
+2024-02-27T11:47:48.785+08:00 recvRun - DEBUG 560 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:47:48.785+08:00 recvRun - DEBUG 561 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114755353","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114728134","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:47:48.994+08:00 Send - DEBUG 562 Sending msg to itg. msg: {"itg":{"msgTime":"114748994","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"bb00dea147514a848358a4c61506b5b0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114748994","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:47:49.001+08:00 recvRun - DEBUG 563 ItgClient RecvMsg len: 272
+2024-02-27T11:47:49.001+08:00 pkcs5UnPadding - DEBUG 564 unpadding 263
+2024-02-27T11:47:49.002+08:00 recvRun - DEBUG 565 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:47:49.002+08:00 recvRun - DEBUG 566 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114753","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114753","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"bb00dea147514a848358a4c61506b5b0","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:48:16.366+08:00 recvRun - DEBUG 567 ItgClient RecvMsg len: 288
+2024-02-27T11:48:16.367+08:00 pkcs5UnPadding - DEBUG 568 unpadding 276
+2024-02-27T11:48:16.368+08:00 recvRun - DEBUG 569 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:48:16.368+08:00 recvRun - DEBUG 570 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114822939","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114755371","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:48:18.792+08:00 recvRun - DEBUG 571 ItgClient RecvMsg len: 288
+2024-02-27T11:48:18.793+08:00 pkcs5UnPadding - DEBUG 572 unpadding 281
+2024-02-27T11:48:18.794+08:00 recvRun - DEBUG 573 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:48:18.794+08:00 recvRun - DEBUG 574 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114825368","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114758149","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:48:18.995+08:00 Send - DEBUG 575 Sending msg to itg. msg: {"itg":{"msgTime":"114818995","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"31a944d69164400d8c16cedb393f32dd","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114818995","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:48:19.002+08:00 recvRun - DEBUG 576 ItgClient RecvMsg len: 272
+2024-02-27T11:48:19.002+08:00 pkcs5UnPadding - DEBUG 577 unpadding 263
+2024-02-27T11:48:19.002+08:00 recvRun - DEBUG 578 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:48:19.003+08:00 recvRun - DEBUG 579 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114823","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114823","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"31a944d69164400d8c16cedb393f32dd","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:48:46.419+08:00 recvRun - DEBUG 580 ItgClient RecvMsg len: 288
+2024-02-27T11:48:46.419+08:00 pkcs5UnPadding - DEBUG 581 unpadding 276
+2024-02-27T11:48:46.421+08:00 recvRun - DEBUG 582 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:48:46.421+08:00 recvRun - DEBUG 583 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114852991","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114825387","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:48:48.806+08:00 recvRun - DEBUG 584 ItgClient RecvMsg len: 288
+2024-02-27T11:48:48.806+08:00 pkcs5UnPadding - DEBUG 585 unpadding 281
+2024-02-27T11:48:48.807+08:00 recvRun - DEBUG 586 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:48:48.807+08:00 recvRun - DEBUG 587 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114855381","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114828162","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:48:48.995+08:00 Send - DEBUG 588 Sending msg to itg. msg: {"itg":{"msgTime":"114848995","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"52d039b9adc94ff1b56afb0c0e0117e8","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114848995","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:48:49.001+08:00 recvRun - DEBUG 589 ItgClient RecvMsg len: 272
+2024-02-27T11:48:49.002+08:00 pkcs5UnPadding - DEBUG 590 unpadding 263
+2024-02-27T11:48:49.002+08:00 recvRun - DEBUG 591 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:48:49.002+08:00 recvRun - DEBUG 592 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114853","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114853","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"52d039b9adc94ff1b56afb0c0e0117e8","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:49:16.391+08:00 recvRun - DEBUG 593 ItgClient RecvMsg len: 288
+2024-02-27T11:49:16.391+08:00 pkcs5UnPadding - DEBUG 594 unpadding 276
+2024-02-27T11:49:16.393+08:00 recvRun - DEBUG 595 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:49:16.394+08:00 recvRun - DEBUG 596 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114922967","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114855401","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:49:18.835+08:00 recvRun - DEBUG 597 ItgClient RecvMsg len: 288
+2024-02-27T11:49:18.836+08:00 pkcs5UnPadding - DEBUG 598 unpadding 281
+2024-02-27T11:49:18.837+08:00 recvRun - DEBUG 599 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:49:18.838+08:00 recvRun - DEBUG 600 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114925394","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114858176","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:49:18.996+08:00 Send - DEBUG 601 Sending msg to itg. msg: {"itg":{"msgTime":"114918996","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"9dc3fcf02fe042f2b84627b2fde74e2b","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114918996","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:49:19.002+08:00 recvRun - DEBUG 602 ItgClient RecvMsg len: 272
+2024-02-27T11:49:19.002+08:00 pkcs5UnPadding - DEBUG 603 unpadding 263
+2024-02-27T11:49:19.003+08:00 recvRun - DEBUG 604 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:49:19.004+08:00 recvRun - DEBUG 605 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114923","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114923","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"9dc3fcf02fe042f2b84627b2fde74e2b","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:49:46.405+08:00 recvRun - DEBUG 606 ItgClient RecvMsg len: 288
+2024-02-27T11:49:46.405+08:00 pkcs5UnPadding - DEBUG 607 unpadding 276
+2024-02-27T11:49:46.407+08:00 recvRun - DEBUG 608 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:49:46.407+08:00 recvRun - DEBUG 609 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114952983","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114925416","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:49:48.829+08:00 recvRun - DEBUG 610 ItgClient RecvMsg len: 288
+2024-02-27T11:49:48.829+08:00 pkcs5UnPadding - DEBUG 611 unpadding 281
+2024-02-27T11:49:48.831+08:00 recvRun - DEBUG 612 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:49:48.832+08:00 recvRun - DEBUG 613 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"114955408","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114928191","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:49:48.997+08:00 Send - DEBUG 614 Sending msg to itg. msg: {"itg":{"msgTime":"114948997","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"8b3df2af39da4238ba14613b466143af","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"114948997","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:49:49.003+08:00 recvRun - DEBUG 615 ItgClient RecvMsg len: 272
+2024-02-27T11:49:49.004+08:00 pkcs5UnPadding - DEBUG 616 unpadding 263
+2024-02-27T11:49:49.004+08:00 recvRun - DEBUG 617 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:49:49.004+08:00 recvRun - DEBUG 618 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227114953","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227114953","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"8b3df2af39da4238ba14613b466143af","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:50:16.435+08:00 recvRun - DEBUG 619 ItgClient RecvMsg len: 288
+2024-02-27T11:50:16.436+08:00 pkcs5UnPadding - DEBUG 620 unpadding 276
+2024-02-27T11:50:16.437+08:00 recvRun - DEBUG 621 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:50:16.437+08:00 recvRun - DEBUG 622 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115022996","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"114955430","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:50:18.844+08:00 recvRun - DEBUG 623 ItgClient RecvMsg len: 288
+2024-02-27T11:50:18.844+08:00 pkcs5UnPadding - DEBUG 624 unpadding 281
+2024-02-27T11:50:18.846+08:00 recvRun - DEBUG 625 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:50:18.846+08:00 recvRun - DEBUG 626 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115025421","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"114958206","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:50:18.998+08:00 Send - DEBUG 627 Sending msg to itg. msg: {"itg":{"msgTime":"115018998","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f26755257fcc4623951a1ac5e0c0f668","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115018998","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:50:19.004+08:00 recvRun - DEBUG 628 ItgClient RecvMsg len: 272
+2024-02-27T11:50:19.005+08:00 pkcs5UnPadding - DEBUG 629 unpadding 263
+2024-02-27T11:50:19.005+08:00 recvRun - DEBUG 630 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:50:19.006+08:00 recvRun - DEBUG 631 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115023","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115023","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f26755257fcc4623951a1ac5e0c0f668","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:50:46.433+08:00 recvRun - DEBUG 632 ItgClient RecvMsg len: 288
+2024-02-27T11:50:46.433+08:00 pkcs5UnPadding - DEBUG 633 unpadding 276
+2024-02-27T11:50:46.434+08:00 recvRun - DEBUG 634 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:50:46.435+08:00 recvRun - DEBUG 635 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115053010","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115025444","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:50:48.854+08:00 recvRun - DEBUG 636 ItgClient RecvMsg len: 288
+2024-02-27T11:50:48.854+08:00 pkcs5UnPadding - DEBUG 637 unpadding 281
+2024-02-27T11:50:48.855+08:00 recvRun - DEBUG 638 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:50:48.855+08:00 recvRun - DEBUG 639 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115055434","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115028221","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:50:48.999+08:00 Send - DEBUG 640 Sending msg to itg. msg: {"itg":{"msgTime":"115048999","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"f405c75d327848ecb550920f6cde784a","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115048999","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:50:49.005+08:00 recvRun - DEBUG 641 ItgClient RecvMsg len: 272
+2024-02-27T11:50:49.005+08:00 pkcs5UnPadding - DEBUG 642 unpadding 263
+2024-02-27T11:50:49.006+08:00 recvRun - DEBUG 643 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:50:49.006+08:00 recvRun - DEBUG 644 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115053","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115053","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"f405c75d327848ecb550920f6cde784a","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:51:16.476+08:00 recvRun - DEBUG 645 ItgClient RecvMsg len: 288
+2024-02-27T11:51:16.477+08:00 pkcs5UnPadding - DEBUG 646 unpadding 276
+2024-02-27T11:51:16.478+08:00 recvRun - DEBUG 647 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:51:16.478+08:00 recvRun - DEBUG 648 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115123055","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115055459","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:51:18.867+08:00 recvRun - DEBUG 649 ItgClient RecvMsg len: 288
+2024-02-27T11:51:18.867+08:00 pkcs5UnPadding - DEBUG 650 unpadding 281
+2024-02-27T11:51:18.869+08:00 recvRun - DEBUG 651 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:51:18.869+08:00 recvRun - DEBUG 652 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115125447","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115058236","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:51:18.999+08:00 Send - DEBUG 653 Sending msg to itg. msg: {"itg":{"msgTime":"115118999","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"ad52d66c25724fda8ea1aba63cdd5f3e","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115118999","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:51:19.006+08:00 recvRun - DEBUG 654 ItgClient RecvMsg len: 272
+2024-02-27T11:51:19.006+08:00 pkcs5UnPadding - DEBUG 655 unpadding 263
+2024-02-27T11:51:19.007+08:00 recvRun - DEBUG 656 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:51:19.007+08:00 recvRun - DEBUG 657 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115123","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115123","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"ad52d66c25724fda8ea1aba63cdd5f3e","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:51:46.462+08:00 recvRun - DEBUG 658 ItgClient RecvMsg len: 288
+2024-02-27T11:51:46.462+08:00 pkcs5UnPadding - DEBUG 659 unpadding 276
+2024-02-27T11:51:46.464+08:00 recvRun - DEBUG 660 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:51:46.464+08:00 recvRun - DEBUG 661 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115153041","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115125473","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:51:48.881+08:00 recvRun - DEBUG 662 ItgClient RecvMsg len: 288
+2024-02-27T11:51:48.881+08:00 pkcs5UnPadding - DEBUG 663 unpadding 281
+2024-02-27T11:51:48.884+08:00 recvRun - DEBUG 664 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:51:48.884+08:00 recvRun - DEBUG 665 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115155461","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115128250","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:51:49+08:00 Send - DEBUG 666 Sending msg to itg. msg: {"itg":{"msgTime":"115149000","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"5ccaf7f0ad5d46669112db90f033ac0d","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115149000","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:51:49.007+08:00 recvRun - DEBUG 667 ItgClient RecvMsg len: 272
+2024-02-27T11:51:49.007+08:00 pkcs5UnPadding - DEBUG 668 unpadding 263
+2024-02-27T11:51:49.008+08:00 recvRun - DEBUG 669 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:51:49.008+08:00 recvRun - DEBUG 670 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115153","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115153","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"5ccaf7f0ad5d46669112db90f033ac0d","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:52:16.5+08:00 recvRun - DEBUG 671 ItgClient RecvMsg len: 288
+2024-02-27T11:52:16.5+08:00 pkcs5UnPadding - DEBUG 672 unpadding 276
+2024-02-27T11:52:16.501+08:00 recvRun - DEBUG 673 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:52:16.502+08:00 recvRun - DEBUG 674 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115223056","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115155487","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:52:18.896+08:00 recvRun - DEBUG 675 ItgClient RecvMsg len: 288
+2024-02-27T11:52:18.897+08:00 pkcs5UnPadding - DEBUG 676 unpadding 281
+2024-02-27T11:52:18.898+08:00 recvRun - DEBUG 677 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:52:18.898+08:00 recvRun - DEBUG 678 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115225476","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115158264","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:52:19.001+08:00 Send - DEBUG 679 Sending msg to itg. msg: {"itg":{"msgTime":"115219001","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"435cbc5d96ce4146845549c5de58e6d1","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115219001","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:52:19.007+08:00 recvRun - DEBUG 680 ItgClient RecvMsg len: 272
+2024-02-27T11:52:19.007+08:00 pkcs5UnPadding - DEBUG 681 unpadding 263
+2024-02-27T11:52:19.008+08:00 recvRun - DEBUG 682 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:52:19.008+08:00 recvRun - DEBUG 683 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115223","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115223","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"435cbc5d96ce4146845549c5de58e6d1","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:52:46.491+08:00 recvRun - DEBUG 684 ItgClient RecvMsg len: 288
+2024-02-27T11:52:46.491+08:00 pkcs5UnPadding - DEBUG 685 unpadding 276
+2024-02-27T11:52:46.492+08:00 recvRun - DEBUG 686 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:52:46.493+08:00 recvRun - DEBUG 687 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115253072","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115225502","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:52:48.911+08:00 recvRun - DEBUG 688 ItgClient RecvMsg len: 288
+2024-02-27T11:52:48.912+08:00 pkcs5UnPadding - DEBUG 689 unpadding 281
+2024-02-27T11:52:48.913+08:00 recvRun - DEBUG 690 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:52:48.913+08:00 recvRun - DEBUG 691 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115255493","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115228278","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:52:49.001+08:00 Send - DEBUG 692 Sending msg to itg. msg: {"itg":{"msgTime":"115249001","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"57328536034d4669b25b413ff9e1f1d5","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115249001","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:52:49.008+08:00 recvRun - DEBUG 693 ItgClient RecvMsg len: 272
+2024-02-27T11:52:49.008+08:00 pkcs5UnPadding - DEBUG 694 unpadding 263
+2024-02-27T11:52:49.008+08:00 recvRun - DEBUG 695 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:52:49.009+08:00 recvRun - DEBUG 696 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115253","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115253","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"57328536034d4669b25b413ff9e1f1d5","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:53:16.507+08:00 recvRun - DEBUG 697 ItgClient RecvMsg len: 288
+2024-02-27T11:53:16.507+08:00 pkcs5UnPadding - DEBUG 698 unpadding 276
+2024-02-27T11:53:16.508+08:00 recvRun - DEBUG 699 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:53:16.509+08:00 recvRun - DEBUG 700 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115323088","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115255516","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:53:18.926+08:00 recvRun - DEBUG 701 ItgClient RecvMsg len: 288
+2024-02-27T11:53:18.926+08:00 pkcs5UnPadding - DEBUG 702 unpadding 281
+2024-02-27T11:53:18.927+08:00 recvRun - DEBUG 703 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:53:18.927+08:00 recvRun - DEBUG 704 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115325508","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115258292","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:53:19.002+08:00 Send - DEBUG 705 Sending msg to itg. msg: {"itg":{"msgTime":"115319002","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"92c537f870e04233a55805f075a4695c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115319002","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:53:19.008+08:00 recvRun - DEBUG 706 ItgClient RecvMsg len: 272
+2024-02-27T11:53:19.008+08:00 pkcs5UnPadding - DEBUG 707 unpadding 263
+2024-02-27T11:53:19.009+08:00 recvRun - DEBUG 708 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:53:19.009+08:00 recvRun - DEBUG 709 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115323","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115323","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"92c537f870e04233a55805f075a4695c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:53:46.531+08:00 recvRun - DEBUG 710 ItgClient RecvMsg len: 288
+2024-02-27T11:53:46.531+08:00 pkcs5UnPadding - DEBUG 711 unpadding 276
+2024-02-27T11:53:46.533+08:00 recvRun - DEBUG 712 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:53:46.533+08:00 recvRun - DEBUG 713 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115353105","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115325531","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:53:48.943+08:00 recvRun - DEBUG 714 ItgClient RecvMsg len: 288
+2024-02-27T11:53:48.944+08:00 pkcs5UnPadding - DEBUG 715 unpadding 281
+2024-02-27T11:53:48.944+08:00 recvRun - DEBUG 716 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:53:48.945+08:00 recvRun - DEBUG 717 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115355525","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115328307","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:53:49.003+08:00 Send - DEBUG 718 Sending msg to itg. msg: {"itg":{"msgTime":"115349003","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"a2a9b7b313d949a0ab9458521cedd0ad","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115349003","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:53:49.009+08:00 recvRun - DEBUG 719 ItgClient RecvMsg len: 272
+2024-02-27T11:53:49.009+08:00 pkcs5UnPadding - DEBUG 720 unpadding 263
+2024-02-27T11:53:49.009+08:00 recvRun - DEBUG 721 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:53:49.01+08:00 recvRun - DEBUG 722 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115353","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115353","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"a2a9b7b313d949a0ab9458521cedd0ad","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:54:16.535+08:00 recvRun - DEBUG 723 ItgClient RecvMsg len: 288
+2024-02-27T11:54:16.537+08:00 pkcs5UnPadding - DEBUG 724 unpadding 276
+2024-02-27T11:54:16.539+08:00 recvRun - DEBUG 725 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:54:16.54+08:00 recvRun - DEBUG 726 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115423119","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115355546","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:54:18.954+08:00 recvRun - DEBUG 727 ItgClient RecvMsg len: 288
+2024-02-27T11:54:18.955+08:00 pkcs5UnPadding - DEBUG 728 unpadding 281
+2024-02-27T11:54:18.956+08:00 recvRun - DEBUG 729 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:54:18.956+08:00 recvRun - DEBUG 730 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115425538","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115358321","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:54:19.003+08:00 Send - DEBUG 731 Sending msg to itg. msg: {"itg":{"msgTime":"115419003","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"b84dba50cf1748c295df9cb5e5b3a8fa","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115419003","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:54:19.01+08:00 recvRun - DEBUG 732 ItgClient RecvMsg len: 272
+2024-02-27T11:54:19.01+08:00 pkcs5UnPadding - DEBUG 733 unpadding 263
+2024-02-27T11:54:19.01+08:00 recvRun - DEBUG 734 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:54:19.011+08:00 recvRun - DEBUG 735 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115423","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115423","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"b84dba50cf1748c295df9cb5e5b3a8fa","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:54:46.548+08:00 recvRun - DEBUG 736 ItgClient RecvMsg len: 288
+2024-02-27T11:54:46.549+08:00 pkcs5UnPadding - DEBUG 737 unpadding 276
+2024-02-27T11:54:46.55+08:00 recvRun - DEBUG 738 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:54:46.551+08:00 recvRun - DEBUG 739 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115453134","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115425559","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:54:48.964+08:00 recvRun - DEBUG 740 ItgClient RecvMsg len: 288
+2024-02-27T11:54:48.964+08:00 pkcs5UnPadding - DEBUG 741 unpadding 281
+2024-02-27T11:54:48.965+08:00 recvRun - DEBUG 742 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:54:48.965+08:00 recvRun - DEBUG 743 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115455551","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115428335","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:54:49.004+08:00 Send - DEBUG 744 Sending msg to itg. msg: {"itg":{"msgTime":"115449004","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"68cc2da575fb4ff5b2946e76b92ae73a","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115449004","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:54:49.01+08:00 recvRun - DEBUG 745 ItgClient RecvMsg len: 272
+2024-02-27T11:54:49.01+08:00 pkcs5UnPadding - DEBUG 746 unpadding 263
+2024-02-27T11:54:49.011+08:00 recvRun - DEBUG 747 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:54:49.011+08:00 recvRun - DEBUG 748 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115453","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115453","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"68cc2da575fb4ff5b2946e76b92ae73a","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:55:16.562+08:00 recvRun - DEBUG 749 ItgClient RecvMsg len: 288
+2024-02-27T11:55:16.563+08:00 pkcs5UnPadding - DEBUG 750 unpadding 276
+2024-02-27T11:55:16.564+08:00 recvRun - DEBUG 751 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:55:16.564+08:00 recvRun - DEBUG 752 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115523149","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115455573","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:55:18.991+08:00 recvRun - DEBUG 753 ItgClient RecvMsg len: 288
+2024-02-27T11:55:18.991+08:00 pkcs5UnPadding - DEBUG 754 unpadding 281
+2024-02-27T11:55:18.993+08:00 recvRun - DEBUG 755 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:55:18.993+08:00 recvRun - DEBUG 756 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115525562","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115458351","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:55:19.004+08:00 Send - DEBUG 757 Sending msg to itg. msg: {"itg":{"msgTime":"115519004","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"209c8c5b807e42818b34ca4ef2229c57","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115519004","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:55:19.011+08:00 recvRun - DEBUG 758 ItgClient RecvMsg len: 272
+2024-02-27T11:55:19.011+08:00 pkcs5UnPadding - DEBUG 759 unpadding 263
+2024-02-27T11:55:19.011+08:00 recvRun - DEBUG 760 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:55:19.012+08:00 recvRun - DEBUG 761 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115523","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115523","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"209c8c5b807e42818b34ca4ef2229c57","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:55:46.575+08:00 recvRun - DEBUG 762 ItgClient RecvMsg len: 288
+2024-02-27T11:55:46.575+08:00 pkcs5UnPadding - DEBUG 763 unpadding 276
+2024-02-27T11:55:46.576+08:00 recvRun - DEBUG 764 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:55:46.576+08:00 recvRun - DEBUG 765 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115553162","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115525589","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:55:48.989+08:00 recvRun - DEBUG 766 ItgClient RecvMsg len: 288
+2024-02-27T11:55:48.989+08:00 pkcs5UnPadding - DEBUG 767 unpadding 281
+2024-02-27T11:55:48.991+08:00 recvRun - DEBUG 768 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:55:48.991+08:00 recvRun - DEBUG 769 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115555576","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115528367","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:55:49.005+08:00 Send - DEBUG 770 Sending msg to itg. msg: {"itg":{"msgTime":"115549005","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"20e484d910d84b73875586994cc1fc43","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115549005","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:55:49.011+08:00 recvRun - DEBUG 771 ItgClient RecvMsg len: 272
+2024-02-27T11:55:49.012+08:00 pkcs5UnPadding - DEBUG 772 unpadding 263
+2024-02-27T11:55:49.012+08:00 recvRun - DEBUG 773 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:55:49.012+08:00 recvRun - DEBUG 774 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115553","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115553","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"20e484d910d84b73875586994cc1fc43","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:56:16.591+08:00 recvRun - DEBUG 775 ItgClient RecvMsg len: 288
+2024-02-27T11:56:16.592+08:00 pkcs5UnPadding - DEBUG 776 unpadding 276
+2024-02-27T11:56:16.592+08:00 recvRun - DEBUG 777 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:56:16.593+08:00 recvRun - DEBUG 778 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115623178","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115555604","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:56:19.006+08:00 Send - DEBUG 779 Sending msg to itg. msg: {"itg":{"msgTime":"115619006","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"044278f65ede4c41a4c84c8d806ae88f","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115619006","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:56:19.013+08:00 recvRun - DEBUG 780 ItgClient RecvMsg len: 272
+2024-02-27T11:56:19.014+08:00 pkcs5UnPadding - DEBUG 781 unpadding 263
+2024-02-27T11:56:19.014+08:00 recvRun - DEBUG 782 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:56:19.014+08:00 recvRun - DEBUG 783 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115623","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115623","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"044278f65ede4c41a4c84c8d806ae88f","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:56:19.028+08:00 recvRun - DEBUG 784 ItgClient RecvMsg len: 288
+2024-02-27T11:56:19.028+08:00 pkcs5UnPadding - DEBUG 785 unpadding 281
+2024-02-27T11:56:19.03+08:00 recvRun - DEBUG 786 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:56:19.031+08:00 recvRun - DEBUG 787 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115625601","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115558381","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-27T11:56:46.602+08:00 recvRun - DEBUG 788 ItgClient RecvMsg len: 288
+2024-02-27T11:56:46.603+08:00 pkcs5UnPadding - DEBUG 789 unpadding 276
+2024-02-27T11:56:46.604+08:00 recvRun - DEBUG 790 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:56:46.604+08:00 recvRun - DEBUG 791 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"126010.04","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115653193","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"115625617","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 276
+2024-02-27T11:56:49.006+08:00 Send - DEBUG 792 Sending msg to itg. msg: {"itg":{"msgTime":"115649006","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"2a855be5677b4db6a9b96e4fa11c1f98","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"115649006","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-27T11:56:49.013+08:00 recvRun - DEBUG 793 ItgClient RecvMsg len: 272
+2024-02-27T11:56:49.013+08:00 pkcs5UnPadding - DEBUG 794 unpadding 263
+2024-02-27T11:56:49.013+08:00 recvRun - DEBUG 795 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:56:49.014+08:00 recvRun - DEBUG 796 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227115653","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240227115653","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"2a855be5677b4db6a9b96e4fa11c1f98","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-27T11:56:49.029+08:00 recvRun - DEBUG 797 ItgClient RecvMsg len: 288
+2024-02-27T11:56:49.029+08:00 pkcs5UnPadding - DEBUG 798 unpadding 281
+2024-02-27T11:56:49.031+08:00 recvRun - DEBUG 799 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-27T11:56:49.031+08:00 recvRun - DEBUG 800 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"115655612","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"115628395","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281

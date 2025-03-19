@@ -1,0 +1,13 @@
+{
+  "active_cfg": {
+    "addr": "47.96.27.180:61613",
+    "topic": ["/topic/SZ:1:","/topic/SH:1:"]
+  },
+  "kdb_cfg": {
+    "ip": "47.96.27.180",
+    "port":40000,
+    "auth": "test:pass",
+    "table": "Market",
+    "fun": "upd"
+  }
+}

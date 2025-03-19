@@ -1,0 +1,72 @@
+2024-02-28T14:24:38.386+08:00 LibITG_Init - DEBUG 1 MergePosition 0
+2024-02-28T14:24:38.386+08:00 LibITG_Init - DEBUG 2 WD D:\Project\T0\T0\ltg\stage
+2024-02-28T14:24:38.434+08:00 NewItg - INFO 3 Create New ItgClient, addr: 106.15.92.93:10005
+2024-02-28T14:24:38.434+08:00 Connect - INFO 4 Connecting to 106.15.92.93:10005
+2024-02-28T14:24:38.443+08:00 Connect - INFO 5 Successfully Connected to 106.15.92.93:10005
+2024-02-28T14:24:38.456+08:00 Connect - WARNING 6 Decrypting the comfirmation failed when connect to 106.15.92.93:10005, crypto/rsa: decryption error
+2024-02-28T14:24:38.456+08:00 Connect - DEBUG 7 AES Key: IGHFAMCGKFOAGJIO, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-28T14:24:38.457+08:00 Send - DEBUG 8 Sending msg to itg. msg: {"itg":{"msgTime":"142438457","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"1c871703780c4e3fb12bb31dbdc1f4a5","infCode":"ITG_LOGIN_ACCOUNT","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":"1c871703780c4e3fb12bb31dbdc1f4a5","accountPwd":"f379eaf3c831b04de153469d1bec345e","loginMac":"","loginDiskSn":"","loginIp":""}}} len: 368 dest: 106.15.92.93:10005
+2024-02-28T14:24:38.458+08:00 Send - DEBUG 9 Sending msg to itg. msg: {"itg":{"msgTime":"142438458","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"488a85884e50477dbcfcef1a0fa10a53","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"142438458","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-28T14:24:38.496+08:00 recvRun - DEBUG 10 ItgClient RecvMsg len: 272
+2024-02-28T14:24:38.496+08:00 pkcs5UnPadding - DEBUG 11 unpadding 263
+2024-02-28T14:24:38.497+08:00 recvRun - DEBUG 12 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-28T14:24:38.497+08:00 recvRun - DEBUG 13 ItgClient RecvMsg: {"itg":{"content":{"time":"20240228142440","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240228142440","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"488a85884e50477dbcfcef1a0fa10a53","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-28T14:24:38.509+08:00 Send - DEBUG 14 Sending msg to itg. msg: {"itg":{"msgTime":"142438509","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"a271213ab4b747be8be73ae3c1797176","infCode":"ITG_DO_SUBMIT_ORDER","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"pkOrder":"","teamCode":"","productCode":"200002","accountCode":"10016","stockCode":"000617","stockType":0,"stockFrom":0,"appointType":2,"appointPrice":"6.190000","appointCnt":100,"macAddr":"","ipAddr":"","snAddr":""}}} len: 448 dest: 106.15.92.93:10005
+2024-02-28T14:24:38.51+08:00 recvRun - DEBUG 15 ItgClient RecvMsg len: 672
+2024-02-28T14:24:38.511+08:00 pkcs5UnPadding - DEBUG 16 unpadding 658
+2024-02-28T14:24:38.511+08:00 recvRun - DEBUG 17 ItgClient RecvMsg Type: ITG_LOGIN_ACCOUNT
+2024-02-28T14:24:38.511+08:00 recvRun - DEBUG 18 ItgClient RecvMsg: {"itg":{"content":{"accountCommission":"0.00025","accountName":"10016","accountPwd":"f379eaf3c831b04de153469d1bec345e","accountStatus":0,"bpLine":"10000000","closingDownLine":"10000","cordonLine":"0.8","desc":"","isAutoShutdown":1,"isEveningUp":1,"isRotationTrade":1,"isTradePub":0,"loginDate":"20240228","loginDiskSn":"","loginIp":"","loginMac":"","loginTime":"142440698","newMinFee":"5","riskCloseRatio":"0","teamCode":"hk801","tradeCloseRatio":""},"errDesc":"","infCode":"ITG_LOGIN_ACCOUNT","msgTime":"142440698","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"1c871703780c4e3fb12bb31dbdc1f4a5","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 658
+2024-02-28T14:24:38.544+08:00 recvRun - DEBUG 19 ItgClient RecvMsg len: 736
+2024-02-28T14:24:38.544+08:00 pkcs5UnPadding - DEBUG 20 unpadding 727
+2024-02-28T14:24:38.545+08:00 recvRun - DEBUG 21 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-28T14:24:38.545+08:00 recvRun - DEBUG 22 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"","appointPrice":"6.190000","appointStatus":"S","appointStockCode":"000617","appointTime":"142440","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.00","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":0,"pkOrder":"20240228142440720037","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"142438509","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"a271213ab4b747be8be73ae3c1797176","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 727
+2024-02-28T14:24:38.546+08:00 recvRun - DEBUG 23 ItgClient RecvMsg len: 496
+2024-02-28T14:24:38.546+08:00 pkcs5UnPadding - DEBUG 24 unpadding 491
+2024-02-28T14:24:38.547+08:00 recvRun - DEBUG 25 ItgClient RecvMsg Type: ITG_PUSH_PRIVATE_POSITION_INFO
+2024-02-28T14:24:38.547+08:00 recvRun - DEBUG 26 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":30000,"accountCode":"10016","belongTo":1,"canBuy":30000,"canSell":29500,"holdNum":-400,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_PRIVATE_POSITION_INFO","msgTime":"142438509","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"a271213ab4b747be8be73ae3c1797176","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 491
+2024-02-28T14:24:38.548+08:00 recvRun - DEBUG 27 ItgClient RecvMsg len: 480
+2024-02-28T14:24:38.548+08:00 pkcs5UnPadding - DEBUG 28 unpadding 468
+2024-02-28T14:24:38.548+08:00 recvRun - DEBUG 29 ItgClient RecvMsg Type: ITG_PUSH_TEAM_POSITION_INFO
+2024-02-28T14:24:38.549+08:00 recvRun - DEBUG 30 ItgClient RecvMsg: {"itg":{"content":{"positionList":[{"ableCnt":0,"accountCode":"","belongTo":2,"canBuy":0,"canSell":0,"holdNum":0,"lockStock":0,"productCode":"200002","productName":"模拟200002","stockCode":"000617","stockType":0,"teamCode":"hk801","unCloseNo":""}]},"errDesc":"","infCode":"ITG_PUSH_TEAM_POSITION_INFO","msgTime":"142438509","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"a271213ab4b747be8be73ae3c1797176","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 468
+2024-02-28T14:24:38.55+08:00 recvRun - DEBUG 31 ItgClient RecvMsg len: 656
+2024-02-28T14:24:38.55+08:00 pkcs5UnPadding - DEBUG 32 unpadding 655
+2024-02-28T14:24:38.551+08:00 recvRun - DEBUG 33 ItgClient RecvMsg Type: ITG_DO_SUBMIT_ORDER
+2024-02-28T14:24:38.551+08:00 recvRun - DEBUG 34 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"a271213ab4b747be8be73ae3c1797176","appointPrice":"6.190000","appointStatus":"2","appointStockCode":"000617","appointTime":"142440","appointType":2,"dealAvrPrice":"","dealCnt":0,"freqNo":"a271213ab4b747be8be73ae3c1797176","isVritual":1,"memo":"","orderDate":"20240228","pkOrder":"","productCode":"200002","stockFrom":0,"stockType":0,"teamCode":"","tradeCommission":""},"errDesc":"","infCode":"ITG_DO_SUBMIT_ORDER","msgTime":"142440729","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"a271213ab4b747be8be73ae3c1797176","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 655
+2024-02-28T14:24:38.584+08:00 recvRun - DEBUG 35 ItgClient RecvMsg len: 736
+2024-02-28T14:24:38.585+08:00 pkcs5UnPadding - DEBUG 36 unpadding 725
+2024-02-28T14:24:38.586+08:00 recvRun - DEBUG 37 ItgClient RecvMsg Type: ITG_PUSH_ORDER
+2024-02-28T14:24:38.586+08:00 recvRun - DEBUG 38 ItgClient RecvMsg: {"itg":{"content":{"accountCode":"10016","appointCnt":100,"appointOrderCode":"142440729734242","appointPrice":"6.190000","appointStatus":"2","appointStockCode":"000617","appointTime":"142440","appointType":2,"batchNumber":"","closePkOrder":"","dealAvrPrice":"0.0","dealCnt":0,"freqNo":"","isVritual":1,"memo":"","orderDate":"","orderDelay":50,"pkOrder":"20240228142440720037","productCode":"200002","publicSeparateNum":0,"stockFrom":0,"stockType":0,"teamCode":"hk801","teamSeparateNum":0,"tradeClosePrice":"","tradeCommission":"0.00025"},"errDesc":"","infCode":"ITG_PUSH_ORDER","msgTime":"142440729","msgType":2,"opUserCode":"10016","opUserType":1,"reqNo":"142440729734242","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 725
+2024-02-28T14:24:53.058+08:00 recvRun - DEBUG 39 ItgClient RecvMsg len: 288
+2024-02-28T14:24:53.058+08:00 pkcs5UnPadding - DEBUG 40 unpadding 275
+2024-02-28T14:24:53.059+08:00 recvRun - DEBUG 41 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:24:53.059+08:00 recvRun - DEBUG 42 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"106327.1","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142457356","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"142429569","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 275
+2024-02-28T14:24:55.358+08:00 recvRun - DEBUG 43 ItgClient RecvMsg len: 288
+2024-02-28T14:24:55.358+08:00 pkcs5UnPadding - DEBUG 44 unpadding 281
+2024-02-28T14:24:55.359+08:00 recvRun - DEBUG 45 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:24:55.359+08:00 recvRun - DEBUG 46 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142459652","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"142432335","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-28T14:25:08.459+08:00 Send - DEBUG 47 Sending msg to itg. msg: {"itg":{"msgTime":"142508459","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"c96c9920dad443b48b10eb2749ab581c","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"142508459","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-28T14:25:18.172+08:00 recvRun - DEBUG 48 ItgClient RecvMsg len: 272
+2024-02-28T14:25:18.173+08:00 pkcs5UnPadding - DEBUG 49 unpadding 263
+2024-02-28T14:25:18.173+08:00 recvRun - DEBUG 50 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-28T14:25:18.173+08:00 recvRun - DEBUG 51 ItgClient RecvMsg: {"itg":{"content":{"time":"20240228142520","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240228142520","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"c96c9920dad443b48b10eb2749ab581c","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-28T14:25:23.062+08:00 recvRun - DEBUG 52 ItgClient RecvMsg len: 288
+2024-02-28T14:25:23.062+08:00 pkcs5UnPadding - DEBUG 53 unpadding 275
+2024-02-28T14:25:23.065+08:00 recvRun - DEBUG 54 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:25:23.065+08:00 recvRun - DEBUG 55 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"106327.1","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142527363","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"142459584","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 275
+2024-02-28T14:25:25.366+08:00 recvRun - DEBUG 56 ItgClient RecvMsg len: 288
+2024-02-28T14:25:25.366+08:00 pkcs5UnPadding - DEBUG 57 unpadding 281
+2024-02-28T14:25:25.368+08:00 recvRun - DEBUG 58 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:25:25.368+08:00 recvRun - DEBUG 59 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142529665","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"142502349","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281
+2024-02-28T14:25:48.169+08:00 Send - DEBUG 60 Sending msg to itg. msg: {"itg":{"msgTime":"142548169","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"894c24255b474646bdf61ab1754efdc0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":1,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"142548169","to":1}}} len: 256 dest: 106.15.92.93:10005
+2024-02-28T14:25:48.176+08:00 recvRun - DEBUG 61 ItgClient RecvMsg len: 272
+2024-02-28T14:25:48.176+08:00 pkcs5UnPadding - DEBUG 62 unpadding 263
+2024-02-28T14:25:48.176+08:00 recvRun - DEBUG 63 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-28T14:25:48.177+08:00 recvRun - DEBUG 64 ItgClient RecvMsg: {"itg":{"content":{"time":"20240228142550","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240228142550","msgType":1,"opUserCode":"10016","opUserType":1,"reqNo":"894c24255b474646bdf61ab1754efdc0","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-28T14:25:53.071+08:00 recvRun - DEBUG 65 ItgClient RecvMsg len: 288
+2024-02-28T14:25:53.071+08:00 pkcs5UnPadding - DEBUG 66 unpadding 275
+2024-02-28T14:25:53.072+08:00 recvRun - DEBUG 67 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:25:53.073+08:00 recvRun - DEBUG 68 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"106327.1","productCode":"666","totalBnc":"0.000"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142557373","msgType":2,"opUserCode":"666","opUserType":3,"reqNo":"142529600","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 275
+2024-02-28T14:25:55.376+08:00 recvRun - DEBUG 69 ItgClient RecvMsg len: 288
+2024-02-28T14:25:55.376+08:00 pkcs5UnPadding - DEBUG 70 unpadding 281
+2024-02-28T14:25:55.378+08:00 recvRun - DEBUG 71 ItgClient RecvMsg Type: ITG_PUSH_PRODUCT_BALANCE
+2024-02-28T14:25:55.378+08:00 recvRun - DEBUG 72 ItgClient RecvMsg: {"itg":{"content":{"availableBnc":"133.85","productCode":"600001","totalBnc":"133.850"},"errDesc":"","infCode":"ITG_PUSH_PRODUCT_BALANCE","msgTime":"142559675","msgType":2,"opUserCode":"600001","opUserType":3,"reqNo":"142532364","reqSource":"ORDER_CHANNEL_REQSOURCE","respCode":0}}, ContentLen: 281

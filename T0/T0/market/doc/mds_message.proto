@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+//package com.tailai.market.protobuf;
+
+//option java_package = "com.tailai.market.protobuf";
+//option java_outer_classname = "MarketData";
+//option java_multiple_files = false;
+
+option go_package="./;proto";
+
+/*消息类型定义*/
+enum MsgType
+{
+ Heartbeat_Notify=0;
+ /*证券行情推送*/
+ Notify_Quotation_Stock = 1;
+}
+
+
+
+message StockQuotationList
+{
+    repeated StockQuotation stock_quotations = 1;
+}
+
+
+/*证券行情消息*/
+message StockQuotation
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ int64 open_price = 4;
+ int64 high_price = 5;
+ int64 low_price = 6;
+ int64 last_price = 7;
+ int64 num_trades = 8;
+ int64 total_volume = 9;
+ int64 total_value = 10;
+ repeated int64 ask_price = 11;
+ repeated int64 ask_size = 12;
+ repeated int64 bid_price = 13;
+ repeated int64 bid_size = 14;
+ int64 after_price = 15; //盘后价格
+ int64 after_volume = 16; //盘后量
+ int64 after_turnover = 17; //盘后成交金额
+ int64 after_match_items = 18; //盘后成交笔数
+ int64 pre_close_price = 19;
+ int64 high_limited = 20;
+ int64 low_limited = 21;
+ int64 IOPV = 22;
+ int64 total_bid_vol = 23;
+ int64 total_ask_vol = 24;
+ int64 avg_ask_price = 25;
+ int64 avg_bid_price = 26;
+ int64 server_time = 27;
+}
+
+
+/*与Request相同,把所有的XxxxxNotification消息集合在一起当作联合体使用.*/
+message Notify
+{
+  StockQuotationList stock_quotation_list = 2;
+}
+
+/*顶层消息，包含所有的Request，Response，Notification，具体包含哪个消息又msg_type字段决定，程序逻辑去保证msg_type和具体的消息进行匹配*/
+message Message
+{
+ MsgType msg_type = 1;
+ uint64  sequence = 2;//消息系列号
+ fixed32 session_id = 3;
+ Notify notify = 6;
+}
+

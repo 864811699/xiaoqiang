@@ -1,0 +1,30 @@
+{
+    "Test": {
+        "Enable": false,
+        "Interval": 1,
+		"Log": false,
+
+        "QEnable": false,
+        "QInterval": 1,
+		"QLog": false
+    },
+	
+    "Log": {
+        "LogFile": "./logs/trade.log",
+        "LogLevel": "DEBUG",
+		"ConsoleLevel": "DEBUG"
+    },
+
+    "Trade": {
+        "ProductCode": "200002",
+		"Addr": "106.15.92.93:10001",
+		"MergePosition": 0,
+		"OpUserType": 1,
+		"BalanceType": 0
+    },
+
+    "Quote": {
+        "ProductCode": "",
+        "Addr": "47.101.170.217:10001"
+    }
+}

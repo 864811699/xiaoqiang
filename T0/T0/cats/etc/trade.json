@@ -1,0 +1,18 @@
+{
+  "broker": "ZhongXin",
+  "kdb_host": "115.238.186.119",
+  "kdb_port": 40000,
+  "auth": "test:pass",
+  "dbPath": "./db",
+  "maxNo": 0,
+  "accounts": ["bfl75RRRR"],
+  "respFile": "./data/rsp/ordRsp.dbf",
+  "assetFile":"./data/rsp/asset.dbf",
+  "ordDir":"./data/order",
+  "tempDir": "./data/temp",
+  "accountInfos": {
+    "bfl75RRRR": {"account": "114438--CNY--RH","accountType": "FEQD","buy": "E40","sell": "E30"}
+  }
+}
+
+

@@ -1,0 +1,30 @@
+{
+  "broker":"TradeApi",
+  "kdb_host": "115.238.186.119",
+  "kdb_port": 40000,
+  "auth": "test:pass",
+  "maxNo": 0,
+  "db": "./db",
+  "urls": {
+    "login_url": "http://106.39.38.170:33808/sys/login",
+    "heart_url":"http://106.39.38.170:33808/sys/heartbeat",
+    "new_order_url": "http://106.39.38.170:33808/order/entrust",
+    "new_cancel_url":"http://106.39.38.170:33808/order/withdraw",
+    "query_order_url": "http://106.39.38.170:33808/order/list",
+    "sub_url":"ws://106.39.38.170:33808/ws"
+  },
+  "userInfo": {
+    "userName": "user1",
+    "password": "pwd1"
+  },
+  "accounts": ["testZX","rzrq"],
+  "accountInfos": {
+    "testZX": {"fundAccount": "15229247","cashType": "0","entrustType": "1"},
+    "rzrq": {"fundAccount": "80801052","cashType": "0","entrustType": "1"}
+  }
+}
+
+
+
+
+

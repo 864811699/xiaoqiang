@@ -1,0 +1,29 @@
+2024-02-27T11:18:07.296+08:00 NewItg - INFO 1 Create New ItgClient, addr: 47.101.170.217:10001
+2024-02-27T11:18:07.297+08:00 Connect - INFO 2 Connecting to 47.101.170.217:10001
+2024-02-27T11:18:07.305+08:00 Connect - INFO 3 Successfully Connected to 47.101.170.217:10001
+2024-02-27T11:18:07.316+08:00 Connect - WARNING 4 Decrypting the comfirmation failed when connect to 47.101.170.217:10001, crypto/rsa: decryption error
+2024-02-27T11:18:07.317+08:00 Connect - DEBUG 5 AES Key: KNNMBGOFDKKOHLKO, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T11:18:07.32+08:00 Send - DEBUG 6 Sending msg to itg. msg: {"itg":{"msgTime":"111807320","reqSource":"human_channel","reqNo":"393fe7f9cc6c4ec7a5d22f9267731f0e","infCode":"ITG_LOGIN_QUOTATION","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":""}}}
+ len: 240 dest: 47.101.170.217:10001
+2024-02-27T11:18:07.322+08:00 Send - DEBUG 7 Sending msg to itg. msg: {"itg":{"msgTime":"111807322","reqSource":"human_channel","reqNo":"7a73bec181374485817391d278707853","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111807322","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:18:07.327+08:00 recvRun - DEBUG 8 ItgClient RecvMsg len: 208
+2024-02-27T11:18:07.331+08:00 pkcs5UnPadding - DEBUG 9 unpadding 207
+2024-02-27T11:18:07.332+08:00 recvRun - DEBUG 10 ItgClient RecvMsg Type: ITG_LOGIN_QUOTATION
+2024-02-27T11:18:07.333+08:00 recvRun - DEBUG 11 ItgClient RecvMsg: {"itg":{"errDesc":"","infCode":"ITG_LOGIN_QUOTATION","msgTime":"111811924","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"393fe7f9cc6c4ec7a5d22f9267731f0e","reqSource":"human_channel","respCode":0}}, ContentLen: 207
+2024-02-27T11:18:07.334+08:00 recvRun - DEBUG 12 ItgClient RecvMsg len: 256
+2024-02-27T11:18:07.334+08:00 pkcs5UnPadding - DEBUG 13 unpadding 251
+2024-02-27T11:18:07.335+08:00 recvRun - DEBUG 14 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:18:07.336+08:00 recvRun - DEBUG 15 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227111811925","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"111811925","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"7a73bec181374485817391d278707853","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:18:37.323+08:00 Send - DEBUG 16 Sending msg to itg. msg: {"itg":{"msgTime":"111837323","reqSource":"human_channel","reqNo":"832e5b8804aa48f392a6b899882f7999","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111837323","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:18:41.704+08:00 recvRun - DEBUG 17 ItgClient RecvMsg len: 256
+2024-02-27T11:18:41.704+08:00 pkcs5UnPadding - DEBUG 18 unpadding 251
+2024-02-27T11:18:41.705+08:00 recvRun - DEBUG 19 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:18:41.707+08:00 recvRun - DEBUG 20 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227111846301","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"111846301","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"832e5b8804aa48f392a6b899882f7999","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:19:11.699+08:00 Send - DEBUG 21 Sending msg to itg. msg: {"itg":{"msgTime":"111911699","reqSource":"human_channel","reqNo":"b11b4a5407064a4dbf10e681084a2011","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111911699","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:19:11.705+08:00 recvRun - DEBUG 22 ItgClient RecvMsg len: 256
+2024-02-27T11:19:11.707+08:00 pkcs5UnPadding - DEBUG 23 unpadding 251
+2024-02-27T11:19:11.707+08:00 recvRun - DEBUG 24 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:19:11.707+08:00 recvRun - DEBUG 25 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227111916303","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"111916303","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"b11b4a5407064a4dbf10e681084a2011","reqSource":"human_channel","respCode":0}}, ContentLen: 251

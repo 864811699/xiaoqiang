@@ -1,0 +1,17 @@
+2024-02-27T10:48:45.135+08:00 NewItg - INFO 1 Create New ItgClient, addr: 47.101.170.217:10001
+2024-02-27T10:48:45.136+08:00 Connect - INFO 2 Connecting to 47.101.170.217:10001
+2024-02-27T10:48:45.143+08:00 Connect - INFO 3 Successfully Connected to 47.101.170.217:10001
+2024-02-27T10:48:45.153+08:00 Connect - WARNING 4 Decrypting the comfirmation failed when connect to 47.101.170.217:10001, crypto/rsa: decryption error
+2024-02-27T10:48:45.153+08:00 Connect - DEBUG 5 AES Key: DCDFDNNDCHBNMNMA, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T10:48:45.156+08:00 Send - DEBUG 6 Sending msg to itg. msg: {"itg":{"msgTime":"104845156","reqSource":"human_channel","reqNo":"96d00b47824d4e6495ef86aff479402e","infCode":"ITG_LOGIN_QUOTATION","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":""}}}
+ len: 240 dest: 47.101.170.217:10001
+2024-02-27T10:48:45.157+08:00 Send - DEBUG 7 Sending msg to itg. msg: {"itg":{"msgTime":"104845157","reqSource":"human_channel","reqNo":"8382a4fc290f4e2da9b6da29903dd5f5","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"104845157","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T10:48:45.163+08:00 recvRun - DEBUG 8 ItgClient RecvMsg len: 208
+2024-02-27T10:48:45.164+08:00 pkcs5UnPadding - DEBUG 9 unpadding 207
+2024-02-27T10:48:45.166+08:00 recvRun - DEBUG 10 ItgClient RecvMsg Type: ITG_LOGIN_QUOTATION
+2024-02-27T10:48:45.166+08:00 recvRun - DEBUG 11 ItgClient RecvMsg: {"itg":{"errDesc":"","infCode":"ITG_LOGIN_QUOTATION","msgTime":"104849709","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"96d00b47824d4e6495ef86aff479402e","reqSource":"human_channel","respCode":0}}, ContentLen: 207
+2024-02-27T10:48:45.167+08:00 recvRun - DEBUG 12 ItgClient RecvMsg len: 256
+2024-02-27T10:48:45.167+08:00 pkcs5UnPadding - DEBUG 13 unpadding 251
+2024-02-27T10:48:45.168+08:00 recvRun - DEBUG 14 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T10:48:45.171+08:00 recvRun - DEBUG 15 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227104849710","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"104849710","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"8382a4fc290f4e2da9b6da29903dd5f5","reqSource":"human_channel","respCode":0}}, ContentLen: 251

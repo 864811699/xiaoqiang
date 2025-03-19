@@ -1,0 +1,19 @@
+{
+  "broker":"TradeApi",
+  "kdb_host": "115.238.186.119",
+  "kdb_port": 40000,
+  "auth": "test:pass",
+  "accounts": [
+    "zt0672i","zt0672iRZ","testxq"
+  ],
+  "maxNo": 0,
+  "db": "./db",
+  "trader_user": "002812100",
+  "trader_pwd": "1",
+  "querry_tk": 2,
+  "account_infos":{
+    "testxq": {"name": "test","buy": "zy","sell": "zy"},
+    "zt0672i": {"name": "zt1041i","buy": "zy","sell": "zy"},
+    "zt0672iRZ": {"name": "zt1041i","buy": "xy","sell": "xy"}
+  }
+}

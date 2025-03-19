@@ -1,0 +1,20 @@
+{
+  "kdb": {
+    "kdbIP": "58.216.145.86",
+    "kdbPort": 40000,
+    "user": "test",
+    "pwd": "pass",
+    "requestTab": "request",
+    "responseTab": "response",
+    "accounts": ["test1"]
+  },
+  "api": {
+    "user": "10016",
+    "pwd": "666666",
+    "fundAccounts": [""]
+  },
+  "accountInfos": {
+    "test1": {"szUserStr": "","szProductCode": "gz001"}
+
+  }
+}

@@ -1,0 +1,523 @@
+[2022/06/30 10:42:29 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:42:29 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:42:29 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).querySql:319) connected with fullKdb, host: 42.192.93.251, port: 5000
+[2022/06/30 10:42:29 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).updateAfterReboot:356) query err: cumqty
+[2022/06/30 10:42:29 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:42:29 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:42:29 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc000044300 
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:42:29 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:42:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:43:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:43:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:44:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:44:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:45:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:45:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:46:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:46:47 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:391) trade engine is stopping
+[2022/06/30 10:46:47 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42351->42.192.93.251:5000: use of closed network connection
+[2022/06/30 10:46:51 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:46:51 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:46:51 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).querySql:319) connected with fullKdb, host: 42.192.93.251, port: 5000
+[2022/06/30 10:46:51 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).updateAfterReboot:356) query err: cumqty
+[2022/06/30 10:46:51 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:46:51 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:46:51 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0002c46c0 
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:46:51 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:46:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:47:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:47:26 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:391) trade engine is stopping
+[2022/06/30 10:47:26 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42422->42.192.93.251:5000: use of closed network connection
+[2022/06/30 10:47:40 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:47:40 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:47:40 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).querySql:319) connected with fullKdb, host: 42.192.93.251, port: 5000
+[2022/06/30 10:47:40 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).updateAfterReboot:356) query err: cumqty
+[2022/06/30 10:47:40 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:47:40 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:47:40 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0003cc660 
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:47:40 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:47:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:48:08 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:48:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:48:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).querySql:319) connected with fullKdb, host: 42.192.93.251, port: 5000
+[2022/06/30 10:48:08 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).updateAfterReboot:356) query err: cumqty
+[2022/06/30 10:48:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:48:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:48:08 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0003cc660 
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:48:08 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:48:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:51:31 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:51:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:51:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:51:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:51:31 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0000d4300 
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:51:31 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:51:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:52:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:52:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:53:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:53:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:54:04 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:381) trade engine is stopping
+[2022/06/30 10:54:04 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42489->42.192.93.251:5000: use of closed network connection
+[2022/06/30 10:54:07 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:103) start cron tasks
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 10:54:07 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 10:54:07 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 10:54:07 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 10:54:07 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc00045e480 
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 10:54:07 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 10:54:09 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1.1:135) &{{test01 9facad4e-876d-fecc-9953-8f20e5134a3e} test 2022-06-30 10:54:35.239 +0000 UTC 0 601818 3 100 0 0 0 0 }
+[2022/06/30 10:54:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:54:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:55:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:55:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:56:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:56:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:57:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:57:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:58:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:58:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:59:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 10:59:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:00:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:00:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:01:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:01:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:02:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:02:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:03:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:03:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:03:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:383) trade engine is stopping
+[2022/06/30 11:03:57 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42511->42.192.93.251:5000: use of closed network connection
+[2022/06/30 11:04:00 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:04:00 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:04:00 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:04:00 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 11:04:00 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0000443c0 
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:04:00 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:04:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:04:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:05:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:05:32 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:383) trade engine is stopping
+[2022/06/30 11:05:32 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42640->42.192.93.251:5000: use of closed network connection
+[2022/06/30 11:05:39 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:05:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:05:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:05:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 11:05:39 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0000443c0 
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:05:39 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:05:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:06:28 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:06:28 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:06:28 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:06:28 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 11:06:28 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc000044360 
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:06:28 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:06:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:07:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:07:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:08:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:08:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:09:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:09:28 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:384) trade engine is stopping
+[2022/06/30 11:09:28 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42668->42.192.93.251:5000: use of closed network connection
+[2022/06/30 11:09:31 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:09:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:09:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:09:31 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:250) ########### ERROR ORDER  START ########
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.(*Api).update:188) ########### UPDATE  START ########
+[2022/06/30 11:09:31 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0004a0360 
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:09:31 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:09:32 CST] [DEBG] (github.com/864811699/T0kdb.process.func1.1:52) new order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test", Qid:"19ee66ed-477a-44d6-95e1-cea7255e5c2c"}, Time:time.Time{wall:0xc1988c0, ext:63792184198, loc:(*time.Location)(nil)}, ParentId:"", Trader:"test01", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:0, Askprice:3, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, OrderId:"", SecurityId:"", EntrustNo:0, CumQty:0, AvgPx:0, Withdraw:0, Status:0, Note:""}
+[2022/06/30 11:09:32 CST] [EROR] (xuntouCSV/trade.(*Api).errOrdReturn:101) Order Error : side :0 , side should be 0/1
+[2022/06/30 11:09:32 CST] [DEBG] (github.com/864811699/T0kdb.process.func2:79) updated order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test", Qid:"19ee66ed-477a-44d6-95e1-cea7255e5c2c"}, Time:time.Time{wall:0xc1988c0, ext:63792184198, loc:(*time.Location)(nil)}, ParentId:"", Trader:"test01", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:0, Askprice:3, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, OrderId:"", SecurityId:"", EntrustNo:1, CumQty:0, AvgPx:0, Withdraw:0, Status:6, Note:"side :0 , side should be 0/1"}
+[2022/06/30 11:09:32 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).updateOrder:302) send to kdb, order info: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test", Qid:"19ee66ed-477a-44d6-95e1-cea7255e5c2c"}, Time:time.Time{wall:0xc1988c0, ext:63792184198, loc:(*time.Location)(nil)}, ParentId:"", Trader:"test01", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:0, Askprice:3, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, OrderId:"", SecurityId:"", EntrustNo:1, CumQty:0, AvgPx:0, Withdraw:0, Status:6, Note:"side :0 , side should be 0/1"}
+[2022/06/30 11:09:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:10:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:10:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:11:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:11:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:12:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:12:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:13:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:13:28 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:380) trade engine is stopping
+[2022/06/30 11:13:28 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42695->42.192.93.251:5000: use of closed network connection
+[2022/06/30 11:13:32 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:13:32 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:13:32 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:13:32 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.(*Api).update:174) ########### UPDATE  START ########
+[2022/06/30 11:13:32 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc0000dc240 
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:236) ########### ERROR ORDER  START ########
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:13:32 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:14:16 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:14:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:14:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:14:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.(*Api).update:174) ########### UPDATE  START ########
+[2022/06/30 11:14:16 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc000044300 
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:236) ########### ERROR ORDER  START ########
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:14:16 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:14:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:17:56 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:17:56 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:17:56 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:17:56 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.(*Api).update:174) ########### UPDATE  START ########
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:236) ########### ERROR ORDER  START ########
+[2022/06/30 11:17:56 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc000086300 
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:17:56 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:20:45 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:20:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:20:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:20:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.(*Api).update:174) ########### UPDATE  START ########
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:20:45 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc00041a240 
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:236) ########### ERROR ORDER  START ########
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:20:45 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:20:47 CST] [DEBG] (github.com/864811699/T0kdb.process.func1.1:52) new order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test01", Qid:"632f09b6-c219-ccf6-a425-5b6053a28b40"}, Time:time.Time{wall:0x342770c0, ext:63792184872, loc:(*time.Location)(nil)}, ParentId:"", Trader:"test", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:0, Askprice:3, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, OrderId:"", SecurityId:"", EntrustNo:0, CumQty:0, AvgPx:0, Withdraw:0, Status:0, Note:""}
+[2022/06/30 11:20:47 CST] [INFO] (xuntouCSV/trade.(*Api).Trade:136) trade order success :: entrustNo [2] --> packID [test1-2] 
+[2022/06/30 11:20:47 CST] [INFO] (xuntouCSV/trade.(*PBApi).sendOrder.func1:167) send order,chan [test01] ,order msg :test1-2,27,3,3.00,SH601818,100,test01 
+[2022/06/30 11:20:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:21:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:21:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:22:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:22:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:23:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:23:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:24:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:24:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:25:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:25:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:26:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:26:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:27:06 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:372) trade engine is stopping
+[2022/06/30 11:27:06 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42828->42.192.93.251:5000: use of closed network connection
+[2022/06/30 11:27:10 CST] [INFO] (github.com/864811699/T0kdb.cronTask.func1:104) start cron tasks
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.(*Api).LoadCfg:82) load cfg success!!
+[2022/06/30 11:27:10 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 42.192.93.251, port: 5000
+[2022/06/30 11:27:10 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: []
+[2022/06/30 11:27:10 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.NewPBAPI:102) Accounts init success!!!
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.NewPBAPI:103) accountType : 2普通, 3信用
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.NewPBAPI:104) side: 23买		24卖		23担保品买入		24担保品卖出		27融资买入		28 融券卖出		29 买券还券		30 直接还券	
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.(*Api).RunApi:95) API run success!
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.(*Api).errorOrder:236) ########### ERROR ORDER  START ########
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.(*Api).update:174) ########### UPDATE  START ########
+[2022/06/30 11:27:10 CST] [DEBG] (xuntouCSV/trade.(*PBApi).sendOrder.func1:159) account:test01 ,chan : 0xc00045e420 
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order_error.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:27:10 CST] [INFO] (xuntouCSV/trade.readCsv:249) notify D:\TradeApp\广发\广发证券QMT量化交易系统-交易端\export_data/order.14902243_2.20220630.csv beggin !!!
+[2022/06/30 11:27:12 CST] [DEBG] (github.com/864811699/T0kdb.process.func1.1:52) new order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test01", Qid:"46765edf-7546-f6a1-0c23-e64b1a4fb3dc"}, Time:time.Time{wall:0x160dc080, ext:63792185257, loc:(*time.Location)(nil)}, ParentId:"", Trader:"test", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:0, Askprice:3, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, OrderId:"", SecurityId:"", EntrustNo:0, CumQty:0, AvgPx:0, Withdraw:0, Status:0, Note:""}
+[2022/06/30 11:27:12 CST] [INFO] (xuntouCSV/trade.(*Api).Trade:136) trade order success :: entrustNo [3] --> packID [test1-3] 
+[2022/06/30 11:27:12 CST] [INFO] (xuntouCSV/trade.(*PBApi).sendOrder.func1:167) send order,chan [test01] ,order msg :test1-3,27,3,3.00,SH601818,100,test01 
+[2022/06/30 11:27:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:27:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:28:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:28:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:29:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:29:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:30:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:30:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:31:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:31:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:32:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:32:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:33:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:33:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:34:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:34:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:35:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:35:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:36:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:36:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:37:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:37:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:38:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:38:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:39:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:39:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:40:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:40:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:41:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:41:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:42:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:42:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:43:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:43:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:44:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:44:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:45:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:45:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:46:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:46:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:47:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:47:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:48:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:48:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:49:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:49:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:50:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:50:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:51:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:51:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:52:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:52:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:53:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:53:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:54:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:54:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:55:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:55:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:56:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:56:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:57:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:57:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:58:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:58:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:59:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 11:59:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:00:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:00:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:01:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:01:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:02:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:02:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:03:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:03:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:04:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:04:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:05:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:05:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:06:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:06:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:07:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:07:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:08:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:08:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:09:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:09:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:10:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:10:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:11:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:11:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:12:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:12:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:13:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:13:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:14:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:14:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:15:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:15:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:16:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:16:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:17:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:17:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:18:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:18:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:19:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:19:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:20:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:20:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:21:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:21:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:22:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:22:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:23:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:23:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:24:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:24:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:25:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:25:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:26:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:26:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:27:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:27:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:28:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:28:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:29:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:29:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:30:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:30:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:31:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:31:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:32:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:32:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:33:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:33:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:34:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:34:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:35:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:35:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:36:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:36:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:37:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:37:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:38:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:38:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:39:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:39:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:40:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:40:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:41:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:41:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:42:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:42:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:43:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:43:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:44:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:44:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:45:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:45:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:46:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:46:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:47:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:47:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:48:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:48:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:49:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:49:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:50:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:50:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:51:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:51:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:52:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:52:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:53:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:53:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:54:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:54:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:55:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:55:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:56:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:56:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:57:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:57:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:58:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:58:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:59:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 12:59:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:00:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:00:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:01:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:01:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:02:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:02:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:03:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:03:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:04:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:04:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:05:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:05:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:06:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:06:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:07:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:07:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:08:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:08:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:09:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:09:52 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:10:22 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:109) KDB HeartBeat
+[2022/06/30 13:10:33 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:372) trade engine is stopping
+[2022/06/30 13:10:33 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:84) read KDB message error: Failed to read message header:read tcp 192.168.2.100:42896->42.192.93.251:5000: use of closed network connection

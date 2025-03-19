@@ -1,0 +1,18 @@
+2024-02-28T16:55:09.299+08:00 LibITG_Init - DEBUG 1 MergePosition 0
+2024-02-28T16:55:09.299+08:00 LibITG_Init - DEBUG 2 WD D:\Project\T0\T0\ltg\stage
+2024-02-28T16:55:09.301+08:00 NewItg - INFO 3 Create New ItgClient, addr: 106.15.92.93:10001
+2024-02-28T16:55:09.301+08:00 Connect - INFO 4 Connecting to 106.15.92.93:10001
+2024-02-28T16:55:09.31+08:00 Connect - INFO 5 Successfully Connected to 106.15.92.93:10001
+2024-02-28T16:55:09.319+08:00 Connect - WARNING 6 Decrypting the comfirmation failed when connect to 106.15.92.93:10001, crypto/rsa: decryption error
+2024-02-28T16:55:09.319+08:00 Connect - DEBUG 7 AES Key: NAMEIOEGHLDHLIOC, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-28T16:55:09.32+08:00 Send - DEBUG 8 Sending msg to itg. msg: {"itg":{"msgTime":"165509320","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"ee8ac4c7c4194887a259d449d58bfa77","infCode":"ITG_LOGIN_TNACCOUNT","opUserCode":"10016","opUserType":6,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":"ee8ac4c7c4194887a259d449d58bfa77","accountPwd":"f379eaf3c831b04de153469d1bec345e","loginMac":"","loginDiskSn":"","loginIp":""}}} len: 368 dest: 106.15.92.93:10001
+2024-02-28T16:55:09.321+08:00 Send - DEBUG 9 Sending msg to itg. msg: {"itg":{"msgTime":"165509321","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"995466888ab54d2fbc9e0d7f963cf319","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"10016","opUserType":6,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"165509321","to":1}}} len: 256 dest: 106.15.92.93:10001
+2024-02-28T16:55:09.328+08:00 recvRun - DEBUG 10 ItgClient RecvMsg len: 272
+2024-02-28T16:55:09.328+08:00 pkcs5UnPadding - DEBUG 11 unpadding 263
+2024-02-28T16:55:09.329+08:00 recvRun - DEBUG 12 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-28T16:55:09.329+08:00 recvRun - DEBUG 13 ItgClient RecvMsg: {"itg":{"content":{"time":"20240228165511","to":2},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"20240228165511","msgType":1,"opUserCode":"10016","opUserType":6,"reqNo":"995466888ab54d2fbc9e0d7f963cf319","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":0}}, ContentLen: 263
+2024-02-28T16:55:09.345+08:00 recvRun - DEBUG 14 ItgClient RecvMsg len: 256
+2024-02-28T16:55:09.345+08:00 pkcs5UnPadding - DEBUG 15 unpadding 251
+2024-02-28T16:55:09.347+08:00 recvRun - DEBUG 16 ItgClient RecvMsg Type: ITG_LOGIN_TNACCOUNT
+2024-02-28T16:55:09.347+08:00 recvRun - DEBUG 17 ItgClient RecvMsg: {"itg":{"errDesc":"投顾账号:10016 或密码出错","infCode":"ITG_LOGIN_TNACCOUNT","msgTime":"165511884","msgType":1,"opUserCode":"10016","opUserType":6,"reqNo":"ee8ac4c7c4194887a259d449d58bfa77","reqSource":"REQ_SOURCE_HAND_TRADER","respCode":1}}, ContentLen: 251
+2024-02-28T16:55:09.349+08:00 Send - DEBUG 18 Sending msg to itg. msg: {"itg":{"msgTime":"165509349","reqSource":"REQ_SOURCE_HAND_TRADER","reqNo":"1aab6bf1c735485c807a1eebb6b0fa1a","infCode":"ITG_GET_ORDER","opUserCode":"10016","opUserType":6,"msgType":0,"respCode":0,"errDesc":"","content":{"teamCode":"","productCode":"","accountCode":"10016"}}} len: 288 dest: 106.15.92.93:10001

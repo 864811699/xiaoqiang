@@ -1,0 +1,8 @@
+{
+  "dbPath": "./db",
+ "wt_file":"./FileOrder/%s_entrust.txt",
+ "entrust_file":"./FileOrder/%s_bargin.txt",
+ "infos":{
+   "testCS02": {"buy": "1","sell":"4","fundAccount": "zx4509i_wjd"}
+ }
+}

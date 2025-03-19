@@ -1,0 +1,32 @@
+2024-02-27T11:15:04.331+08:00 NewItg - INFO 1 Create New ItgClient, addr: 47.101.170.217:10001
+2024-02-27T11:15:04.331+08:00 Connect - INFO 2 Connecting to 47.101.170.217:10001
+2024-02-27T11:15:04.339+08:00 Connect - INFO 3 Successfully Connected to 47.101.170.217:10001
+2024-02-27T11:15:04.349+08:00 Connect - WARNING 4 Decrypting the comfirmation failed when connect to 47.101.170.217:10001, crypto/rsa: decryption error
+2024-02-27T11:15:04.35+08:00 Connect - DEBUG 5 AES Key: LJHILCNHAIIOHDMJ, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T11:15:04.352+08:00 Send - DEBUG 6 Sending msg to itg. msg: {"itg":{"msgTime":"111504352","reqSource":"human_channel","reqNo":"cc4ce2a832654862a68192d605d4380d","infCode":"ITG_LOGIN_QUOTATION","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":""}}}
+ len: 240 dest: 47.101.170.217:10001
+2024-02-27T11:15:04.354+08:00 Send - DEBUG 7 Sending msg to itg. msg: {"itg":{"msgTime":"111504354","reqSource":"human_channel","reqNo":"16b9b11857ff42f385e9943704f7ba96","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111504354","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:15:04.36+08:00 recvRun - DEBUG 8 ItgClient RecvMsg len: 208
+2024-02-27T11:15:04.362+08:00 pkcs5UnPadding - DEBUG 9 unpadding 207
+2024-02-27T11:15:04.362+08:00 recvRun - DEBUG 10 ItgClient RecvMsg Type: ITG_LOGIN_QUOTATION
+2024-02-27T11:15:04.363+08:00 recvRun - DEBUG 11 ItgClient RecvMsg: {"itg":{"errDesc":"","infCode":"ITG_LOGIN_QUOTATION","msgTime":"111508951","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"cc4ce2a832654862a68192d605d4380d","reqSource":"human_channel","respCode":0}}, ContentLen: 207
+2024-02-27T11:15:04.364+08:00 recvRun - DEBUG 12 ItgClient RecvMsg len: 256
+2024-02-27T11:15:04.364+08:00 pkcs5UnPadding - DEBUG 13 unpadding 251
+2024-02-27T11:15:04.366+08:00 recvRun - DEBUG 14 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:15:04.366+08:00 recvRun - DEBUG 15 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227111508952","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"111508952","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"16b9b11857ff42f385e9943704f7ba96","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:15:34.355+08:00 Send - DEBUG 16 Sending msg to itg. msg: {"itg":{"msgTime":"111534355","reqSource":"human_channel","reqNo":"7c1a0492d5af405082a58701f95ea134","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111534355","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:16:02.497+08:00 recvRun - DEBUG 17 ItgClient RecvMsg len: 256
+2024-02-27T11:16:02.497+08:00 pkcs5UnPadding - DEBUG 18 unpadding 251
+2024-02-27T11:16:02.497+08:00 recvRun - DEBUG 19 ItgClient RecvMsg Type: ITG_DO_KEEP_ALIVE
+2024-02-27T11:16:02.498+08:00 recvRun - DEBUG 20 ItgClient RecvMsg: {"itg":{"content":{"time":"20240227111607089","to":1},"errDesc":"","infCode":"ITG_DO_KEEP_ALIVE","msgTime":"111607089","msgType":1,"opUserCode":"none","opUserType":9,"reqNo":"7c1a0492d5af405082a58701f95ea134","reqSource":"human_channel","respCode":0}}, ContentLen: 251
+2024-02-27T11:16:32.49+08:00 Send - DEBUG 21 Sending msg to itg. msg: {"itg":{"msgTime":"111632490","reqSource":"human_channel","reqNo":"e5e4edbaae52460fb88f378153e64aa0","infCode":"ITG_DO_KEEP_ALIVE","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"time":"111632490","to":1}}}
+ len: 256 dest: 47.101.170.217:10001
+2024-02-27T11:17:02.496+08:00 recvRun - ERROR 22 ItgClient RecvHead Error: EOF
+2024-02-27T11:18:03.196+08:00 Connect - INFO 23 Connecting to 47.101.170.217:10001
+2024-02-27T11:18:03.203+08:00 Connect - INFO 24 Successfully Connected to 47.101.170.217:10001
+2024-02-27T11:18:03.214+08:00 Connect - WARNING 25 Decrypting the comfirmation failed when connect to 47.101.170.217:10001, crypto/rsa: decryption error
+2024-02-27T11:18:03.214+08:00 Connect - DEBUG 26 AES Key: LFHBHGBJOBGHEHJO, Recv Enrypted: Zcn+d2HvlX6UvLcdvYOCAeaS3IovOOCnHZ2geGnqHfFCP/UevDbqB+NObTlBqH/zGkD2c6OpnnBPhKFaoeEQbpnVXpd+MgXsCER2QNLUHavyQlw8zsjCVuluK2sqbcDGYopLW7jnqUkeK0OJBAjygIBFtKLpXxoeGhtdpN6bA8Y=, Decrypted Result: 
+2024-02-27T11:18:03.215+08:00 Send - DEBUG 27 Sending msg to itg. msg: {"itg":{"msgTime":"111803215","reqSource":"human_channel","reqNo":"5f083805a184477da5dae6b530e753ea","infCode":"ITG_LOGIN_QUOTATION","opUserCode":"none","opUserType":9,"msgType":0,"respCode":0,"errDesc":"","content":{"ReqID":""}}}
+ len: 240 dest: 47.101.170.217:10001

@@ -1,0 +1,14 @@
+[2023/02/03 16:12:56 CST] [CRIT] (tradeCenter/trade.(*Api).LoadCfg:54) read trade cfg :./etc/trade.json fail ,err: open ./etc/trade.json: The system cannot find the file specified.
+[2023/02/03 16:13:18 CST] [INFO] (tradeCenter/trade.(*Api).LoadCfg:64) load cfg success!!
+[2023/02/03 16:13:18 CST] [CRIT] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connect error: EOF
+[2023/02/03 16:15:45 CST] [INFO] (tradeCenter/trade.(*Api).LoadCfg:64) load cfg success!!
+[2023/02/03 16:15:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 115.238.186.119, port: 50000
+[2023/02/03 16:15:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: [testCS02]
+[2023/02/03 16:15:45 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/02/03 16:15:45 CST] [INFO] (tradeCenter/trade.(*Api).RunApi:76) API run success!
+[2023/02/03 16:24:53 CST] [INFO] (tradeCenter/trade.(*Api).LoadCfg:67) load cfg success!!
+[2023/02/03 16:24:53 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:58) connected with host: 115.238.186.119, port: 50000
+[2023/02/03 16:24:53 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: request, sym: [testCS02]
+[2023/02/03 16:24:53 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:63) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/02/03 16:24:53 CST] [INFO] (tradeCenter/trade.(*Api).RunApi:79) API run success!
+[2023/02/03 16:24:53 CST] [INFO] (tradeCenter/trade.(*Api).update.func1:124) ::::::Update Return::::::

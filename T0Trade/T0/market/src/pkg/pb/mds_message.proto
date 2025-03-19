@@ -1,0 +1,429 @@
+syntax = "proto3";
+
+//package com.tailai.intradata.client.netcomm.proto;
+
+//option java_package = "com.tailai.intradata.client.netcomm.proto";
+//option java_outer_classname = "MarketData";
+//option java_multiple_files = false;
+option go_package="./;proto";
+package pb;
+
+/*消息类型定义*/
+enum MsgType
+{
+ Heartbeat_Notify = 0;
+ Qry_Secu_Instruments_Request = 10001;
+ Qry_Secu_Instruments_Response = 10002;
+ Qry_Stock_Quotation_Request = 10003;
+ Qry_Stock_Quotation_Response = 10004;
+ Qry_Future_Instruments_Request = 10005;
+ Qry_Future_Instruments_Response = 10006;
+ Qry_Future_Quotation_Request = 10007;
+ Qry_Future_Quotation_Response = 10008;
+ Qry_Tick_Indicator_Request = 10000;
+ Qry_Tick_Indicator_Response = 10010;
+ Qry_Minute_Indicator_Request = 10011;
+ Qry_Minute_Indicator_Response = 10012;
+ Qry_Index_Quotation_Request = 10013;
+ Qry_Index_Quotation_Response = 10014;
+
+ /*证券行情推送*/
+ Notify_Quotation_Stock = 20001;
+ /*指数行情推送*/
+ Notify_Quotation_Index = 20002;
+ /*期货行情推送*/
+ Notify_Quotation_Future = 20003;
+ /*期权行情推送*/
+ Notify_Quotation_Option = 20004;
+ /*逐笔指标推送*/
+ Notify_Indicator_Tick = 20005;
+ /*分钟指标推送*/
+ Notify_Indicator_Minute = 20006;
+ /*证券逐笔委托推送*/
+ Notify_Transaction_Order = 20007;
+ /*证券逐笔成交推送*/
+ Notify_Transaction_Trade = 20008;
+ /*证券委托队列推送*/
+ Notify_Stock_Order_Queue = 20009;
+ /*证券合约信息推送*/
+ Notify_Secu_Instrument = 20010;
+ /*期货合约信息推送*/
+ Notify_Future_Instrument = 20011;
+ /*分钟信号推送*/
+ Notify_Signal_Minute = 20012;
+ /*Tick信号推送*/
+ Notify_Signal_Tick = 20013;
+}
+
+//
+message Heartbeat
+{
+}
+
+//
+message QryMinuteIndicatorRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+message MinuteIndicatorList
+{
+    repeated MinuteIndicator minute_indicators = 1;
+}
+
+//
+message QryTickIndicatorRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+message TickIndicatorList
+{
+    repeated TickIndicator tick_indicators = 1;
+}
+
+//
+message QryStockQuotationRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+message StockQuotationList
+{
+    repeated StockQuotation stock_quotations = 1;
+}
+
+//
+message QryIndexQuotationRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+message IndexQuotationList
+{
+    repeated IndexQuotation index_quotations = 1;
+}
+
+//
+message QryFutureQuotationRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+message FutureQuotationList
+{
+    repeated FutureQuotation future_quotations = 1;
+}
+
+//
+message QrySecuInstrumentsRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+
+message SecuInstrumentList
+{
+    repeated SecuInstrument secu_instruments = 1;
+}
+
+
+//
+message QryFutureInstrumentsRequest
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+}
+
+message FutureInstrumentList
+{
+    repeated FutureInstrument future_instruments = 1;
+}
+
+/*代码表信息*/
+message SecuInstrument
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+ bytes instrument_name = 3;
+ int32 stkType = 4;
+ double pre_close_price = 5;
+ double high_limited = 6;
+ double low_limited = 7;
+ double openPrice = 12;
+}
+
+message FutureInstrument
+{
+ string exchange_ID = 1;
+ string instrument_ID = 2;
+ bytes instrument_name = 3;
+ int32 stkType = 4;
+ double pre_close_price = 5;
+ double high_limited = 6;
+ double low_limited = 7;
+ double pre_settle_price = 8;
+ int32 pre_delta = 9;
+ int32 curr_delta = 10;
+ int64 pre_positions =11;
+ double openPrice = 12;
+}
+
+/*指数行情消息*/
+message IndexQuotation
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ double open_price = 4;
+ double high_price = 5;
+ double low_price = 6;
+ double last_price = 7;
+ int64 total_volume = 8;
+ double total_value = 9;
+ double pre_close_price = 10;
+ int64 server_received_time = 11;
+ int64 server_sent_time = 12;
+}
+
+/*证券行情消息*/
+message StockQuotation
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ double open_price = 4;
+ double high_price = 5;
+ double low_price = 6;
+ double last_price = 7;
+ int64 num_trades = 8;
+ int64 total_volume = 9;
+ double total_value = 10;
+ repeated double ask_price = 11;
+ repeated int64 ask_size = 12;
+ repeated double bid_price = 13;
+ repeated int64 bid_size = 14;
+ double after_price = 15; //盘后价格
+ int64 after_volume = 16; //盘后量
+ int64 after_turnover = 17; //盘后成交金额
+ int64 after_match_items = 18; //盘后成交笔数
+ double pre_close_price = 19;
+ double high_limited = 20;
+ double low_limited = 21;
+ double IOPV = 22;
+ int64 total_bid_vol = 23;
+ int64 total_ask_vol = 24;
+ double avg_ask_price = 25;
+ double avg_bid_price = 26;
+ int64 server_received_time = 27;
+ int64 server_sent_time = 28;
+}
+
+/*期货行情消息*/
+message FutureQuotation
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ double open_price = 4;
+ double high_price = 5;
+ double low_price = 6;
+ double last_price = 7;
+ int32 num_trades = 8;
+ int64 total_volume = 9;
+ double total_value = 10;
+ repeated double ask_price = 11;
+ repeated int64 ask_size = 12;
+ repeated double bid_price = 13;
+ repeated int64 bid_size = 14;
+ double settle_price = 15;
+ double estimated_settle_price = 16;
+ double pre_close_price = 19;
+ double high_limited = 20;
+ double low_limited = 21;
+ int64 server_received_time = 22;
+ int64 server_sent_time = 23;
+}
+
+/*证券行情消息*/
+message OptionQuotation
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ double open_price = 4;
+ double high_price = 5;
+ double low_price = 6;
+ double last_price = 7;
+ int32 num_trades = 8;
+ int64 total_volume = 9;
+ double total_value = 10;
+ repeated double ask_price = 11;
+ repeated int64 ask_size = 12;
+ repeated double bid_price = 13;
+ repeated int64 bid_size = 14;
+ double auction_price = 15; //动态参考价格
+ int64 tot_long_position = 16;//当前合约未平仓数
+ int64 auction_qty = 17; //虚拟匹配数量
+ string trad_phase_code = 18; //产品实施阶段及标志
+ int64 server_received_time = 19;
+ int64 server_sent_time = 20;
+}
+
+/*分钟指标消息*/
+message MinuteIndicator
+{
+ int32  time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ map<string, double> indicators = 4;
+}
+
+/*分钟信号消息*/
+message MinuteSignal
+{
+ int32  time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ map<string, double> signals = 4;
+}
+
+/*Tick信号消息*/
+message TickSignal
+{
+ int32  time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ map<string, double> signals = 4;
+}
+
+message TickIndicator
+{
+  int64 volume_interval = 1;
+  int64 num_trades_interval = 2;
+  double accu_bid_size = 3;
+  double accu_ask_size = 4;
+  int32 updown_tick = 5;
+  double money_flow_small = 6;
+  double money_flow_large = 7;
+  double fill_size = 8;
+  double accu_fill_size = 9;
+  double fill_size_per_sec = 10;
+  double accu_fill_size_per_sec = 11;
+  double avg_ask_size_1 = 12;
+  double avg_ask_size_2 = 13;
+  double avg_bid_size_1 = 14;
+  double avg_bid_size_2 = 15;
+  double avg_spreed = 16;
+  double min_volatility = 17;
+  int32 time = 18;
+  string exchange_ID = 19;
+  string instrument_ID = 20;
+}
+
+message SecuOrderQueue
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ string side = 4; //指令交易类型 'B' ;'A'
+ double price = 5; //订单价格
+ int32 orders = 6; //订单明细总数
+ int32 AB_items = 7; //订单队列明细个数
+ repeated int32 AB_volume = 8; //订单队列明细数量
+ int64 server_received_time = 9;
+ int64 server_sent_time = 10;
+}
+
+message SecuTransactionOrder
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ int32 orderNum = 4;
+ double price = 5;
+ int64 volume = 6;
+ string orderKind = 7;
+ string functionCode = 8;
+ int64 server_received_time = 9;
+ int64 server_sent_time = 10;
+}
+
+message SecuTransactionTrade
+{
+ int32 time = 1;
+ string exchange_ID = 2;
+ string instrument_ID = 3;
+ int64 index = 4; //成交编号
+ double price = 5; //成交价格
+ int64 volume = 6; //成交数量
+ double turnover = 7; //成交金额
+ string bsFlag = 8; //内外盘标志：B-外盘，主动买；S-内盘，主动卖，N-未知
+ string orderKind = 9;
+ string functionCode = 10;
+ int32 askOrder = 11;
+ int32 bidOrder = 12;
+ int64 server_received_time = 13;
+ int64 server_sent_time = 14;
+}
+
+/*请求消息集合，把所有的 XxxxxRequest消息全部集合在一起，使用起来类似于C语言的联合体，全部使用字段，任何时刻根据MSG 的id值，最多只有一个有效性， 从程序的逻辑上去保证，编译器（不管是protoc>还是具体语言的编译器都无法保证）*/
+message Request
+{
+ int64 request_id = 1;
+ QrySecuInstrumentsRequest qry_secu_instruments = 2;
+ QryStockQuotationRequest qry_stock_quotation = 3;
+ QryFutureQuotationRequest qry_future_quotation = 4;
+ QryTickIndicatorRequest qry_tick_indicator = 5;
+ QryMinuteIndicatorRequest qry_minute_indicator = 6;
+ QryFutureInstrumentsRequest qry_future_instruments = 7;
+ QryIndexQuotationRequest qry_index_quotation = 8;
+}
+
+/*与Request作用相同，把所有的XxxxResponse消息集合在一起，当作联合体使用，不过额外多了几个字段用于表示应答的结果*/
+message Response
+{
+  bool success = 1;  //true表示应答成功，false表示应答失败
+  bool last = 2; // 一个请求可以包含多个应答，用于指示是否为最后一个应答
+  string info = 3; // success == false时，用于描述错误信息
+  int64 request_id = 4;
+
+  SecuInstrumentList secu_instrument_list = 5;
+  FutureInstrumentList future_instrument_list = 6;
+  StockQuotationList stock_quotation_list = 7;
+  IndexQuotationList index_quotation_list = 8;
+  FutureQuotationList future_quotation_list = 9;
+  TickIndicatorList tick_indicator_list = 10;
+  MinuteIndicatorList minute_indicator_list = 11;
+}
+
+/*与Request相同,把所有的XxxxxNotification消息集合在一起当作联合体使用.*/
+message Notify
+{
+  Heartbeat heartbeat = 1;
+  StockQuotation stock_quotation = 2;
+  IndexQuotation index_quotation = 3;
+  FutureQuotation future_quotation = 4;
+  TickIndicator tick_indicator = 5;
+  MinuteIndicator minute_indicator = 6;
+  OptionQuotation option_quotation = 7;
+  SecuOrderQueue order_queue = 8;
+  SecuTransactionOrder transaction_order = 9;
+  SecuTransactionTrade transaction_trade = 10;
+  SecuInstrument secu_instrument = 11;
+  FutureInstrument future_instrument = 12;
+  MinuteSignal minute_signal = 13;
+  TickSignal tick_signal = 14;
+}
+
+/*顶层消息，包含所有的Request，Response，Notification，具体包含哪个消息又msg_type字段决定，程序逻辑去保证msg_type和具体的消息进行匹配*/
+message Message
+{
+ MsgType msg_type = 1;
+ uint64  sequence = 2;//消息系列号
+ fixed32 session_id = 3;
+ Request request  = 4;
+ Response response = 5;
+ Notify notify = 6;
+}
+

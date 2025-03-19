@@ -1,0 +1,15 @@
+[2023/07/19 13:52:37 CST] [INFO] (tradeCenter/trade.(*Api).LoadCfg:67) load cfg success!!
+[2023/07/19 13:52:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/07/19 13:52:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [testCS02]
+[2023/07/19 13:52:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/07/19 13:52:37 CST] [INFO] (tradeCenter/trade.(*Api).RunApi:79) API run success!
+[2023/07/19 13:52:37 CST] [INFO] (tradeCenter/trade.(*FileOrder).write_order.func1:127) ********写单文件模块启动*******
+[2023/07/19 13:52:37 CST] [INFO] (tradeCenter/trade.(*Api).update.func1:128) ::::::Update Return::::::
+[2023/07/19 13:52:37 CST] [INFO] (tradeCenter/trade.(*FileOrder).fileNotify:174) beggin Notify file :: ./FileOrder/20230719_bargin.txt
+[2023/07/19 13:52:43 CST] [INFO] (tradeCenter/trade.(*Api).LoadCfg:67) load cfg success!!
+[2023/07/19 13:52:43 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/07/19 13:52:43 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [testCS02]
+[2023/07/19 13:52:43 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/07/19 13:52:43 CST] [INFO] (tradeCenter/trade.(*Api).RunApi:79) API run success!
+[2023/07/19 13:52:43 CST] [INFO] (tradeCenter/trade.(*Api).update.func1:128) ::::::Update Return::::::
+[2023/07/19 13:52:43 CST] [INFO] (tradeCenter/trade.(*FileOrder).write_order.func1:127) ********写单文件模块启动*******

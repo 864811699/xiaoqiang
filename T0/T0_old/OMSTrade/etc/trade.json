@@ -1,0 +1,23 @@
+{
+	"broker":"OMS",
+	"kdb_host": "115.238.186.119",
+	"kdb_port": 50000,
+	"auth": "test:pass",
+	"accounts": ["test_conn","test_qfii","msmtx3pa8549_inner"],
+	"maxNo": 0,
+	"DB": "./db",
+	"order_url": "http://139.224.56.241:6026/manual/insertOrder",
+	"cancel_url":"http://139.224.56.241:6026/manual/cancelOrder",
+	"search_url": "http://139.224.56.241:6026/order/getParentOrders",
+	"search_algo":"intraday_strategy_2",
+	"strategyId": "intraday_strategy_2",
+	"rbq_url":"amqp://oms:oms@139.224.56.241:5672/" ,
+	"rbq_sub_algo":["DMA"],
+	"webAddr": "0.0.0.0:9999",
+	"account_sides": {
+		"test_conn": {"buy":4 ,"sell":5 ,"broker": "MS"},
+		"test_qfii": {"buy": 1,"sell": 8,"broker": "MS"},
+		"msmtx3pa8549_inner": {"buy": 1,"sell": 5,"broker": "zhongxin"}
+
+	}
+}

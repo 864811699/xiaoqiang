@@ -1,0 +1,21 @@
+{
+	"broker":"OMS",
+	"kdb_host": "115.238.186.119",
+	"kdb_port": 50000,
+	"auth": "test:pass",
+	"accounts": ["test_conn","test_qfii"],
+	"maxNo": 0,
+	"DB": "./db",
+	"order_url": "http://172.16.8.61:6026/manual/insertOrder",
+	"cancel_url":"http://172.16.8.61:6026/manual/cancelOrder",
+	"search_url": "http://172.16.8.61:6026/order/getParentOrders",
+	"search_algo":"intraday_strategy_3",
+	"strategyId": "intraday_strategy_3",
+	"rbq_url":"amqp://oms:oms@172.16.8.61:5672/" ,
+	"rbq_sub_algo":["DMA"],
+	"account_sides": {
+		"mshw_ms01_conn": {"buy":4 ,"sell":5 },
+		"mshw_ms01_qfii": {"buy": 1,"sell": 8},
+		"broker": "MS"
+	}
+}

@@ -1,0 +1,100 @@
+
+syntax = "proto3";
+
+package pb;
+
+option go_package = "go;proto";
+
+// 查询持仓请求
+message GetPositionRequest{
+    // 资金账号
+    string accountId = 1;
+    // 证券代码
+    string symbol = 2;
+    // 持仓方向
+    PositionDirection.Enum positionDirection = 3;
+}
+
+// 查询持仓应答
+message GetPositionReply{
+    int32 errorId = 1;
+    string errorMsg = 2;
+    repeated Position positions = 3;
+}
+
+
+// 查询策略持仓请求
+message GetStrategyPositionRequest{
+    // 资金账号
+    string accountId = 1;
+    // 证券代码
+    string symbol = 2;
+    // 持仓方向
+    PositionDirection.Enum positionDirection = 3;
+    // 策略编号
+    string strategyId = 4;
+}
+
+// 查询策略持仓应答
+message GetStrategyPositionReply{
+    int32 errorId = 1;
+    string errorMsg = 2;
+    string strategyId = 3;
+    repeated Position positions = 4;
+}
+
+// 持仓方向
+message PositionDirection {
+    enum Enum{
+        // 未知
+        UnKnow = 0;
+        // 多头持仓
+        LONG  = 1;
+        // 空头
+        SHORT = 2;
+    }
+}
+
+// 持仓通道
+message PositionChannel{
+	enum Enum{
+		// 
+		UnKnow = 0;
+		CONNECT = 1;
+		QFII = 2;
+		// INNER
+		INNER = 3;
+	}
+}
+
+// 仓位
+message Position{
+    // 仓位的：昨日数量
+    int32 yesterdayVol = 1;
+    // 仓位的：今日数量
+    int32 todayVol = 2;
+    // 占用保证金
+    double occupationMargin = 3;
+    // 持仓成本
+    double positionAvgPrice = 4;
+    // 浮动盈亏：（市值-成本）*数量
+    double openPl = 5;
+    // 全部持仓
+    int32 allQuantity = 6;
+    // 持仓方向
+    PositionDirection.Enum direction = 7;
+    // 可卖持仓：对于股票来说：等于昨天的仓位：对于期货来说：等于今天开仓+昨天持仓
+    int32 availableQuantiy = 8;
+    // 合约对象
+    string symbol  = 9;
+    // 冻结数量
+    int32 frozenQuantity = 10;
+    // 仓位的创建时间
+    int64 createTime = 11;
+    // 资金账号
+    string accountId = 12;
+    // 策略编号
+    string StrategyId = 13;
+	// 通道
+	PositionChannel.Enum channel = 14;
+}

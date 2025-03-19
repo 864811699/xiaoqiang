@@ -1,0 +1,1 @@
+pyinstaller -F trade_demo.py

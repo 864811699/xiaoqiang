@@ -1,0 +1,29 @@
+{
+  "broker": "test",
+  "kdb_host": "115.238.186.119",
+  "kdb_port": 40000,
+  "auth": "test:pass",
+  "dbPath": "./db",
+  "date": 11,
+  "cancelID":6,
+  "entrustNo": 0,
+  "dealQty":9,
+  "price": 8,
+  "cancelQty":10,
+  "status": 7,
+  "note":13,
+  "maxNo": 10,
+  "tagID": "testZX",
+  "timeout": 10,
+  "accounts": ["test1","test2"],
+  "isFull": false,
+  "order_dir":"D:\\TradeApp\\广发\\广发证券QMT量化交易系统-交易端\\export_data",
+  "temp_dir":"D:\\TradeApp\\广发\\广发证券QMT量化交易系统-交易端\\export_data\\temp",
+  "resonse_dir":"D:\\TradeApp\\广发\\广发证券QMT量化交易系统-交易端\\export_data",
+  "account_infos": {
+      "test1": {"account": "36879512",    "account_type":"3",    "buy": "23",    "sell":"41",	"return":"30"},
+      "test2": {"account": "36879512",    "account_type":"3",    "buy": "23",    "sell":"24",	"return":"30"}
+  }
+}
+
+

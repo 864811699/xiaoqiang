@@ -1,0 +1,478 @@
+# coding=utf-8
+# python3.7
+# pyinstaller -F trade_demo.py
+import json
+import logging
+import math
+import os
+import socket
+import sys
+import threading
+import time
+import traceback
+from xtquant.xttrader import XtQuantTrader, XtQuantTraderCallback
+# noinspection PyInterpreter
+from xtquant.xttype import StockAccount
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+rq = time.strftime('%Y%m%d', time.localtime(time.time()))
+formatter = logging.Formatter("%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s")
+# log_path = os.path.dirname(os.getcwd())
+log_name = "./log/" + rq + '.log'
+
+fh = logging.FileHandler(log_name, mode='a', encoding="UTF-8")
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+ch = logging.StreamHandler()
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+
+def OrderToStr(order):
+    data = {}
+    data['msg_type'] = "O"
+    data['account_type'] = order.account_type  # 账号类型
+    data['account_id'] = order.account_id  # 资金账号
+    data['stock_code'] = order.stock_code  # 股票代码
+    data['order_id'] = order.order_id  # 订单编号
+    data['order_sysid'] = order.order_sysid  # 柜台合同号
+    data['order_time'] = order.order_time  # 委托时间
+    data['order_type'] = order.order_type  # side
+    data['order_volume'] = order.order_volume  # 委托数量
+    data['price_type'] = order.price_type  # 价格类型
+    data['price'] = order.price  # 委托价格
+    data['traded_volume'] = order.traded_volume  # 成交数量
+    data['traded_price'] = order.traded_price  # 成交价格
+    data['order_status'] = order.order_status  # 委托状态
+    data['status_msg'] = order.status_msg  # 状态信息
+    data['strategy_name'] = order.strategy_name  # KDB表名
+    data['order_remark'] = order.order_remark  # 委托备注
+    # print("msg : {}\n".format(data['status_msg']))
+    msg = json.dumps(data)
+    return msg
+
+
+def CheckNaN(data):
+    for key in data:
+        if isinstance(data[key], (int, float)):
+            if math.isnan(data[key]):
+                data[key] = 0
+    return data
+
+
+class MyXtQuantTraderCallback(XtQuantTraderCallback):
+    def on_disconnected(self):
+        """
+        连接断开
+        :return:
+        """
+        # TODO
+        logger.info("connection lost")
+
+    def on_account_status(self, status):
+        logger.info("ACCOUNT STATUS :: {}".format(status.status))
+        global server
+        data = {}
+        data['order_remark'] = "ACCOUNT STATUS"
+        data['order_status'] = status.status
+        data['msg_type'] = "T"
+        msg = json.dumps(data)
+        server.send(msg)
+
+    def on_stock_order(self, order):
+        msg = OrderToStr(order)
+        if order.strategy_name != 'XT_AMS':
+            global server
+            logger.info(
+                "on order callback:account_type:{}\taccount_id:{}\tstock_code:{}\torder_id:{}\torder_sysid:{}\torder_time:{}\torder_time:{}\torder_type:{}\torder_volume:{}\tprice_type:{}\tprice:{}\ttraded_volume:{}\ttraded_price:{}\torder_status:{}\tstatus_msg:{}\tKdbAccountName:{}\tKdbLocalID:{}".format(
+                    order.account_type, order.account_id, order.stock_code, order.order_id, order.order_sysid,
+                    order.order_time, order.order_time, order.order_type, order.order_volume, order.price_type,
+                    order.price, order.traded_volume, order.traded_price, order.order_status,
+                    # order.status_msg,
+                    "", order.strategy_name, order.order_remark))
+            server.send(msg)
+
+    def on_stock_asset(self, asset):
+        """
+        资金变动推送
+        :param asset: XtAsset对象
+        :return:
+        """
+        pass
+        # print("on asset callback")
+        # print(asset.account_id, asset.cash, asset.total_asset)
+
+    def on_stock_trade(self, trade):
+        """
+        成交变动推送
+        :param trade: XtTrade对象
+        :return:
+        """
+        # print("on trade callback")
+        # print(trade.account_id, trade.stock_code, trade.order_id)
+
+    def on_stock_position(self, position):
+        """
+        持仓变动推送
+        :param position: XtPosition对象
+        :return:
+        """
+        pass
+        # print("on position callback")
+        # print(position.stock_code, position.volume)
+
+    def on_order_error(self, order_error):
+        """
+        委托失败推送
+        :param order_error:XtOrderError 对象
+        :return:
+
+        :param account_id: 资金账号
+        :param order_id: 订单编号
+        :param error_id: 报单失败错误码
+        :param error_msg: 报单失败具体信息
+        """
+
+        if order_error.strategy_name != 'XT_AMS':
+            global server
+            # fund_order_id = '{}_{}'.format(order_error.account_id, order_error.order_id)
+            # localId = server.order_map.get(fund_order_id, "0")
+            # if localId == "0":
+            #     logger.warning("未找到 order_map 的委托 ,fund_req_id :{}".format(fund_order_id))
+            #     server.orderID_status_map[fund_order_id] = 57
+            data = {}
+            data['msg_type'] = "O"
+            data['account_id'] = order_error.account_id  # 资金账号
+            data['order_status'] = 57  # 委托状态
+            data['order_remark'] = order_error.order_remark  # 委托备注
+            data['strategy_name'] = order_error.strategy_name
+            msg = json.dumps(data)
+
+            logger.info(
+                "on order_error callback : account_id:{}\tstrategy_name:{}\torder_id:{}\tKdbLocalID :{}\t,error_id:{}\terror_msg:{}".format(
+                    order_error.account_id, order_error.strategy_name, order_error.order_id, order_error.order_remark,
+                    order_error.error_id,
+                    order_error.error_msg))
+
+            server.send(msg)
+
+    def on_cancel_error(self, cancel_error):
+        """
+        撤单失败推送
+        :param cancel_error: XtCancelError 对象
+        :return:
+        """
+        pass
+        # print("on cancel_error callback")
+        # print(cancel_error.order_id, cancel_error.error_id, cancel_error.error_msg)
+
+    def on_order_stock_async_response(self, response):
+        """
+        异步下单回报推送
+        :param response: XtOrderResponse 对象
+        self.strategy_name = strategy_name
+        self.order_remark = order_remark
+        :return:
+        """
+        # print("on_order_stock_async_response")
+        if response.strategy_name != 'XT_AMS':
+            global server
+            # fund_req_id = '{}_{}'.format(response.account_id, response.seq)
+            # localId = server.entrust_map.get(fund_req_id, "0")
+            # if localId == "0":
+            #     logger.warning("未找到 entrust_map 的委托 ,fund_req_id :{}".format(fund_req_id))
+
+            # fund_order_id = '{}_{}'.format(response.account_id, response.order_id)
+            # server.order_map[fund_order_id] = localId
+
+            logger.info(
+                "异步下单回报推送 :: account_id:{}\t,order_id : {}\t,seq_id : {}\t,KdbLocalID :{} ".format(response.account_id,
+                                                                                                   response.order_id,
+                                                                                                   response.seq,
+                                                                                                   response.order_remark))
+            data = {}
+            data['msg_type'] = "O"
+            data['account_id'] = response.account_id  # 资金账号
+            data['order_remark'] = response.order_remark  # 委托备注
+            data['strategy_name'] = response.strategy_name
+            data['order_status'] = 50  # 委托状态 已报
+            data['order_id'] = response.order_id
+            if response.order_id == -1:
+                data['order_status'] = 57  # 委托状态  废单
+
+            msg = json.dumps(data)
+            server.send(msg)
+
+
+def readConfig(path):
+    with open(path, 'r', encoding="UTF-8") as json_file:
+        cfg = json.load(json_file)
+    return cfg
+
+
+class Server():
+
+    def __init__(self, ip, port):
+
+        self.ip = ip
+        self.port = port
+        self.ConnNormal = False
+
+    def pack(self, msg):
+        head = b"***"
+        l_msg = len(msg)
+        l_byte = int.to_bytes(l_msg, 4, 'big')
+        data_bytes = head + l_byte + msg.encode()
+        return data_bytes
+
+    def runServer(self):
+        self.server = socket.socket()
+        self.server.bind((self.ip, self.port))  # 绑定要监听的端口port
+        self.server.listen()  # 监听
+        logger.info("WS 启动 :: {}:{}".format(self.ip, self.port))
+
+    def serverAccept(self):
+        while True:
+            self.conn, self.addr = self.server.accept()
+            receive = threading.Thread(target=self.receive, name=threading.current_thread().name + "_receive")
+            receive.start()
+            # self.receive()
+
+    def send(self, msg, logIsOpen=True):
+
+        if self.ConnNormal:
+            msg = self.pack(msg)
+            try:
+                self.conn.send(msg)
+                if logIsOpen:
+                    logger.info("发送msg 成功 ::{}".format(msg))
+            except Exception as e:
+                logger.error("发送失败, err:: {}".format(e))
+                self.ConnNormal = False
+
+    def order(self, req):
+        global xt_trader, kdbToAccount
+        reqType = req['reqType']
+        if reqType == "S":
+            orders = xt_trader.query_stock_orders(kdbToAccount[req['KdbAcountName']])
+            if len(orders) != 0:
+                for order in orders:
+                    msg = OrderToStr(order)
+                    self.send(msg)
+                logger.info("委托查询结果 :: {0} {1} {2} ".format(orders[-1].stock_code, orders[-1].order_volume,
+                                                            orders[-1].price))
+
+        if reqType == "O":
+            req_id = xt_trader.order_stock_async(kdbToAccount[req['KdbAcountName']], req['stock_code'], req['side'],
+                                                 req['askQty'],
+                                                 req['priceMode'],
+                                                 req['askPrice'], req['KdbAcountName'], req['KdbLocalID'])
+            if req_id > 0:
+                logger.info("下单成功 : KdbLocalID :{}\t请求序列号 : {}".format(req['KdbLocalID'], req_id))
+                # fund_req_id = '{}_{}'.format(FundAccountMap[req['KdbAcountName']], req_id, )
+                # self.entrust_map[fund_req_id] = req['KdbLocalID']
+            if req_id < 0:
+                data = {}
+                data['account_id'] = kdbToAccount[req['KdbAcountName']].account_id  # 资金账号
+                data['order_status'] = 57  # 委托状态
+                data['strategy_name'] = req['KdbAcountName']  # KDB表名
+                data['order_remark'] = req['KdbLocalID']  # 委托备注
+                msg = json.dumps(data)
+                self.send(msg)
+                logger.info(
+                    "下单失败 :: stock_code:{}\tside:{}\taskQty:{}\tpriceMode:{}\taskPrice:{}\tKdbAcountName:{}\tKdbLocalID:{}".format(
+                        req['stock_code'], req['side'], req['askQty'], req['priceMode'],
+                        req['askPrice'], req['KdbAcountName'], req['KdbLocalID']))
+
+        if reqType == "C":
+            cancel_order_result = xt_trader.cancel_order_stock(kdbToAccount[req['KdbAcountName']], req['entrust_no'])
+            if cancel_order_result == 0:
+                logger.info(
+                    "##########撤单成功##########,Kdb表名 :: {} ,KDB委托号 :: {} ,讯投委托号 :: {}".format(req['KdbAcountName'],
+                                                                                             req['KdbLocalID'],
+                                                                                             req['entrust_no']))
+            else:
+                logger.warning(
+                    "#########撤单失败#########,Kdb表名 :: {} ,KDB委托号 :: {} ,讯投委托号 :: {}".format(req['KdbAcountName'],
+                                                                                           req['KdbLocalID'],
+                                                                                           req['entrust_no']))
+
+    def unpack(self, msg):
+        # print(msg)
+        if msg[:3] != b"***":
+            return msg
+        else:
+            i = msg[3:7]
+            # l = int.from_bytes(i, 'big',False)
+            l = int.from_bytes(i, 'big')
+            if len(msg) < l + 7:
+                return msg
+            logger.info("receive req :: {}".format(msg[7:l + 7]))
+            obj = json.loads(msg[7:l + 7].decode('utf-8'))
+            logger.info("receive req :: {}".format(obj))
+            self.order(obj)
+
+            if len(msg[l + 7:]) > 7:
+                return self.unpack(msg[l + 7:])
+            else:
+                return msg[l + 7:]
+
+    def receive(self):
+        self.ConnNormal = True
+        logger.info("收到一个链接 :: {}".format(self.addr))
+        logger.info("当前进程 : {}\t 当前pid : {}".format(threading.current_thread().name, os.getpid()))
+        buf_temp = b""
+        while True:
+            try:
+                data_str = self.conn.recv(1024)
+            except Exception as e:
+                logger.error("链接异常 err:: {}".format(e))
+                break
+            else:
+                # try:
+                if len(buf_temp + data_str) > 7:
+                    buf_temp = self.unpack(buf_temp + data_str)
+                # except Exception as e2:
+                #    logger.error("请求异常,检查字段 : {} ,err:: {}".format(data_str, e2))
+
+    def getAsset(self):
+        global AccountInfoMap
+        for k, v in AccountInfoMap.items():
+            if "STOCK" in k:
+                asset = xt_trader.query_stock_asset(v)
+                if asset != None:
+                    data = {}
+                    data['msg_type'] = "A"
+                    data['account_type'] = asset.account_type
+                    data['account_id'] = asset.account_id
+                    data['cash'] = asset.cash
+                    data['frozen_cash'] = asset.frozen_cash
+                    data['market_value'] = asset.market_value
+                    data['total_asset'] = asset.total_asset
+                    data = CheckNaN(data)
+                    msg = json.dumps(data)
+                    server.send(msg, False)
+            elif "CREDIT" in k:
+                asset = xt_trader.query_credit_detail(v)
+                if asset != None:
+                    data = {}
+                    data['msg_type'] = "CA"
+                    data['account_type'] = asset[0].account_type
+                    data['account_id'] = asset[0].account_id
+                    data['m_dBalance'] = asset[0].m_dBalance
+                    data['m_dAvailable'] = asset[0].m_dAvailable
+                    data['m_dMarketValue'] = asset[0].m_dMarketValue
+                    data['m_dStockValue'] = asset[0].m_dStockValue
+                    data['m_dTotalDebt'] = asset[0].m_dTotalDebt
+                    data['m_dEnableBailBalance'] = asset[0].m_dEnableBailBalance
+                    data['m_dAssureAsset'] = asset[0].m_dAssureAsset
+                    data['m_dPerAssurescaleValue'] = asset[0].m_dPerAssurescaleValue
+                    data = CheckNaN(data)
+                    msg = json.dumps(data)
+                    server.send(msg, False)
+
+    def getPosition(self):
+        global AccountInfoMap
+        for k, v in AccountInfoMap.items():
+            positions = xt_trader.query_stock_positions(v)
+            if positions != None:
+                for position in positions:
+                    data = {}
+                    data['msg_type'] = "P"
+                    data['account_type'] = position.account_type
+                    data['account_id'] = position.account_id
+                    data['stock_code'] = position.stock_code
+                    data['volume'] = position.volume
+                    data['can_use_volume'] = position.can_use_volume
+                    data['open_price'] = position.open_price
+                    data['market_value'] = position.market_value
+                    data = CheckNaN(data)
+                    msg = json.dumps(data)
+                    server.send(msg, False)
+
+    def crontabGetAssetPosition(self):
+        while True:
+            self.getAsset()
+            self.getPosition()
+            time.sleep(5)
+
+
+if __name__ == "__main__":
+    try:
+        cfg = readConfig("./etc/config.json")
+        logger.info("##########导入配置成功,程序启动############")
+        logger.info("cfg  :: {}".format(cfg))
+
+        global server, xt_trader, kdbToAccount, AccountInfoMap
+        AccountInfoMap = {}
+        # path为mini qmt客户端安装目录下userdata_mini路径
+        path = cfg["path"]
+
+        FundAccountMap = cfg["FundAccount"]
+        # FundToKdbNameMap = {val: key for (key, val) in FundAccountMap.items()}
+        # session_id为会话编号，策略使用方对于不同的Python策略需要使用不同的会话编号
+        session_id = cfg["session_id"]
+
+        xt_trader = XtQuantTrader(path, session_id)
+        # 创建资金账号为 8000000160 的证券账号对象
+        logger.info(
+            "xt_trader success  #### path : {}\tsession_id : {}\tFunAccount : {}".format(path, session_id,
+
+                                                                                         FundAccountMap))
+
+        # 创建交易回调类对象，并声明接收回调
+        callback = MyXtQuantTraderCallback()
+        xt_trader.register_callback(callback)
+
+        # 启动交易线程
+        xt_trader.start()
+        logger.info("交易线程启动~~~~~~~~~~~")
+
+        # 建立交易连接，返回0表示连接成功
+        connect_result = xt_trader.connect()
+        if connect_result == 0:
+            logger.info("##########连接成功##########")
+        else:
+            logger.info("#########连接失败#########")
+            sys.exit(1)
+
+        # 对交易回调进行订阅，订阅后可以收到交易主推，返回0表示订阅成功
+        kdbToAccount = {}
+        for k, v in FundAccountMap.items():
+            kdbToAccount[k] = StockAccount(v["fund"], v["type"])
+            AccountInfoMap[v["fund"] + v["type"]] = kdbToAccount[k]
+            subscribe_result = xt_trader.subscribe(kdbToAccount[k])
+            if subscribe_result == 0:
+                logger.info("##########{} 订阅回报成功##########".format(k))
+            else:
+                logger.info("#########{} 订阅回报失败#########".format(k))
+                sys.exit(1)
+
+        # 使用指定价下单，接口返回订单编号，后续可以用于撤单操作以及查询委托状态
+        # 同步下单
+        # fix_result_order_id = xt_trader.order_stock(acc, '601818.SH', xtconstant.STOCK_BUY, 200, xtconstant.FIX_PRICE, 10.5, 'strategy_name', 'remark')
+        # print("下单成功,订单ID :: ",fix_result_order_id)
+        server = Server(cfg['ws_addr'], cfg['ws_port'])
+        # server.entrust_map = {}
+        # server.order_map = {}
+        # server.orderID_status_map = {}
+        server.runServer()
+        accept = threading.Thread(target=server.serverAccept, name=threading.current_thread().name + "_accept")
+        assetPosition = threading.Thread(target=server.crontabGetAssetPosition,
+                                         name=threading.current_thread().name + "_crontabGetAssetPosition")
+
+        accept.start()
+
+        assetPosition.start()
+        logger.info("WS 启动成功!!!!!!!!!!")
+
+        # 阻塞线程，接收交易推送
+
+        xt_trader.run_forever()
+    except:
+        e = traceback.format_exc()
+        logger.info(e)
+

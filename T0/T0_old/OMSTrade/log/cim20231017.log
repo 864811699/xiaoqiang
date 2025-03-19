@@ -1,0 +1,75 @@
+[2023/10/17 14:08:22 CST] [CRIT] (OMSTrade/trade.(*Api).LoadCfg:75) tradecfg unmarshal fail,err:json: cannot unmarshal string into Go struct field TradeCfg.account_sides of type trade.AccountSide
+[2023/10/17 14:14:23 CST] [CRIT] (OMSTrade/trade.(*Api).LoadCfg:75) tradecfg unmarshal fail,err:json: cannot unmarshal string into Go struct field TradeCfg.account_sides of type trade.AccountSide
+[2023/10/17 14:19:20 CST] [INFO] (OMSTrade/trade.(*Api).LoadCfg:84) load cfg success!!
+[2023/10/17 14:19:20 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/10/17 14:19:20 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [test_conn test_qfii]
+[2023/10/17 14:19:20 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/10/17 14:20:38 CST] [INFO] (OMSTrade/trade.(*Api).LoadCfg:84) load cfg success!!
+[2023/10/17 14:20:38 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/10/17 14:20:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [test_conn test_qfii]
+[2023/10/17 14:20:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/10/17 14:20:58 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:21:00 CST] [CRIT] (OMSTrade/trade.(*Api).RunApi:96) rbq init fail,dial tcp 139.224.56.241:5672: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+[2023/10/17 14:45:16 CST] [INFO] (OMSTrade/trade.(*Api).LoadCfg:84) load cfg success!!
+[2023/10/17 14:45:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/10/17 14:45:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [test_conn test_qfii]
+[2023/10/17 14:45:16 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/10/17 14:45:16 CST] [INFO] (OMSTrade/trade.(*Api).RunApi:100) rbq sub success!
+[2023/10/17 14:45:16 CST] [INFO] (OMSTrade/trade.(*Api).RunApi:106) API run success!
+[2023/10/17 14:45:16 CST] [INFO] (OMSTrade/trade.(*Api).update:224) ########### UPDATE  START ########
+[2023/10/17 14:45:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:45:38 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:45:58 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:46:18 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:46:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:46:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:47:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:47:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:47:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:48:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:48:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:48:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:49:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:49:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:49:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:50:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:50:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:50:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:51:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:51:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:51:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:52:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:52:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:52:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:53:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:53:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:53:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:54:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:54:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:54:55 CST] [DEBG] (github.com/864811699/T0kdb.process.func1.1:52) new order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test_conn", Qid:"111"}, ReqType:0, Time:time.Date(2023, time.October, 17, 14, 55, 53, 329000000, time.UTC), ParentId:"", Trader:"aaa", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:1, Askprice:3.1, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, ReqType:0, OrderId:"", SecurityId:"", EntrustNo:0, CumQty:0, AvgPx:0, Withdraw:0, Status:0, Note:"{\"request\":{\"side\":8}}"}
+[2023/10/17 14:54:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:55:16 CST] [WARN] (OMSTrade/trade.(*Api).Trade:162) order[trade.OrderRequest{OriginId:"111", InputPrice:3.1, InputVol:100, OrderAction:8, Remark:"test_conn_1", Broker:"MS", Symbol:"601818", AccountId:"test", User:"", Group:"aaa", Channel:1, Portfolio:"intraday_strategy_2", StrategyId:"intraday_strategy_2"}] send fail ,new order fail,post fail,Post "http://139.224.56.241:6026/manual/insertOrder": dial tcp 139.224.56.241:6026: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+[2023/10/17 14:55:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:55:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 14:55:39 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:390) trade engine is stopping
+[2023/10/17 14:55:39 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:82) read KDB message error: Failed to read message header:read tcp 192.168.2.100:56858->115.238.186.119:50000: use of closed network connection
+[2023/10/17 15:08:03 CST] [INFO] (OMSTrade/trade.(*Api).LoadCfg:84) load cfg success!!
+[2023/10/17 15:08:03 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).connect:56) connected with host: 115.238.186.119, port: 50000
+[2023/10/17 15:08:03 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: request, sym: [test_conn test_qfii]
+[2023/10/17 15:08:03 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).subscribe:61) Subscribing Kdb, table: HeartBeat, sym: []
+[2023/10/17 15:08:03 CST] [INFO] (OMSTrade/trade.(*Api).RunApi:100) rbq sub success!
+[2023/10/17 15:08:03 CST] [INFO] (OMSTrade/trade.(*Api).RunApi:106) API run success!
+[2023/10/17 15:08:03 CST] [INFO] (OMSTrade/trade.(*Api).update:236) ########### UPDATE  START ########
+[2023/10/17 15:08:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:08:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:08:46 CST] [DEBG] (github.com/864811699/T0kdb.process.func1.1:52) new order: &kdbtdx.Order{Request:kdbtdx.Request{basic:kdbtdx.basic{Sym:"test_conn", Qid:"111"}, ReqType:0, Time:time.Date(2023, time.October, 17, 15, 9, 44, 768000000, time.UTC), ParentId:"", Trader:"aaa", Fund:"", Strategy:"", Broker:"", Stockcode:"601818", Stocktype:0, Side:1, Askprice:3.1, Ordertype:1, Orderqty:100, Algorithm:"", Params:""}, ReqType:0, OrderId:"", SecurityId:"", EntrustNo:0, CumQty:0, AvgPx:0, Withdraw:0, Status:0, Note:"{\"request\":{\"side\":8}}"}
+[2023/10/17 15:08:46 CST] [WARN] (OMSTrade/trade.(*Api).Trade:178) order[trade.OrderRequest{OriginId:"111", InputPrice:3.1, InputVol:100, OrderAction:8, Remark:"test_conn_2", Broker:"MS", Symbol:"601818", AccountId:"test", User:"", Group:"aaa", Channel:1, Portfolio:"intraday_strategy_2", StrategyId:"intraday_strategy_2"}] reject by OMS, account not allow!
+[2023/10/17 15:08:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:09:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:09:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:09:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:10:17 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:10:37 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:10:57 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:107) KDB HeartBeat
+[2023/10/17 15:11:08 CST] [DEBG] (github.com/864811699/T0kdb.(*tradeKdb).stop:390) trade engine is stopping
+[2023/10/17 15:11:08 CST] [EROR] (github.com/864811699/T0kdb.(*tradeKdb).readFromKdb.func1:82) read KDB message error: Failed to read message header:read tcp 192.168.2.100:57132->115.238.186.119:50000: use of closed network connection

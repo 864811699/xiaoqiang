@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7ba3911-6bd9-444b-a713-035adb966401" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="2Li4PjnQyyWowtqSiTQ4HVhsMQG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\T0\T0\TradeApi\trade" />
+      <recent name="D:\Project\T0\T0\TradeApi\PB" />
+      <recent name="D:\Project\T0\T0\TradeApi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\T0\T0\TradeApi\PB" />
+      <recent name="D:\Project\T0\T0\TradeApi" />
+      <recent name="D:\Project\T0\T0\TradeApi\trade" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build tradeApi">
+    <configuration name="go build tradeApi" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="TradeApi" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="tradeApi" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build tradeApi/trade" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="TradeApi" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/trade/Api.go" />
+      <package value="tradeApi/trade" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLoadDll in tradeApi/trade" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="TradeApi" />
+      <working_directory value="$PROJECT_DIR$/trade" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="tradeApi/trade" />
+      <pattern value="^TestLoadDll$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build tradeApi" />
+        <item itemvalue="Go Build.go build tradeApi/trade" />
+        <item itemvalue="Go Test.TestLoadDll in tradeApi/trade" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.io,direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1676530080350">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1676530080350" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1676601430650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1676601430650" />
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1677494808310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1677494808310" />
+    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1677494808310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1677494808310" />
+    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1677494808310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1677494808310" />
+    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1677494808310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1677494808310" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1676617927639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1676617927639" />
+    <state x="540" y="175" key="editAsTableFormatDialogDimension" timestamp="1676530399580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="175" key="editAsTableFormatDialogDimension/0.0.1920.1040@0.0.1920.1040" timestamp="1676530399580" />
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1676361568355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676361568355" />
+  </component>
+</project>

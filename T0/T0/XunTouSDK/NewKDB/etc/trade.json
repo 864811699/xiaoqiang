@@ -1,0 +1,18 @@
+{
+  "kdb_host-": "47.116.2.62",
+  "kdb_port-": 15001,
+  "kdb_host": "115.238.186.119",
+  "kdb_port": 40000,
+  "auth": "test:pass",
+  "dbPath": "./db",
+  "accounts": ["testCS"],
+  "maxNo": 100000,
+  "wsAddr": "127.0.0.1:12000",
+  "tag": "OEMS",
+  "account_infos": {
+    "testCS": {"buy": 23, "sell": 24,"return": 29}, // 29 买券还券,30 直接还券,42 专项买券还券,43 专项直接还券"
+    "8009232720": {"syms": "sym1|sym2|sym3"}
+  }
+}
+
+

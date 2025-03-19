@@ -1,0 +1,40 @@
+=============== Oct 17, 2023 (CST) ===============
+14:19:20.351014 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:19:20.354367 db@open opening
+14:19:20.355488 version@stat F·[] S·0B[] Sc·[]
+14:19:20.356611 db@janitor F·2 G·0
+14:19:20.356611 db@open done T·2.2431ms
+=============== Oct 17, 2023 (CST) ===============
+14:20:38.988309 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:20:38.989401 version@stat F·[] S·0B[] Sc·[]
+14:20:38.989401 db@open opening
+14:20:38.989401 journal@recovery F·1
+14:20:38.990551 journal@recovery recovering @1
+14:20:38.991661 version@stat F·[] S·0B[] Sc·[]
+14:20:38.997267 db@janitor F·2 G·0
+14:20:38.997267 db@open done T·7.8662ms
+14:21:00.065186 db@close closing
+14:21:00.065186 db@close done T·0s
+=============== Oct 17, 2023 (CST) ===============
+14:45:16.227854 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:45:16.229048 version@stat F·[] S·0B[] Sc·[]
+14:45:16.229048 db@open opening
+14:45:16.229048 journal@recovery F·1
+14:45:16.229048 journal@recovery recovering @2
+14:45:16.230498 version@stat F·[] S·0B[] Sc·[]
+14:45:16.236038 db@janitor F·2 G·0
+14:45:16.236038 db@open done T·6.99ms
+14:55:39.957560 db@close closing
+14:55:39.957560 db@close done T·0s
+=============== Oct 17, 2023 (CST) ===============
+15:08:03.720661 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:08:03.721827 version@stat F·[] S·0B[] Sc·[]
+15:08:03.721827 db@open opening
+15:08:03.721827 journal@recovery F·1
+15:08:03.721827 journal@recovery recovering @4
+15:08:03.724792 memdb@flush created L0@6 N·2 S·716B "1,v2":"1,v1"
+15:08:03.724792 version@stat F·[1] S·716B[716B] Sc·[0.25]
+15:08:03.730505 db@janitor F·3 G·0
+15:08:03.730505 db@open done T·8.6779ms
+15:11:08.359920 db@close closing
+15:11:08.359920 db@close done T·0s
